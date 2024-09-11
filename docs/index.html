@@ -1,256 +1,258 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-</head>
-<body class="overflow-hidden">
-     <!-- header -->
-     <div class=" z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
+      <!doctype html>
+      <html>
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel="stylesheet">
+        <link href="./input.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <div class=" container h-[calc(100%-7rem)]">
+      </head>
+      <body class="overflow-hidden">
+          <!-- header -->
+          <div class="z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
 
-     
-    
-        <!-- background -->
-        <div id="background-div" class="w-full bg-[url('galaxy.png')] h-full bg-cover bg-center relative">
+          <div class="h-[calc(100%-7rem)]">
 
-
-<!-- second background -->
-
-          <div id="parent-background" class="parent-background z-40 bg-gradient-to-r from-[#323F75] to-[#999999] h-full w-full relative flex items-center">
-            <div class="opacity-[25%] bg-gradient-to-b from-[#737373] to-[#D9D9D9] h-[55.375rem] w-[75.063rem] bg-black left-[-41.188rem] top-[-5.25rem] absolute rounded-full"></div>
-         
           
-<!-- blur div -->
-            <div id="blur" class="h-full w-full absolute bg-black opacity-[50%] backdrop-blur-[4] z-10"></div>
+          
+              <!-- background -->
+              <div id="background-div" class="w-full bg-[url('galaxy.png')] h-full bg-cover bg-center relative">
+
+
+      <!-- second background -->
+
+                <div id="parent-background" class="parent-background z-40 bg-gradient-to-r from-[#323F75] to-[#999999] h-full w-full relative flex items-center">
+                  <div id="second-background" class="opacity-[25%] bg-gradient-to-b from-[#737373] to-[#D9D9D9] h-[55.375rem] w-[75.063rem] bg-black left-[-41.188rem] top-[-5.25rem] absolute rounded-full"></div>
+              
+                
+      <!-- blur div -->
+                  <div id="blur" class="h-full w-full absolute bg-black opacity-[50%] backdrop-blur-[4] z-10"></div>
+                  
+                  <!-- content-container -->
+                  <div class="h-full w-full text-white absolute z-20 flex flex-col justify-center">
+                    <!-- landing-text -->
+                    <div class="landing-text w-full flex flex-col items-center">
+                      <div id="landing-text" class="w-[43.125rem]">
+                        <h1 class=" text-8xl font-inika text-center">WELCOME</h1>
+                        <h3 class="text-[2rem] font-inria text-center leading-none my-10"> Hi! I am Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
+                      </div>
+                      
+
+                    <!-- earths-->
+                  <div class="flex w-full z-50 ">
+                    <div id="earth-container" class="flex items-center relative left-[35%] ">
+                      <div class='links font-instrument text-[1.5rem] text-right'>
+                        <h3   class="buttons"><a class='' target="_blank" rel="noreferrer" href="jerikocoz@gmail.com"></a>Gmail</h3>
+                        <h3   class='buttons mr-[1.25rem]' ><a class='' target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100053874975545"></a>Facebook</h3>
+                        <h3   class="buttons"><a class='' target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"></a>Linkedin</h3>
+                    </div>
+
+
+                    <!-- circle -->
+                    <div class='h-[11.25rem] w-[11.25rem] bg-gray-700 rounded-full relative flex justify-center flex-col items-center'>
+                      <div class=" opacity-0 cursor-default pointer-events-none" id="links-circle">
+                        <h3 class="text-white text-[1.688rem]">Contact</h3>
+                        <div class="flex justify-center">
+                          <i class="icon-circle fa fa-instagram text-black fa-2x"></i>
+                          <a href="https://www.facebook.com/profile.php?id=100053874975545"  target="_blank"><i class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
+                          <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"  target="_blank"><i class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i></a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- categories -->
+                    <div class='links font-inika text-[1.5rem]'>
+                                <h3 class='buttons ml-[1.25rem]'   onclick="clicks(event)"><a class="" href=""></a>Personal Project</h3>
+                                <h3 class='buttons ml-[1.25rem]'   onclick="clicks(event)"><a class="" href=""></a>More about me</h3>
+                                <h3 class="buttons"   onclick="clicks(event)"><a class="" href=""></a>experience</h3>
+                            </div>
+                    </div>
+                      <!-- end tag of circle -->
+                    </div>
+
+              
+
+                  
+              
+
+                  </div>
+      <!-- personal-project -->
+      <div id="about-me" class="categories z-0 opacity-0 text-white h-full w-[60%] absolute right-0 flex flex-col justify-center items-center">
+      <h1 class="font-bold text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer" target="_blank" href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
+      <!-- card projects -->
+      <div class="flex flex-col overflow-scroll overflow-x-hidden p-6 h-[80%]">
+      <!-- card1 -->
+      <div class="mb-3">
+        <img src="amazon.png" alt="">
+      </div>
+      <!-- card2 -->
+      <div class="mb-3">
+        <img src="chocolate.png" alt="">
+      </div>
+      <!-- card3 -->
+      <div class="mb-3">
+        <img src="library.png" alt="">
+      </div>
+        <!-- card4 -->
+        <div class="mb-3">
+          <img src="manga.png" alt="">
+        </div>
+      </div>
+      </div>
+
+                  
+                                <!-- more about me -->
+          <div id="about-me" class="categories z-0 opacity-0 text-white h-full w-[60%] absolute right-0 flex flex-col justify-center items-center">
+            <img src="./Frame 148.png" alt=""/>
+            <h3 class="text-[2rem]">STI  ORTIGAS-CAINTA</h3>
+            <h3 class="text-[1.25rem]">Graduate at July 26, 2024</h3>
+            <h3 class="text-[1.25rem]">Look at my resume for more info: <a target="_blank" href="Jeriko Ronnel S. Coz.pdf">click here</a></h3>
+            <div class="flex overflow-scroll overflow-x-hidden p-6 h-[80%] flex-col">
+              <h3 class="text-[1.563rem] font-thin">Good day!, I am a student at STI Ortigas-Cainta, a BS in Computer Science graduate, with a strong focus on both front-end and back-end development. Although I have no formal work experience, I have developed practical skills through academic projects and personal initiatives. I am capable of working as either a front-end developer, where I use Tailwind CSS to create responsive, user-friendly designs, or as a back-end developer, where I handle databases, APIs, and server-side logic to ensure the functionality and security of applications. While I can specialize in either front-end or back-end development, my experience in both areas allows me to understand the full development process and collaborate effectively with teams.</h3>
+          
+              <br><br>
+              <h1 class="text-3xl">language:</h1>
+              <br>
+              <div class=" flex">
             
-            <!-- content-container -->
-            <div class="h-full w-full text-white absolute z-20 flex flex-col justify-center">
-              <!-- landing-text -->
-              <div class="landing-text w-full flex flex-col items-center">
-                <div id="landing-text" class="w-[43.125rem]">
-                  <h1 class=" text-8xl font-inika text-center">WELCOME</h1>
-                  <h3 class="text-[2rem] font-inria text-center leading-none my-10"> Hi! I am Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
-                </div>
+            <!-- card1 -->
+            <div class="h-24 w-24">
+              <img src="java.png" alt="">
+            </div>
+            <!-- card2 -->
+            <div class="h-24 w-48">
+              <img src="python-logo.png" alt="">
+            </div>
+            <!-- card3 -->
+            <div class="h-24 w-24">
+              <img src="html.png" alt="">
+            </div>
+            <!-- card4 -->
+            <div class="h-24 w-24">
+              <img src="css.png" alt="">
+            </div>
+            <!-- card5 -->
+            <div class="h-24 w-24">
+              <img src="js.png" alt="">
+            </div>
+            <!-- card6 -->
+            <div class="h-24 w-24">
+              <img src="php.png" alt="">
+            </div>
+            <!-- card7 -->
+            <div class="h-24 w-48">
+              <img src="tailwind.png" alt="">
+            </div>
+          </div>
+            </div>
+          </div>
+
+          <!-- experience -->
+          <div id="experience" class="categories opacity-0 z-0 text-white h-full w-[60%] absolute right-0 flex flex-col justify-center items-center">
+          
+              <h3 class="text-[1.563rem] font-thin"> As of now, I don’t have any formal work experience, but I have previously worked as a front-end web development intern where I gained hands-on experience with Tailwind CSS. During this internship, I developed a strong foundation in building responsive and visually appealing websites, and I had the opportunity to enhance my skills in HTML, CSS, and JavaScript.</h3>
+            
+          </div>
+
+            
+          
+            
+      <!-- end tag of content container -->
+      </div>
+                  </div>
+
                 
 
-              <!-- earths-->
-            <div class="flex w-full z-50 ">
-              <div id="earth-container" class="flex items-center relative left-[35%] ">
-                <div class='links font-instrument text-[1.5rem] text-right'>
-                  <h3   class="buttons"><a class='' target="_blank" rel="noreferrer" href="jerikocoz@gmail.com"></a>Gmail</h3>
-                  <h3   class='buttons mr-[1.25rem]' ><a class='' target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100053874975545"></a>Facebook</h3>
-                  <h3   class="buttons"><a class='' target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"></a>Linkedin</h3>
-              </div>
 
-
-              <!-- circle -->
-              <div class='h-[11.25rem] w-[11.25rem] bg-gray-700 rounded-full relative flex justify-center flex-col items-center'>
-                <div class=" opacity-0 cursor-default pointer-events-none" id="links-circle">
-                  <h3 class="text-white text-[1.688rem]">Contact</h3>
-                  <div class="flex justify-center">
-                    <i class="icon-circle fa fa-instagram text-black fa-2x"></i>
-                    <a href="https://www.facebook.com/profile.php?id=100053874975545"  target="_blank"><i class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"  target="_blank"><i class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i></a>
-                    
                   </div>
-                </div>
-              </div>
-              <!-- categories -->
-              <div class='links font-inika text-[1.5rem]'>
-                          <h3 class='buttons ml-[1.25rem]'   onclick="clicks(event)"><a class="" href=""></a>Personal Project</h3>
-                          <h3 class='buttons ml-[1.25rem]'   onclick="clicks(event)"><a class="" href=""></a>More about me</h3>
-                          <h3 class="buttons"   onclick="clicks(event)"><a class="" href=""></a>experience</h3>
-                      </div>
-              </div>
-                <!-- end tag of circle -->
-              </div>
+              
 
-         
+          <!-- end tag of background -->
+          </div>
 
+
+
+          <!-- end tag of container -->
+        </div>
+          
+              
             
-        
+          <!-- footer -->
+          <div class="z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
+      </body>
+      <script>
+          const buttons = document.getElementsByClassName("buttons");
+          const categories = document.getElementsByClassName("categories");
+          const earth = document.getElementById("earth-container");
+          const landing = document.getElementById("landing-text");
+          const linksCircle = document.getElementById("links-circle");
+          const aboutMe = document.getElementById("about-me");
+          const background = document.getElementById("parent-background");
+          const blurs = document.getElementById("blur");
 
-            </div>
-<!-- personal-project -->
-<div id="about-me" class="categories z-0 opacity-0 text-white h-full w-[60%] absolute right-0 flex flex-col justify-center items-center">
-<h1 class="font-bold text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer" target="_blank" href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
-<!-- card projects -->
-<div class="flex flex-col overflow-scroll overflow-x-hidden p-6 h-[80%]">
-<!-- card1 -->
- <div class="mb-3">
-  <img src="amazon.png" alt="">
- </div>
- <!-- card2 -->
- <div class="mb-3">
-  <img src="chocolate.png" alt="">
- </div>
- <!-- card3 -->
- <div class="mb-3">
-  <img src="library.png" alt="">
- </div>
-  <!-- card4 -->
-  <div class="mb-3">
-    <img src="manga.png" alt="">
-   </div>
-</div>
-</div>
 
-            
-                          <!-- more about me -->
-    <div id="about-me" class="categories z-0 opacity-0 text-white h-full w-[60%] absolute right-0 flex flex-col justify-center items-center">
-      <img src="./Frame 148.png" alt=""/>
-      <h3 class="text-[2rem]">STI  ORTIGAS-CAINTA</h3>
-      <h3 class="text-[1.25rem]">Graduate at July 26, 2024</h3>
-      <h3 class="text-[1.25rem]">Look at my resume for more info: <a target="_blank" href="Jeriko Ronnel S. Coz.pdf">click here</a></h3>
-      <div class="flex overflow-scroll overflow-x-hidden p-6 h-[80%] flex-col">
-        <h3 class="text-[1.563rem] font-thin">Good day!, I am a student at STI Ortigas-Cainta, a BS in Computer Science graduate, with a strong focus on both front-end and back-end development. Although I have no formal work experience, I have developed practical skills through academic projects and personal initiatives. I am capable of working as either a front-end developer, where I use Tailwind CSS to create responsive, user-friendly designs, or as a back-end developer, where I handle databases, APIs, and server-side logic to ensure the functionality and security of applications. While I can specialize in either front-end or back-end development, my experience in both areas allows me to understand the full development process and collaborate effectively with teams.</h3>
-     
-        <br><br>
-        <h1 class="text-3xl">language:</h1>
-        <br>
-        <div class=" flex">
+
       
-      <!-- card1 -->
-      <div class="h-24 w-24">
-        <img src="java.png" alt="">
-      </div>
-       <!-- card2 -->
-       <div class="h-24 w-48">
-        <img src="python-logo.png" alt="">
-      </div>
-       <!-- card3 -->
-       <div class="h-24 w-24">
-        <img src="html.png" alt="">
-      </div>
-       <!-- card4 -->
-       <div class="h-24 w-24">
-        <img src="css.png" alt="">
-      </div>
-       <!-- card5 -->
-       <div class="h-24 w-24">
-        <img src="js.png" alt="">
-      </div>
-       <!-- card6 -->
-       <div class="h-24 w-24">
-        <img src="php.png" alt="">
-      </div>
-       <!-- card7 -->
-       <div class="h-24 w-48">
-        <img src="tailwind.png" alt="">
-      </div>
-     </div>
-      </div>
-    </div>
+        let buttonArray = Array.from(buttons);
 
-    <!-- experience -->
-    <div id="experience" class="categories opacity-0 z-0 text-white h-full w-[60%] absolute right-0 flex flex-col justify-center items-center">
-    
-        <h3 class="text-[1.563rem] font-thin"> As of now, I don’t have any formal work experience, but I have previously worked as a front-end web development intern where I gained hands-on experience with Tailwind CSS. During this internship, I developed a strong foundation in building responsive and visually appealing websites, and I had the opportunity to enhance my skills in HTML, CSS, and JavaScript.</h3>
-      
-    </div>
-
-       
-    
-      
-<!-- end tag of content container -->
-</div>
-            </div>
-
-           
-
-
-            </div>
-        
-
-     <!-- end tag of background -->
-    </div>
-
-
-
-    <!-- end tag of container -->
-  </div>
-    
-         
-      
-    <!-- footer -->
-    <div class="z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
-</body>
-<script>
-     const buttons = document.getElementsByClassName("buttons");
-     const categories = document.getElementsByClassName("categories");
-     const earth = document.getElementById("earth-container");
-     const landing = document.getElementById("landing-text");
-     const linksCircle = document.getElementById("links-circle");
-     const aboutMe = document.getElementById("about-me");
-     const background = document.getElementById("parent-background");
-     const blurs = document.getElementById("blur");
-
-
-
- 
-  let buttonArray = Array.from(buttons);
-
-  // hover event
-  function hover(e) {
-  for (let j = 0; j < buttons.length; j++) {
-    if (buttons[j] !== e.target) {
-      buttons[j].style.color = "gray";
-    } else {
-      buttons[j].style.color = "white"; // Highlight hovered button
-    }
-  }
-}
-
-// Click function
-function click(e) {
-  let targetIndex = buttonArray.indexOf(e.target); // Get the index in the array
-  let clickTarget = e.target;
-
-  if (targetIndex > 2) {
-    earth.classList.add("earth-move");
-    landing.style.display = "none";
-    blurs.style.display = "none";
-    linksCircle.classList.add("links-circle");
-
-    // Add class to the first 3 buttons
-    for (let k = 0; k < 3; k++) {
-      buttons[k].classList.add("links-buttons");
-    }
-
- 
-  
-
-    // Add and remove classes to/from categories based on the targetIndex
-    for (let z = 0; z < categories.length; z++) {
-      if ((targetIndex - 3) === z) {
-        categories[z].classList.add("cate");
-        categories[z].classList.remove("earth-contents-out");
-      } else {
-        categories[z].classList.add("earth-contents-out");
+        // hover event
+        function hover(e) {
+        for (let j = 0; j < buttons.length; j++) {
+          if (buttons[j] !== e.target) {
+            buttons[j].style.color = "gray";
+          } else {
+            buttons[j].style.color = "white"; // Highlight hovered button
+          }
+        }
       }
-    }
 
-    //change the background
-    background.classList.add("change-background");
+      // Click function
+      function click(e) {
+        let targetIndex = buttonArray.indexOf(e.target); // Get the index in the array
+        let clickTarget = e.target;
 
-  }
-}
+        if (targetIndex > 2) {
+          earth.classList.add("earth-move");
+          landing.style.display = "none";
+          blurs.style.display = "none";
+          linksCircle.classList.add("links-circle");
+
+          // Add class to the first 3 buttons
+          for (let k = 0; k < 3; k++) {
+            buttons[k].classList.add("links-buttons");
+          }
+
+      
+        
+
+          // Add and remove classes to/from categories based on the targetIndex
+          for (let z = 0; z < categories.length; z++) {
+            if ((targetIndex - 3) === z) {
+              categories[z].classList.add("cate");
+              categories[z].classList.remove("earth-contents-out");
+            } else {
+              categories[z].classList.add("earth-contents-out");
+            }
+          }
+
+          //change the background
+          background.classList.add("change-background");
+
+        }
+      }
 
 
 
-  
+        
 
 
-for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("mouseover", hover);
-  buttons[i].addEventListener("click", click);
-}
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("mouseover", hover);
+        buttons[i].addEventListener("click", click);
+      }
 
 
-</script>
-</html>
+      </script>
+      </html>

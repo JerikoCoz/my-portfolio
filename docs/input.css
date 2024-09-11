@@ -58,6 +58,10 @@ main{
 .parent-background > * {
   visibility: visible;
 }
+#second-background{
+  visibility: inherit;
+}
+
 .change-background{
   visibility: visible;
 }
