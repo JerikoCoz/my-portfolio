@@ -1,0 +1,91 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+body, html{
+  height: 100%;
+}
+
+#header{
+  top: 0px;
+}
+
+#foot{
+  bottom: 0px;
+}
+main{
+  height: 100%;
+}
+.links{
+
+   display: flex;
+   flex-direction: column;
+   color: white;
+   justify-content: center;  
+}
+
+.links h3{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  
+}
+
+.earth-move{
+  transition: 2s ease-in-out;
+  top: 20%;
+  left: 0.625rem;
+}
+.links-buttons{
+  transition: 1s ease-out;
+  opacity: 0;
+ 
+}
+.icon-circle{
+  margin-left: 0.188rem;
+  margin-right: 0.188rem;
+}
+.links-circle{
+   opacity: 1;
+  transition: 2s ease-in;
+}
+.parent-background {
+  visibility: hidden;
+}
+
+.parent-background > * {
+  visibility: visible;
+}
+.change-background{
+  visibility: visible;
+}
+
+.cate{
+  transition: 2s ease-in;
+  opacity: 1;
+  z-index: 100;
+}
+.earth-contents-out{
+  transition: 1s ease-out;
+  opacity: 0;
+  z-index: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #695baa; 
+    border-radius: 0.625rem;
+}
+::-webkit-scrollbar-track {
+  background: rgb(182, 17, 17); 
+  border: 1px solid black;
+  border-radius: 0.625rem;
+
+}
+ 
