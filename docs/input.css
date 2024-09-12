@@ -50,6 +50,8 @@ main{
 .links-circle{
    opacity: 1;
   transition: 2s ease-in;
+  pointer-events: fill;
+  cursor: pointer;
 }
 .parent-background {
   visibility: hidden;
