@@ -11,37 +11,42 @@
       </head>
       <body class="overflow-hidden">
           <!-- header -->
-          <div class="z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
+          <div class="z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
+            <!-- mobile view -->
+         <div class="lg:hidden flex absolute right-0 p-3">
+          <i class="icon-circle fa fa-instagram text-black fa-2x"></i>
+          <a href="https://www.facebook.com/profile.php?id=100053874975545"  target="_blank"><i class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"  target="_blank"><i class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i></a>
+          
+         </div>
+          </div>
 
           <div class="h-[calc(100%-7rem)]">
-
-          
-          
               <!-- background -->
-              <div id="background-div" class="w-full bg-[url('galaxy.png')] h-full bg-cover bg-center relative">
+              <div id="background-div" class="w-full bg-[#454661] lg:bg-[url('galaxy.png')] h-full bg-cover bg-center relative">
 
 
       <!-- second background -->
 
                 <div id="parent-background" class="parent-background z-40 bg-gradient-to-r from-[#323F75] to-[#999999] h-full w-full relative flex items-center">
-                  <div id="second-background" class="opacity-[25%] bg-gradient-to-b from-[#737373] to-[#D9D9D9] h-[55.375rem] w-[75.063rem] bg-black left-[-41.188rem] top-[-5.25rem] absolute rounded-full"></div>
+                  <div id="second-background" class="opacity-[25%] bg-gradient-to-b from-[#737373] to-[#D9D9D9] h-[55.375rem] w-[75.063rem] bg-black left-[-41.188rem] top-[-5.25rem] s rounded-full"></div>
               
                 
       <!-- blur div -->
-                  <div id="blur" class="h-full w-full absolute bg-black opacity-[50%] backdrop-blur-[4] z-10"></div>
+                  <div id="blur" class="hidden lg:block h-full w-full absolute bg-black opacity-[50%] backdrop-blur-[4] z-10"></div>
                   
                   <!-- content-container -->
                   <div class="h-full w-full text-white absolute z-20 flex flex-col justify-center">
                     <!-- landing-text -->
                     <div class="landing-text w-full flex flex-col items-center">
-                      <div id="landing-text" class="w-[43.125rem]">
-                        <h1 class=" text-8xl font-inika text-center">WELCOME</h1>
-                        <h3 class="text-[2rem] font-inria text-center leading-none my-10"> Hi! I am Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
+                      <div id="landing-text" class="lg:w-[43.125rem] w-[19.125rem]">
+                        <h1 class="text-[2rem] lg:text-8xl font-inika text-center">WELCOME</h1>
+                        <h3 class="text-[0.875rem] lg:text-[2rem] font-inria text-center leading-none my-10"> Hi! I am Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
                       </div>
                       
 
                     <!-- earths-->
-                  <div class="flex w-full z-50 ">
+                  <div class="lg:flex w-full z-50 hidden ">
                     <div id="earth-container" class="flex items-center relative left-[35%] ">
                       <div class='links font-instrument text-[1.5rem] text-right'>
                         <h3   class="buttons"><a class='' target="_blank" rel="noreferrer" href="jerikocoz@gmail.com"></a>Gmail</h3>
