@@ -745,12 +745,20 @@ video {
   height: 4.563rem;
 }
 
-.max-h-\[350px\] {
-  max-height: 350px;
+.h-\[5\.688rem\] {
+  height: 5.688rem;
 }
 
-.w-\[100px\] {
-  width: 100px;
+.h-\[6\.688rem\] {
+  height: 6.688rem;
+}
+
+.h-\[6rem\] {
+  height: 6rem;
+}
+
+.max-h-\[350px\] {
+  max-height: 350px;
 }
 
 .w-\[11\.125rem\] {
@@ -783,6 +791,18 @@ video {
 
 .w-\[4\.688rem\] {
   width: 4.688rem;
+}
+
+.w-\[5\.688rem\] {
+  width: 5.688rem;
+}
+
+.w-\[6\.688rem\] {
+  width: 6.688rem;
+}
+
+.w-\[6rem\] {
+  width: 6rem;
 }
 
 .max-w-\[420px\] {
@@ -1161,6 +1181,42 @@ main{
 }
 
 @media (min-width: 768px) {
+  .md\:h-\[\] {
+    height: ;
+  }
+
+  .md\:h-\[9\.688rem\] {
+    height: 9.688rem;
+  }
+
+  .md\:h-\[8\.688rem\] {
+    height: 8.688rem;
+  }
+
+  .md\:h-\[7\.688rem\] {
+    height: 7.688rem;
+  }
+
+  .md\:h-\[7rem\] {
+    height: 7rem;
+  }
+
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[9\.688rem\] {
+    width: 9.688rem;
+  }
+
+  .md\:w-\[8\.688rem\] {
+    width: 8.688rem;
+  }
+
+  .md\:w-\[7\.688rem\] {
+    width: 7.688rem;
+  }
+
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -1246,6 +1302,14 @@ main{
 
   .lg\:bg-\[url\(\"\/src\/second\.jpg\"\)\] {
     background-image: url("/src/second.jpg");
+  }
+
+  .lg\:bg-\[url\(\"\/docs\/src\/second\.jpg\"\)\] {
+    background-image: url("/docs/src/second.jpg");
+  }
+
+  .lg\:bg-\[url\(\'\/docs\/src\/first\.jpg\'\)\] {
+    background-image: url('/docs/src/first.jpg');
   }
 
   .lg\:px-0 {
