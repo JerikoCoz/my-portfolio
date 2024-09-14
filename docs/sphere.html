@@ -5,20 +5,38 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-    <div class="sphere rounded-full w-[500px] h-[500px] border-solid border-4 bg-red-500 border-black">
-        <div id="circle2" class="sphere rounded-full w-[500px] h-[500px] border-solid border-4 bg-blue-500 border-black">
-            <div id="circle3" class="sphere rounded-full w-[500px] h-[500px] border-solid border-4 bg-green-500 border-black">
-        
-            </div>
-        </div>
+<body class="overflow-x-hidden"> 
+ 
+    <div class="h-[100px] w-full bg-black static" id="div">gj</div>
+    <div>
+        <h3 id="text">thi;</h3>
     </div>
+    
     <script>
 
 
+  const ss = document.getElementById("div");
+  let sss = document.getElementById("text");
 
+  let condition = false;
 
+  ss.addEventListener("touchstart", (ev)=>{
+    let touch = ev.touches[0].clientX;
+    ss.addEventListener("touchmove", (e)=>{
 
+let xtouch = e.touches[0].clientX;
+if(touch > xtouch){
+    ss.style.backgroundColor = "blue";
+   sss.innerHTML = touch;
+}else{
+    ss.style.backgroundColor = "red";
+    sss.innerHTML = touch;
+}
+
+})
+
+  })
+  
 
 
 
