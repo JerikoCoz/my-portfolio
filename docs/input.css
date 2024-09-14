@@ -91,6 +91,9 @@ main{
 #catergories-contents-container{
   transition: 2s ease-in;
 }
+#card-container{
+  transition: 2s ease;
+}
 
 
 

@@ -1120,6 +1120,10 @@ main{
   transition: 2s ease-in;
 }
 
+#card-container{
+  transition: 2s ease;
+}
+
 .img-test{
   margin: 0;
   padding: 0;
