@@ -90,7 +90,7 @@
       <!-- more about me -->
       <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1rem]">More about me</h3>
-        <img src="./Frame 148.png" alt="" class="-[3.688rem] h-[3.563rem] lg:w-auto lg:h-auto"/>
+        <img src="./Frame 148.png" alt="" class="w-[4.688rem] h-[4.563rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
         <h3 class="text-[1rem] lg:text-[1rem]">Graduate at July 26, 2024</h3>
         <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info: <a target="_blank"
@@ -322,6 +322,7 @@ const next = document.getElementById("next");
         function touch(e){
          touchs =  e.touches[0].clientX;
         }
+
         let currentPosition = 0;
         function touchmove(event){
            currentPosition = event.touches[0].clientX;
@@ -329,10 +330,9 @@ const next = document.getElementById("next");
 
         function touchend(){
           if(touchs > currentPosition){
-            cardContainer.style.right = lefts == card.length*card[0].clientWidth ? (lefts -= (card.length*card[0].clientWidth)) + "px" : (lefts += card[0].clientWidth) + "px";
-            
+            nextt();
           }else{
-            cardContainer.style.right = lefts >= card[0].clientWidth ?  (lefts -= card[0].clientWidth) + "px" : "";
+            prevs();
           }
         }
 
