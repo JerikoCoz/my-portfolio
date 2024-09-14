@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body> 
   <!-- header -->
   <div class="z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
     <!-- mobile view -->
@@ -30,7 +30,7 @@
   </div>
   </div>
   <!-- main-->
-  <main id="background-div" class="w-full h-auto lg:h-[calc(100%-7rem)] bg-[#454661] lg:bg-[url('first.jpg')] bg-cover bg-center relative">
+  <main id="background-div" class="px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] bg-[#454661] lg:bg-[url('first.jpg')] bg-cover bg-center relative">
     <!-- second backgound -->
 
     <!-- blur  -->
@@ -88,7 +88,7 @@
     <!-- categories contents container -->
     <div id="catergories-contents-container" class="lg:hidden opacity-100 lg:opacity-0  top-0 w-full h-full relative">
       <!-- more about me -->
-      <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
+      <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1rem]">More about me</h3>
         <img src="./Frame 148.png" alt="" class="-[3.688rem] h-[3.563rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
@@ -143,8 +143,7 @@
       <div id="personal-project" class="hidden lg:flex opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
         <h1 class="font-bold text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer"
             target="_blank"
-            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click
-            here</a></h1>
+            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">clickhere</a></h1>
         <!-- card projects -->
         <div class="flex flex-col overflow-scroll overflow-x-hidden p-6 h-[80%]">
           <!-- card1 -->
@@ -166,37 +165,42 @@
         </div>
       </div>
 <!-- mobile view - projects -->
-<div class="lg:hidden w-full relative h[500px] flex flex-col justify-center px-1  z-0">
+<div class="lg:hidden flex flex-col items-center px-1">
   <h3 class="lg:hidden text-[1rem] text-center text-white">Personal projects</h3>
- <!-- current view container -->
-  <div class="flex justify-center w-[350px] h-[210px] relative bg-black overflow-hidden" >
-    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" id="prevs" class="absolute z-50 h-full flex items-center" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+  <!-- project container -->
+<div class=" relative inline-block ">
+  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" id="prevs" class="absolute z-50 h-full flex items-center" viewBox="0 0 20 20"><path fill="currentColor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
 
+ <!-- current view container -->
+  <div class="flex flex-shrink-1 max-w-[420px] max-h-[350px] bg-black overflow-hidden" >
+    
     <!-- card container -->
       <div  id="card-container" class="relative flex right-0">
             <!-- card1 -->
-      <div class="w-[350px] h-[210px] flex-shrink-0 card">
+      <div class="w-full h-full flex-shrink-0 card">
           <img class="w-full h-full" src="amazon.png" alt="">
       </div> 
       <!-- card2 -->
-      <div class="w-[350px] h-[210px] flex-shrink-0 card">
+      <div class="w-full h-full flex-shrink-0 card">
           <img class="w-full h-full" src="chocolate.png" alt="">
       </div>
       <!-- card3 -->
-      <div class="w-[350px] h-[210px] flex-shrink-0 card">
+      <div class="w-full h-full flex-shrink-0 card">
           <img class="w-full h-full" src="library.png" alt="">
       </div>
       <!-- card4 -->
-      <div class="w-[350px] h-[210px] flex-shrink-0">
+      <div class="w-full h-full flex-shrink-0">
           <img class="w-full h-full" src="manga.png" alt="">
       </div>
      
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20" id="next" class="absolute z-50 h-full flex items-center right-0"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
-
+      
   </div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20" id="next" class="top-0 absolute z-50 h-full flex items-center right-0"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
 
 </div>
+</div>
+ 
       <!-- experience -->
       <div id="experience" class="py-5 lg:py-0 z-50 categories opacity-1 lg:opacity-0 text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1rem]">Experience</h3>
