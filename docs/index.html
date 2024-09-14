@@ -322,10 +322,13 @@ const next = document.getElementById("next");
         function touch(e){
          touchs =  e.touches[0].clientX;
         }
+        let currentPosition = 0;
+        function touchmove(event){
+           currentPosition = event.touches[0].clientX;
+        }
 
-        function touchmove(event, touch){
-          let currentPosition = event.touches[0].clientX;
-          if(currentPosition < touchs){
+        function touchend(){
+          if(touchs > currentPosition){
             cardContainer.style.right = lefts == card.length*card[0].clientWidth ? (lefts -= (card.length*card[0].clientWidth)) + "px" : (lefts += card[0].clientWidth) + "px";
             
           }else{
@@ -335,6 +338,7 @@ const next = document.getElementById("next");
 
         currentView.addEventListener("touchstart", touch);
         currentView.addEventListener("touchmove", touchmove);
+        currentView.addEventListener("touchend", touchend);
 
         next.addEventListener("click", nextt);
         prev.addEventListener("click", prevs);
