@@ -1208,6 +1208,14 @@ main{
     width: auto;
   }
 
+  .lg\:w-28 {
+    width: 7rem;
+  }
+
+  .lg\:w-48 {
+    width: 12rem;
+  }
+
   .lg\:max-w-\[60\%\] {
     max-width: 60%;
   }
@@ -1226,6 +1234,18 @@ main{
 
   .lg\:bg-\[url\(\'first\.jpg\'\)\] {
     background-image: url('first.jpg');
+  }
+
+  .lg\:bg-\[url\(\"\/srs\/second\.jpg\"\)\] {
+    background-image: url("/srs/second.jpg");
+  }
+
+  .lg\:bg-\[url\(\'\/src\/first\.jpg\'\)\] {
+    background-image: url('/src/first.jpg');
+  }
+
+  .lg\:bg-\[url\(\"\/src\/second\.jpg\"\)\] {
+    background-image: url("/src/second.jpg");
   }
 
   .lg\:px-0 {
