@@ -753,6 +753,10 @@ video {
   height: 100%;
 }
 
+.h-\[3\.563rem\] {
+  height: 3.563rem;
+}
+
 .w-\[11\.125rem\] {
   width: 11.125rem;
 }
@@ -1261,6 +1265,10 @@ main{
 
   .lg\:text-\[2rem\] {
     font-size: 2rem;
+  }
+
+  .lg\:text-\[1rem\] {
+    font-size: 1rem;
   }
 
   .lg\:opacity-0 {
