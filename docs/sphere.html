@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sphere rounded-full w-[500px] h-[500px] border-solid border-4 bg-red-500 border-black">
+        <div id="circle2" class="sphere rounded-full w-[500px] h-[500px] border-solid border-4 bg-blue-500 border-black">
+            <div id="circle3" class="sphere rounded-full w-[500px] h-[500px] border-solid border-4 bg-green-500 border-black">
+        
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let body = document.body
+     body.addEventListener("mousemove", (e)=>{
+        let img = document.createElement("img");
+        img.setAttribute("src", "html.png");
+        img.setAttribute("class", "img-test")
+        img.style.left = e.clientX-20;
+        img.style.top = e.clientY-20;
+        body.append(img);
+        setTimeout(()=>{
+            img.style.display = "none";
+        }, 500);
+        
+     })
+    </script>
+</body>
+</html>

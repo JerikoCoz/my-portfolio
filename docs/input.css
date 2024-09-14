@@ -35,8 +35,8 @@ main{
 
 .earth-move{
   transition: 2s ease-in-out;
-  top: 20%;
-  left: 0.625rem;
+  top: 40%;
+  left: -70px;
 }
 .links-buttons{
   transition: 1s ease-out;
@@ -53,19 +53,13 @@ main{
   pointer-events: fill;
   cursor: pointer;
 }
-.parent-background {
+
+#second-background{
   visibility: hidden;
 }
 
-.parent-background > * {
-  visibility: visible;
-}
-#second-background{
-  visibility: inherit;
-}
-
-.change-background{
-  visibility: visible;
+#background-div{
+  transition: 2s ease-in-out;
 }
 
 .cate{
@@ -94,4 +88,31 @@ main{
   border-radius: 0.625rem;
 
 }
- 
+#catergories-contents-container{
+  transition: 2s ease-in;
+}
+
+
+
+
+#card-container{
+  transition: 2s ease;
+}
+
+
+
+.img-test{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
+
+
+#circle2{
+  transform: rotateY(50deg);
+}
+#circle3{
+  transform: rotateY(70deg);
+}
