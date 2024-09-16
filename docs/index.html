@@ -388,7 +388,8 @@ const next = document.getElementById("next"),
           let status = true;
 
 
-        function touchtAssertive(e){
+        function touchtAssertive(){
+        
           if(status){
             assertiveContainer.style.right = [(body.offsetWidth/2)-assertiveContainer.offsetWidth] + "px";
           active();
@@ -402,6 +403,7 @@ const next = document.getElementById("next"),
           }, 1000);
           
           body.style.overflow = "auto";
+          console.log("1");
           }
           status = false;
           
@@ -419,6 +421,8 @@ const next = document.getElementById("next"),
             setTimeout(() => {
               assertiveContainer.style.right = -25 + "px";
             }, 500);
+           
+
 
             setTimeout(() => {
               
@@ -437,12 +441,17 @@ const next = document.getElementById("next"),
           
         }
         function touchtmoveAssertive(e){
-          status = null;
+          e.preventDefault();
+          e.stopPropagation();
+          status = false;
           let x = window.innerWidth - e.touches[0].pageX - 60;
           let y = window.innerWidth - e.touches[0].pageY + 320;
 
           assertiveContainer.style.right = x + "px";
           assertiveContainer.style.bottom = y + "px";
+
+          cac.style.height = "0px";
+          cac.style.display = "none";
           
           assertiveContainer.style.transition = "none";
           body.style.overflow = "hidden";
