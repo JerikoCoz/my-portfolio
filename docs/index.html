@@ -14,10 +14,6 @@
   <div class="z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
     <!-- mobile view -->
     <div class="lg:hidden w-full flex justify-between p-3">
-      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 14 14">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-          d="M.5 7.5h13M4 .5h6A3.5 3.5 0 0 1 13.5 4a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1A3.5 3.5 0 0 1 4 .5m9 9.5H7l-1.5 1.5l-3-1.5H1a.5.5 0 0 0-.5.5v0a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3a.5.5 0 0 0-.5-.5" />
-      </svg>
       <div>
         <a href="https://www.facebook.com/profile.php?id=100053874975545" target="_blank"><i
             class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
@@ -29,15 +25,53 @@
     </div>
   </div>
   </div>
-  <!-- main-->
-  <main id="background-div" class="px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] bg-[#454661] lg:bg-[url('first.jpg')] bg-cover bg-center relative">
-    <!-- second backgound -->
+    <!-- assertive touch for mobile and tablet view -->
+     <!-- assertive touch container -->
+     <div id="assertive-container" class="z-[100] lg:hidden fixed right-[-25px] mt-3 flex flex-col  items-center  justify-center ">
+   
+      <!-- icon container -->
+      <div id="icon-container" class="flex items-center relative  w-[80px] h-[53px]">
+ <!-- blur -->
+ <div id="burger-container" class="bg-[#A8A1A1] opacity-[.50] rounded-[60px]  absolute h-full w-full">
+  <!-- blur background color -->
+  <div id="background-color-blur" class=" absolute h-full w-full rounded-full"></div>
+ </div>
+ 
+  <!-- buger icon -->
+  <svg id="burger" class="z-[101] ml-4" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 14 14">
+    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+      d="M.5 7.5h13M4 .5h6A3.5 3.5 0 0 1 13.5 4a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1A3.5 3.5 0 0 1 4 .5m9 9.5H7l-1.5 1.5l-3-1.5H1a.5.5 0 0 0-.5.5v0a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3a.5.5 0 0 0-.5-.5" />
+  </svg>
 
+  <!-- end of icon container -->
+      </div>
+     
+      <!-- categories container for assertive touch -->
+      <div id="categories-assertive-container" class="hidden opacity-0 h-0 w-[176px] mt-2">
+        <!-- blur -->
+ <div class="opacity-100 bg-transparent backdrop-blur-md z-50 h-full w-full absolute rounded-[30px]">
+  <!-- blur background color -->
+  <div id="background-color-blur2" class="overflow-auto scroll bg-[rgba(18,14,14,0.6)] z-50 absolute h-full w-full rounded-[30px] flex justify-center flex-col items-center">
+    <!-- categories -->
+     <div class="categories-assertive">More about me</div>
+     <div class="categories-assertive">Personal projects</div>
+     <div class="categories-assertive">Experience</div>
+  </div>
+ </div>
+      </div>
+
+
+    <!--end of assertive touch container -->
+   </div>
+
+  <!-- main-->
+  <main id="background-div" class="z[99] px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] lg:bg-[url('first.jpg')] bg-cover bg-center relative">
+  
     <!-- blur  -->
     <div id="blur" class="hidden lg:block h-full w-full absolute bg-black opacity-[25%] backdrop-blur-[4] z-[1]"></div>
     <!-- landing texts -->
     <div id="landing-text" class="relative h-1/2 w-full flex justify-center flex-col items-center text-white z-[2]">
-      <h1 class="text-[3rem] lg:text-8xl font-inika text-center">WELCOME</h1>
+      <h1 class="text-[2.8rem] lg:text-8xl font-inika text-center">WELCOME</h1>
       <h3 class="text-[1.2rem] lg:text-[2rem] font-inria text-center leading-none my-10 lg:w-[44.625rem]"> Hi! I am
         Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
     </div>
@@ -89,7 +123,7 @@
     <div id="catergories-contents-container" class="lg:hidden opacity-100 lg:opacity-0  top-0 w-full h-full relative">
       <!-- more about me -->
       <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
-        <h3 class="lg:hidden text-[1rem]">More about me</h3>
+        <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
         <img src="Frame 148.png" alt="" class="w-[4.688rem] h-[4.563rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
         <h3 class="text-[1rem] lg:text-[1rem]">Graduate at July 26, 2024</h3>
@@ -228,7 +262,11 @@ const buttons = document.getElementsByClassName("buttons"),
    aboutMe = document.getElementById("about-me"),
    ccc = document.getElementById("catergories-contents-container"),
    background = document.getElementById("background-div"),
-   blurs = document.getElementById("blur");
+   blurs = document.getElementById("blur"),
+   burgerContainer = document.getElementById("burger-container");
+
+   let bodyWidth = document.body.offsetWidth;
+   let body = document.body;
 
 
 
@@ -305,7 +343,15 @@ let currentView = document.getElementById("current-view");
 const next = document.getElementById("next"),
       prev = document.getElementById("prevs"),
       cardContainer = document.getElementById("card-container"),
+      burger = document.getElementById("burger"),
       card = document.getElementsByClassName("card");
+      catAssertive = document.getElementsByClassName("categories-assertive");
+
+      let assertiveContainer = document.getElementById("assertive-container");
+      let bgBlur = document.getElementById("background-color-blur");
+      let cac = document.getElementById("categories-assertive-container");
+      let ic = document.getElementById("icon-container");
+      
 
         let lefts = 0;
         prev.style.color = lefts == 0 ? "gray" : "black";
@@ -336,6 +382,81 @@ const next = document.getElementById("next"),
             prevs();
           }
         }
+        console.log(bodyWidth)
+
+        // this functions below are for assertive touch
+          let status = true;
+
+
+        function touchtAssertive(e){
+          if(status){
+            assertiveContainer.style.right = [(body.offsetWidth/2)-assertiveContainer.offsetWidth] + "px";
+          active();
+          cac.style.display = "flex";
+          
+          setTimeout(() => {
+            cac.style.opacity = 1;
+          }, 500);
+          setTimeout(() => {
+            cac.style.height = "229px";
+          }, 1000);
+          
+          body.style.overflow = "auto";
+          }
+          status = false;
+          
+          
+        }
+          // this function is for style when assertive was clicked or move
+          function active(){
+          bgBlur.classList.add("bg-blur");
+          burger.style.color = "white";
+          burgerContainer.classList.add("assertive-touch");
+        }
+        
+        function touchtMain(){
+          if(status == false){
+            setTimeout(() => {
+              assertiveContainer.style.right = -25 + "px";
+            }, 500);
+
+            setTimeout(() => {
+              
+          cac.style.display = "none";
+            }, 600);
+            cac.style.height = "0px";
+            
+          setTimeout(() => {
+            burgerContainer.classList.remove("assertive-touch");
+          burger.style.color = "black";
+          bgBlur.classList.remove("bg-blur");
+          }, 1000);
+          body.style.overflow = "auto";
+          }
+          status = true;
+          
+        }
+        function touchtmoveAssertive(e){
+          status = null;
+          let x = window.innerWidth - e.touches[0].pageX - 60;
+          let y = window.innerWidth - e.touches[0].pageY + 320;
+
+          assertiveContainer.style.right = x + "px";
+          assertiveContainer.style.bottom = y + "px";
+          
+          assertiveContainer.style.transition = "none";
+          body.style.overflow = "hidden";
+          active();
+          assertiveContainer.addEventListener("touchend", ()=>{
+            assertiveContainer.style.transition = ".5s ease-in";
+          });
+        }
+
+        assertiveContainer.addEventListener("touchend", touchtAssertive);
+        ic.addEventListener("touchmove", touchtmoveAssertive);
+
+        
+        background.addEventListener("touchend", touchtMain);
 
         currentView.addEventListener("touchstart", touch);
         currentView.addEventListener("touchmove", touchmove);

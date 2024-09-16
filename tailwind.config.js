@@ -4,7 +4,11 @@ module.exports = {
     "./docs/**/*.{html,js}", // Make sure this path matches where your files are
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightblue: '#ADD8E6' // Example custom color
+      },
+    },
   },
   plugins: [],
 }
