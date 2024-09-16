@@ -442,7 +442,6 @@ const next = document.getElementById("next"),
         }
         function touchtmoveAssertive(e){
           e.preventDefault();
-          e.stopPropagation();
           status = false;
           let x = window.innerWidth - e.touches[0].pageX - 60;
           let y = window.innerWidth - e.touches[0].pageY + 320;
@@ -454,7 +453,6 @@ const next = document.getElementById("next"),
           cac.style.display = "none";
           
           assertiveContainer.style.transition = "none";
-          body.style.overflow = "hidden";
           active();
           assertiveContainer.addEventListener("touchend", ()=>{
             assertiveContainer.style.transition = ".5s ease-in";
