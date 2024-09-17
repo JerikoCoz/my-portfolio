@@ -1049,6 +1049,10 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(galaxy\.WebP\)\] {
+  background-image: url(galaxy.WebP);
+}
+
 .from-\[\#323F75\] {
   --tw-gradient-from: #323F75 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(50 63 117 / 0) var(--tw-gradient-to-position);
@@ -1464,6 +1468,14 @@ main{
 
   .lg\:bg-\[url\(\'first\.jpg\'\)\] {
     background-image: url('first.jpg');
+  }
+
+  .lg\:bg-\[url\(\"second\.WebP\"\)\] {
+    background-image: url("second.WebP");
+  }
+
+  .lg\:bg-\[url\(\'first\.WebP\'\)\] {
+    background-image: url('first.WebP');
   }
 
   .lg\:px-0 {
