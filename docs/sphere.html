@@ -5,65 +5,64 @@
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden"> 
- 
-    <div class="h-[100px] w-full bg-black static" id="div">gj</div>
-    <div>
-        <h3 id="text">thi;</h3>
-    </div>
+<body class="flex justify-center items-center w-full bg-black"> 
+ <div id="contaier" class="flex justify-center items-center">
+
+    <div class="circless top-[-195px] h-[15px] w-[15px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-190px] h-[30px] w-[30px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-180px] h-[60px] w-[60px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-170px] h-[90px] w-[90px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-160px] h-[120px] w-[120px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-150px] h-[150px] w-[150px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-130px]  h-[180px] w-[180px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless  top-[-90px] h-[150px] w-[150px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[-40px] h-[120px] w-[120px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[10px] h-[90px] w-[90px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[60px] h-[60px] w-[60px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[95px] h-[30px] w-[30px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
+    <div class="circless top-[115px] h-[15px] w-[15px] border-[7px] absolute border-solid rounded-full border-transparent  "></div>
     
+</div>    
     <script>
+let circles = document.getElementsByClassName("circless");
+let con = document.getElementById("contaier");
 
 
-  const ss = document.getElementById("div");
-  let sss = document.getElementById("text");
+let total = circles.length;
 
-  let condition = false;
-
-  ss.addEventListener("touchstart", (ev)=>{
-    let touch = ev.touches[0].clientX;
-    ss.addEventListener("touchmove", (e)=>{
-
-let xtouch = e.touches[0].clientX;
-if(touch > xtouch){
-    ss.style.backgroundColor = "blue";
-   sss.innerHTML = touch;
-}else{
-    ss.style.backgroundColor = "red";
-    sss.innerHTML = touch;
-}
-
-})
-
-  })
-  
+let count = 0;
+let count1 = 0;
 
 
 
 
+let run = setInterval(() => {
+    if (count < total) {
+        circles[count].classList.add("animations2");
+        count++;
+    } else {
+        count = 0; 
+    }
+}, 50);
 
 
-
-
-
+let run2 = setInterval(() => {
+    if (count1 < total) {
+        circles[count1].classList.remove("animations2");
+        count1++;
+    } else {
+        count1 = 0; 
+    }
+}, 75);
 
 
 
 
 
-let body = document.body
-     body.addEventListener("mousemove", (e)=>{
-        let img = document.createElement("img");
-        img.setAttribute("src", "html.png");
-        img.setAttribute("class", "img-test")
-        img.style.left = e.clientX-20;
-        img.style.top = e.clientY-20;
-        body.append(img);
-        setTimeout(()=>{
-            img.style.display = "none";
-        }, 500);
-        
-     })
     </script>
 </body>
 </html>
+<!-- cricles[i].classList.add("animation");
+
+cricles[i].classList.remove("animation");
+cricles[i].classList.add("animation2"); -->

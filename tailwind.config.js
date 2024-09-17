@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         lightblue: '#ADD8E6' // Example custom color
       },
+      
     },
   },
   plugins: [],

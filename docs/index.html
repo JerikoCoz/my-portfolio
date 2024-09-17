@@ -10,27 +10,49 @@
 </head>
 
 <body> 
+  <div id="container-load" class="bg-black w-full h-full flex justify-center items-center">
+    <div id="contaier" class="flex justify-center flex-col items-center z-50">
+
+      <div class="circless top-[-195px] h-[15px] w-[15px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-190px] h-[30px] w-[30px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-180px] h-[60px] w-[60px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-170px] h-[90px] w-[90px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-160px] h-[120px] w-[120px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-150px] h-[150px] w-[150px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-130px]  h-[180px] w-[180px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless  top-[-90px] h-[150px] w-[150px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[-40px] h-[120px] w-[120px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[10px] h-[90px] w-[90px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[60px] h-[60px] w-[60px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[95px] h-[30px] w-[30px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+      <div class="circless top-[115px] h-[15px] w-[15px] border-[7px] absolute border-solid rounded-full border-transparent z-50  "></div>
+     
+  </div>  
+  <h1 class="loadt text-white">LOADING...</h1>
+  </div>
+  
   <!-- header -->
-  <div class="z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
+  <div id="header" class="hidden z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
     <!-- mobile view -->
-    <div class="lg:hidden w-full flex justify-between p-3">
-      <div>
-        <a href="https://www.facebook.com/profile.php?id=100053874975545" target="_blank"><i
-            class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
+    <div class="lg:hidden w-full flex justify-center items-center p-3">
+      <div class="">
+        <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank"> 
+          <i class="icon-circle fa fa-instagram text-gray-300 fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100053874975545" class = "w-0 m-0 p-0" target="_blank"><i
+            class="icon-circle fa fa-facebook-official text-gray-300 m-0 p-0 fa-2x"></i></a>
         <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/" target="_blank"><i
-            class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i></a>
+            class="icon-circle fa fa-linkedin text-gray-300 fa-2x" aria-hidden="true"></i></a>
 
       </div>
 
     </div>
   </div>
-  </div>
     <!-- assertive touch for mobile and tablet view -->
      <!-- assertive touch container -->
-     <div id="assertive-container" class="z-[100] lg:hidden fixed right-[-25px] mt-3 flex flex-col  items-center  justify-center ">
+     <div id="assertive-container" class="hidden z-[100] lg:hidden fixed right-[-70px] mt-3 flex-col w-[176px] items-center  justify-center ">
    
       <!-- icon container -->
-      <div id="icon-container" class="flex items-center relative  w-[80px] h-[53px]">
+      <div id="icon-container" class="flex items-center relative m-0 p-0 w-[80px] h-[53px]">
  <!-- blur -->
  <div id="burger-container" class="bg-[#A8A1A1] opacity-[.50] rounded-[60px]  absolute h-full w-full">
   <!-- blur background color -->
@@ -47,26 +69,28 @@
       </div>
      
       <!-- categories container for assertive touch -->
-      <div id="categories-assertive-container" class="hidden opacity-0 h-0 w-[176px] mt-2">
+      <div id="categories-assertive-container" class="hidden justify-center items-center flex-col relative opacity-0 h-0 w-full mt-2">
         <!-- blur -->
  <div class="opacity-100 bg-transparent backdrop-blur-md z-50 h-full w-full absolute rounded-[30px]">
   <!-- blur background color -->
   <div id="background-color-blur2" class="overflow-auto scroll bg-[rgba(18,14,14,0.6)] z-50 absolute h-full w-full rounded-[30px] flex justify-center flex-col items-center">
     <!-- categories -->
-     <div class="categories-assertive">More about me</div>
-     <div class="categories-assertive">Personal projects</div>
-     <div class="categories-assertive">Experience</div>
+     <a href="#about-me"><div class="categories-assertive">More about me</div></a>
+     <a href="#personal-project-mobile"> <div class="categories-assertive">Personal projects</div></a>
+     <a href="#experience"><div class="categories-assertive">Experience</div></a>
+   
   </div>
  </div>
       </div>
+  
 
 
     <!--end of assertive touch container -->
    </div>
 
   <!-- main-->
-  <main id="background-div" class="z[99] px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] lg:bg-[url('first.jpg')] bg-cover bg-center relative">
-  
+  <main id="background-div" class="hidden z-[99] px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] lg:bg-[url('first.jpg')] bg-cover bg-center relative">
+
     <!-- blur  -->
     <div id="blur" class="hidden lg:block h-full w-full absolute bg-black opacity-[25%] backdrop-blur-[4] z-[1]"></div>
     <!-- landing texts -->
@@ -80,31 +104,30 @@
 
 
     <!-- earth container -->
-    <div id="earth-container" class="hidden lg:flex max-w-full items-center z-[2] absolute left-[35%] ">
+    <div id="earth-container" class="earth-container hidden lg:flex max-w-full items-center z-[2] absolute ">
       <!-- contact container -->
       <div class='links font-instrument text-[1.5rem] text-right'>
-        <h3 class="buttons"><a class='' target="_blank" rel="noreferrer" href="jerikocoz@gmail.com"></a>Instagram</h3>
+        <h3><a class='buttons' target="_blank" rel="noreferrer" href="https://www.instagram.com/jjjjerikoooo/?next=%2F">Instagram</a></h3>
         <h3 class=' mr-[1.25rem]'><a class='buttons' target="_blank" rel="noreferrer"
             href="https://www.facebook.com/profile.php?id=100053874975545">Facebook</a></h3>
         <h3 class=""><a class='buttons' target="_blank" rel="noreferrer"
             href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/">Linkedin</a></h3>
       </div>
-
-
       <!-- circle -->
       <div
-        class='h-[11.25rem] w-[11.25rem] bg-gray-700 rounded-full relative flex justify-center flex-col items-center'>
+        class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative bg-gray-700 flex justify-center flex-col items-center'>
+        
         <!-- contact container -->
         <div class=" opacity-0 cursor-default pointer-events-none" id="links-circle">
           <h3 class="text-white text-[1.688rem]">Contact</h3>
           <!-- icons container -->
           <div class="flex justify-center">
-            <i class="icon-circle fa fa-instagram text-black fa-2x"></i>
+            <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank"> 
+              <i class="icon-circle fa fa-instagram text-black fa-2x"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100053874975545" target="_blank"><i
                 class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/" target="_blank"><i
                 class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i></a>
-
           </div>
         </div>
       </div>
@@ -124,7 +147,7 @@
       <!-- more about me -->
       <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
-        <img src="Frame 148.png" alt="" class="w-[4.688rem] h-[4.563rem] lg:w-auto lg:h-auto"/>
+        <img src="Frame 148.png" alt="" class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
         <h3 class="text-[1rem] lg:text-[1rem]">Graduate at July 26, 2024</h3>
         <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info: <a target="_blank"
@@ -145,7 +168,7 @@
               <img src="java.png" alt="" class="w-full h-full">
             </div>
             <!-- card2 -->
-            <div class="w-[11.125rem] h-[3.188rem] lg:h-24 lg:w-24">
+            <div class="w-[11.125rem] flex-grow h-[3.188rem] lg:h-24 lg:w-24">
               <img src="python-logo.png" alt="" class="w-full h-full">
             </div>
             <!-- card3 -->
@@ -177,7 +200,7 @@
       <div id="personal-project" class="hidden lg:flex opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
         <h1 class="font-bold text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer"
             target="_blank"
-            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">clickhere</a></h1>
+            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
         <!-- card projects -->
         <div class="flex flex-col overflow-scroll overflow-x-hidden p-6 h-[80%]">
           <!-- card1 -->
@@ -199,8 +222,11 @@
         </div>
       </div>
 <!-- mobile view - projects -->
-<div class="lg:hidden flex flex-col items-center px-1">
+<div id="personal-project-mobile" class="lg:hidden flex flex-col items-center px-1">
   <h3 class="lg:hidden text-[1rem] text-center text-white">Personal projects</h3>
+  <h1 class="lg:hidden text-[1.2rem] text-white font-bold text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer"
+    target="_blank"
+    href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
   <!-- project container -->
 <div class=" relative inline-block ">
   <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" id="prevs" class="absolute z-50 h-full flex items-center" viewBox="0 0 20 20"><path fill="currentcolor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
@@ -251,7 +277,7 @@
 
 
   <!-- footer -->
-  <div class="z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
+  <div id="footer" class="hidden z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
 </body>
 <script>
 const buttons = document.getElementsByClassName("buttons"),
@@ -273,24 +299,54 @@ const buttons = document.getElementsByClassName("buttons"),
 
   let buttonArray = Array.from(buttons);
 
+  let statusHover = false;
+  let statusClick = false;
+
+  let eventH = null;
+  let eventC = null;
+
+  function checkEvent(){
+   
+      for (let j = 0; j < buttons.length; j++) {
+        buttons[j].style.color = "gray";
+        if(eventH != null){
+          eventH.style.color = "white";
+          if(eventC != null){
+            eventC.style.color = "white";
+          }
+          
+          
+        }
+     
+      }
+       
+    }
+   
+    
+
+
   // hover event
   function hover(e) {
-    for (let j = 0; j < buttons.length; j++) {
-      if (buttons[j] !== e.target) {
-        buttons[j].style.color = "gray";
-      } else {
-        buttons[j].style.color = "white"; // Highlight hovered button
-      }
-    }
+   eventH = e.target;
+   statusHover = true;
+
+
+checkEvent();
   }
 
+
+ 
   // Click function
-  function click(e) {
+  function clicks(e) {
+    statusClick = true;
+    eventC = e.target;
+    checkEvent();
     let targetIndex = buttonArray.indexOf(e.target), // Get the index in the array
         clickTarget = e.target;
 
     if (targetIndex > 2) {
       earth.classList.add("earth-move");
+      earth.classList.remove("earth-container")
       landing.style.display = "none";
       blurs.style.display = "none";
 
@@ -335,7 +391,7 @@ const buttons = document.getElementsByClassName("buttons"),
 
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("mouseover", hover);
-    buttons[i].addEventListener("click", click);
+    buttons[i].addEventListener("click", clicks);
   }
 
 //this is for projects in mobile view
@@ -382,17 +438,14 @@ const next = document.getElementById("next"),
             prevs();
           }
         }
-        console.log(bodyWidth)
+
 
         // this functions below are for assertive touch
           let status = true;
 
 
-        function touchtAssertive(){
-        
-          if(status){
-            assertiveContainer.style.right = [(body.offsetWidth/2)-assertiveContainer.offsetWidth] + "px";
-          active();
+// this function is for active position
+        function activePosition(){
           cac.style.display = "flex";
           
           setTimeout(() => {
@@ -403,14 +456,24 @@ const next = document.getElementById("next"),
           }, 1000);
           
           body.style.overflow = "auto";
-          console.log("1");
+
+          status = false;
+          }
+          
+        
+
+        function touchtAssertive(){
+          if(status){
+            assertiveContainer.style.right = [ (body.offsetWidth/2) - (assertiveContainer.offsetWidth/2) ] + "px";
+          activeBlur();
+          activePosition();
           }
           status = false;
           
           
         }
-          // this function is for style when assertive was clicked or move
-          function active(){
+          // this function is for style when assertive was clicked or move for blur and icon
+          function activeBlur(){
           bgBlur.classList.add("bg-blur");
           burger.style.color = "white";
           burgerContainer.classList.add("assertive-touch");
@@ -418,59 +481,131 @@ const next = document.getElementById("next"),
         
         function touchtMain(){
           if(status == false){
+            assertiveContainer.style.transition = "1s ";
             setTimeout(() => {
-              assertiveContainer.style.right = -25 + "px";
+              assertiveContainer.style.right = -70 + "px";
             }, 500);
-           
-
-
             setTimeout(() => {
               
           cac.style.display = "none";
             }, 600);
-            cac.style.height = "0px";
+            cac.style.height = 0 + "px";
             
           setTimeout(() => {
             burgerContainer.classList.remove("assertive-touch");
           burger.style.color = "black";
           bgBlur.classList.remove("bg-blur");
-          }, 1000);
+          }, 1450);
           body.style.overflow = "auto";
           }
+
           status = true;
           
         }
         function touchtmoveAssertive(e){
           e.preventDefault();
+      
+            
           status = false;
-          let x = window.innerWidth - e.touches[0].pageX - 60;
-          let y = window.innerWidth - e.touches[0].pageY + 320;
+          let x = window.innerWidth - e.touches[0].pageX - 50;
+          let y = window.innerHeight - e.touches[0].pageY - 30;
 
           assertiveContainer.style.right = x + "px";
           assertiveContainer.style.bottom = y + "px";
 
-          cac.style.height = "0px";
-          cac.style.display = "none";
           
           assertiveContainer.style.transition = "none";
-          active();
-          assertiveContainer.addEventListener("touchend", ()=>{
-            assertiveContainer.style.transition = ".5s ease-in";
-          });
+          activeBlur();
+         
+          
+          assertiveContainer.addEventListener("touchstart", ()=>{
+            assertiveContainer.addEventListener("touchend", ()=>{
+              activePosition();
+              activeBlur();
+       
+            });
+            });
+          
+        
+           
+            
         }
 
-        assertiveContainer.addEventListener("touchend", touchtAssertive);
+//         //this is only for presentation in resizing
+//         window.addEventListener('resize', () => {
+//   location.reload();
+// });
+
+
+
+
+
+      window.addEventListener("load", ()=>{
+
+
+
+        let circles = document.getElementsByClassName("circless");
+let con = document.getElementById("contaier");
+
+
+let total = circles.length;
+
+let count = 0;
+let count1 = 0;
+
+
+document.getElementById("container-load").style.display = "none";
+cac.style.display = "flex";
+assertiveContainer.classList.add("assertive-mobile");
+document.getElementById("header").style.display = "flex";
+document.getElementById("footer").style.display = "flex";
+background.style.display = "block";
+
+
+
+
+
+let run = setInterval(() => {
+    if (count < total) {
+        circles[count].classList.add("animations2");
+        count++;
+    } else {
+        count = 0; 
+    }
+}, 10);
+
+
+let run2 = setInterval(() => {
+    if (count1 < total) {
+        circles[count1].classList.remove("animations2");
+        count1++;
+    } else {
+        count1 = 0; 
+    }
+}, 20);
+
+    
+      });
+      window.addEventListener("resize", ()=>{
+        window.location.reload();
+      })
+         
+        
+assertiveContainer.addEventListener("touchend", touchtAssertive);
         ic.addEventListener("touchmove", touchtmoveAssertive);
 
         
-        background.addEventListener("touchend", touchtMain);
+          background.addEventListener("touchend", touchtMain);
 
-        currentView.addEventListener("touchstart", touch);
-        currentView.addEventListener("touchmove", touchmove);
-        currentView.addEventListener("touchend", touchend);
+          currentView.addEventListener("touchstart", touch);
+          currentView.addEventListener("touchmove", touchmove);
+          currentView.addEventListener("touchend", touchend);
 
-        next.addEventListener("click", nextt);
-        prev.addEventListener("click", prevs);
+          next.addEventListener("click", nextt);
+          prev.addEventListener("click", prevs);
+
+
+
 </script>
 
 </html>
