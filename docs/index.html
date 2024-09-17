@@ -1,4 +1,4 @@
-<!doctype html language="en">
+<!doctype html lang="en">
 <html>
 
 <head>
@@ -72,12 +72,13 @@
    </div>
 
   <!-- main-->
-  <main id="background-div" class="hidden z-[99] px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] lg:bg-[url('first.WebP')] bg-cover bg-center relative">
+  <main id="background-div" class="justify-center items-center flex-col hidden z-[99] px-3 md:px-20 lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] lg:bg-[url('first.WebP')] bg-cover bg-center">
 
     <!-- blur  -->
-    <div id="blur" class="hidden lg:block h-full w-full absolute bg-black opacity-[25%] backdrop-blur-[4] z-[1]"></div>
+    <div id="blur" class="hidden lg:block h-full w-full relative bg-black opacity-[25%] backdrop-blur-[4] z-[1]"></div>
+    
     <!-- landing texts -->
-    <div id="landing-text" class="relative h-1/2 w-full flex justify-center flex-col items-center text-white z-[2]">
+    <div id="landing-text" class="absolute top-[25%]  w-full flex justify-center flex-col items-center text-white z-[2]">
       <h1 class="text-[2.8rem] lg:text-8xl font-inika text-center">WELCOME</h1>
       <h3 class="text-[1.2rem] lg:text-[2rem] font-inria text-center leading-none my-10 lg:w-[44.625rem]"> Hi! I am
         Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
@@ -87,7 +88,7 @@
 
 
     <!-- earth container -->
-    <div id="earth-container" class="earth-container hidden lg:flex max-w-full items-center z-[2] absolute ">
+    <div id="earth-container" class="earth-container top-[50%] hidden lg:flex absolute z-[2] ">
       <!-- contact container -->
       <div class='links font-instrument text-[1.5rem] text-right'>
         <h3><a class='buttons' target="_blank" rel="noreferrer" href="https://www.instagram.com/jjjjerikoooo/?next=%2F">Instagram</a></h3>
@@ -128,7 +129,7 @@
     <!-- categories contents container -->
     <div id="catergories-contents-container" class="lg:hidden opacity-100 lg:opacity-0  top-0 w-full h-full relative">
       <!-- more about me -->
-      <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
+      <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
         <img src="Frame 148.WebP" alt="" class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
@@ -136,7 +137,7 @@
         <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info: <a target="_blank"
             href="Jeriko Ronnel S. Coz.pdf">click here</a></h3>
 
-        <div class="flex lg:overflow-scroll lg:overflow-x-hidden p-6 h-[80%] flex-col">
+        <div class="flex lg:overflow-scroll lg:overflow-x-hidden lg:overflow-y-hidden p-6 flex-col">
           <h3 class="text-[1rem] lg:text-[1.563rem] font-thin">Good day! I am a BS Computer Science graduate from STI Ortigas-Cainta, with skills in both front-end and back-end development. While I lack formal work experience, I’ve honed my abilities through academic projects and personal initiatives. I can work as a front-end developer using Tailwind CSS for responsive designs or as a back-end developer handling databases, APIs, and server-side logic. My experience in both areas enables me to understand the full development process and collaborate effectively with teams.
 
           </h3>
@@ -362,7 +363,7 @@ checkEvent();
 
       // Add and remove classes to/from categories based on the targetIndex
       for (let z = 0; z < categories.length; z++) {
-        if ((targetIndex - 3) === z) {
+        if ((targetIndex - 3) == z) {
           categories[z].classList.remove("lg:opacity-0");
           categories[z].classList.add("cate");
           categories[z].classList.remove("earth-contents-out");
@@ -549,7 +550,7 @@ cac.style.display = "flex";
 assertiveContainer.classList.add("assertive-mobile");
 document.getElementById("header").style.display = "flex";
 document.getElementById("footer").style.display = "flex";
-background.style.display = "block";
+background.style.display = "flex";
 
 
 
