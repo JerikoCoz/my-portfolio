@@ -115,7 +115,7 @@
       </div>
       <!-- circle -->
       <div
-        class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative bg-gray-700 flex justify-center flex-col items-center'>
+        class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative bg-[url(galaxy.png)] flex justify-center flex-col items-center'>
         
         <!-- contact container -->
         <div class=" opacity-0 cursor-default pointer-events-none" id="links-circle">
@@ -123,7 +123,7 @@
           <!-- icons container -->
           <div class="flex justify-center">
             <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank"> 
-              <i class="icon-circle fa fa-instagram text-black fa-2x"></i></a>
+              <i class="icon-circle fa fa-instagram text-white fa-2x"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100053874975545" target="_blank"><i
                 class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/" target="_blank"><i
@@ -292,27 +292,34 @@ const buttons = document.getElementsByClassName("buttons"),
    burgerContainer = document.getElementById("burger-container");
 
    let bodyWidth = document.body.offsetWidth;
+   
    let body = document.body;
-
-
-
 
   let buttonArray = Array.from(buttons);
 
-  let statusHover = false;
-  let statusClick = false;
 
   let eventH = null;
   let eventC = null;
 
+
+  // this is for when hover and click links in links and categories
   function checkEvent(){
-   
-      for (let j = 0; j < buttons.length; j++) {
-        buttons[j].style.color = "gray";
-        if(eventH != null){
+      for (let j = 0; j < buttons.length; j++) {//loop buttons which is links(fb, ins, linkedin) and categories(more abou me, proj, exp)
+        buttons[j].style.color = "gray";//will set all buttons to gray 
+        buttons[j].style.fontWeight = "normal";//will set all buttons to normal font eight 
+        buttons[j].style.textDecoration = "none";//will set all buttons to non underlined 
+        if(eventH != null){ //if not null then eventH(the target element or the current hover) is white
           eventH.style.color = "white";
+          if(eventC != null){//eventC means target click
+          earth.addEventListener("mouseleave", ()=>{
+            eventH.style.color = "gray";
+            eventC.style.color = "white";
+          });
+        }
           if(eventC != null){
             eventC.style.color = "white";
+            eventC.style.fontWeight = "bold";
+            eventC.style.textDecoration = "underline";
           }
           
           
@@ -362,7 +369,7 @@ checkEvent();
       background.classList.remove("lg:bg-[url('first.jpg')]");
       //change the background
       background.classList.add('lg:bg-[url("second.jpg")]');
-      // Add class to the first 3 buttons
+      // Add style to the first 3 buttons which is hides the links button
       for (let k = 0; k < 3; k++) {
         buttons[k].classList.add("links-buttons");
       }
