@@ -640,58 +640,6 @@ video {
   top: -84px;
 }
 
-.top-\[-130px\] {
-  top: -130px;
-}
-
-.top-\[-150px\] {
-  top: -150px;
-}
-
-.top-\[-160px\] {
-  top: -160px;
-}
-
-.top-\[-170px\] {
-  top: -170px;
-}
-
-.top-\[-180px\] {
-  top: -180px;
-}
-
-.top-\[-190px\] {
-  top: -190px;
-}
-
-.top-\[-195px\] {
-  top: -195px;
-}
-
-.top-\[-40px\] {
-  top: -40px;
-}
-
-.top-\[-90px\] {
-  top: -90px;
-}
-
-.top-\[10px\] {
-  top: 10px;
-}
-
-.top-\[115px\] {
-  top: 115px;
-}
-
-.top-\[60px\] {
-  top: 60px;
-}
-
-.top-\[95px\] {
-  top: 95px;
-}
-
 .top-\[25\%\] {
   top: 25%;
 }
@@ -734,10 +682,6 @@ video {
 
 .m-0 {
   margin: 0px;
-}
-
-.m-auto {
-  margin: auto;
 }
 
 .my-10 {
@@ -793,10 +737,6 @@ video {
   height: 0px;
 }
 
-.h-1\/2 {
-  height: 50%;
-}
-
 .h-14 {
   height: 3.5rem;
 }
@@ -835,34 +775,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[120px\] {
-  height: 120px;
-}
-
-.h-\[150px\] {
-  height: 150px;
-}
-
-.h-\[15px\] {
-  height: 15px;
-}
-
-.h-\[180px\] {
-  height: 180px;
-}
-
-.h-\[30px\] {
-  height: 30px;
-}
-
-.h-\[60px\] {
-  height: 60px;
-}
-
-.h-\[90px\] {
-  height: 90px;
 }
 
 .max-h-\[350px\] {
@@ -905,44 +817,12 @@ video {
   width: 100%;
 }
 
-.w-\[120px\] {
-  width: 120px;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[15px\] {
-  width: 15px;
-}
-
-.w-\[180px\] {
-  width: 180px;
-}
-
-.w-\[30px\] {
-  width: 30px;
-}
-
-.w-\[60px\] {
-  width: 60px;
-}
-
-.w-\[90px\] {
-  width: 90px;
-}
-
 .max-w-\[420px\] {
   max-width: 420px;
 }
 
 .max-w-\[60\%\] {
   max-width: 60%;
-}
-
-.max-w-full {
-  max-width: 100%;
 }
 
 .flex-shrink-0 {
@@ -1007,18 +887,6 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.border-\[7px\] {
-  border-width: 7px;
-}
-
-.border-solid {
-  border-style: solid;
-}
-
-.border-transparent {
-  border-color: transparent;
 }
 
 .bg-\[\#454661\] {
@@ -1480,10 +1348,6 @@ main{
 
   .lg\:bg-\[url\(\'first\.WebP\'\)\] {
     background-image: url('first.WebP');
-  }
-
-  .lg\:bg-\[url\(\'first\.jpg\'\)\] {
-    background-image: url('first.jpg');
   }
 
   .lg\:px-0 {
