@@ -544,17 +544,8 @@ const next = document.getElementById("next"),
 
 
       window.addEventListener("load", ()=>{
-
-
-
-        let circles = document.getElementsByClassName("circless");
 let con = document.getElementById("contaier");
 
-
-let total = circles.length;
-
-let count = 0;
-let count1 = 0;
 
 
 document.getElementById("container-load").classList.add("none-dislpay");
@@ -565,33 +556,9 @@ document.getElementById("footer").classList.add("flex-dislpay");
 background.classList.add("flex-dislpay");;
 
 
-
-
-
-let run = setInterval(() => {
-    if (count < total) {
-        circles[count].classList.add("animations2");
-        count++;
-    } else {
-        count = 0; 
-    }
-}, 10);
-
-
-let run2 = setInterval(() => {
-    if (count1 < total) {
-        circles[count1].classList.remove("animations2");
-        count1++;
-    } else {
-        count1 = 0; 
-    }
-}, 20);
-
     
       });
-      window.addEventListener("resize", ()=>{
-        window.location.reload();
-      })
+   
          
         
 assertiveContainer.addEventListener("touchend", touchtAssertive);
