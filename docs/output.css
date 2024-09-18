@@ -697,6 +697,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -713,16 +717,12 @@ video {
   margin-right: 1.25rem;
 }
 
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -943,11 +943,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(galaxy\.WebP\)\] {
@@ -1406,14 +1401,6 @@ main{
 
   .lg\:bg-\[url\(\'first\.WebP\'\)\] {
     background-image: url('first.WebP');
-  }
-
-  .lg\:bg-\[url\(\"second\.jpg\"\)\] {
-    background-image: url("second.jpg");
-  }
-
-  .lg\:bg-\[url\(\'first\.jpg\'\)\] {
-    background-image: url('first.jpg');
   }
 
   .lg\:bg-cover {
