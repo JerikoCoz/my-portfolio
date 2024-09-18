@@ -163,3 +163,10 @@ background-color: transparent;
   transition: .100 ease-in;
 }
 
+.flex-dislpay{
+  display: flex;
+}
+.none-dislpay{
+  display: none;
+}
+
