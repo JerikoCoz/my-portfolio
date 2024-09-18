@@ -78,7 +78,7 @@
     <div id="blur" class="hidden lg:block h-full w-full relative bg-black opacity-[25%] backdrop-blur-[4] z-[1]"></div>
     
     <!-- landing texts -->
-    <div id="landing-text" class="absolute top-[25%]  w-full flex justify-center flex-col items-center text-white z-[2]">
+    <div id="landing-text" class="absolute top-[calc(100%-84%)] hidden  w-full lg:flex justify-center flex-col items-center text-white z-[2]">
       <h1 class="text-[2.8rem] lg:text-8xl font-inika text-center">WELCOME</h1>
       <h3 class="text-[1.2rem] lg:text-[2rem] font-inria text-center leading-none my-10 lg:w-[44.625rem]"> Hi! I am
         Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
@@ -88,7 +88,7 @@
 
 
     <!-- earth container -->
-    <div id="earth-container" class="earth-container top-[50%] hidden lg:flex absolute z-[2] ">
+    <div id="earth-container" class="earth-container top-[calc(100%-50%)]  hidden lg:flex absolute z-[2] ">
       <!-- contact container -->
       <div class='links font-instrument text-[1.5rem] text-right'>
         <h3><a class='buttons' target="_blank" rel="noreferrer" href="https://www.instagram.com/jjjjerikoooo/?next=%2F">Instagram</a></h3>
@@ -129,7 +129,7 @@
     <!-- categories contents container -->
     <div id="catergories-contents-container" class="lg:hidden opacity-100 lg:opacity-0  top-0 w-full h-full relative">
       <!-- more about me -->
-      <div id="about-me" class="py-2 opacity-100 lg:opacity-0 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
+      <div id="about-me" class="lg:hidden py-2 opacity-100 lg:opacity-0 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
         <img src="Frame 148.WebP" alt="" class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
@@ -137,7 +137,7 @@
         <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info: <a target="_blank"
             href="Jeriko Ronnel S. Coz.pdf">click here</a></h3>
 
-        <div class="flex lg:overflow-scroll lg:overflow-x-hidden lg:overflow-y-hidden p-6 flex-col">
+        <div class="flex lg:overflow-scroll lg:overflow-x-hidden lg:overflow-y-hidden p-8 flex-col">
           <h3 class="text-[1rem] lg:text-[1.563rem] font-thin">Good day! I am a BS Computer Science graduate from STI Ortigas-Cainta, with skills in both front-end and back-end development. While I lack formal work experience, I’ve honed my abilities through academic projects and personal initiatives. I can work as a front-end developer using Tailwind CSS for responsive designs or as a back-end developer handling databases, APIs, and server-side logic. My experience in both areas enables me to understand the full development process and collaborate effectively with teams.
 
           </h3>
@@ -186,22 +186,22 @@
             target="_blank"
             href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
         <!-- card projects -->
-        <div class="flex flex-col overflow-scroll overflow-x-hidden p-6 h-[80%]">
+        <div class="flex flex-col overflow-scroll overflow-x-hidden p-8 h-[80%]">
           <!-- card1 -->
           <div class="mb-3">
-            <img src="amazon.WebP" alt="">
+            <img src="amazon.WebP" class=" w-full h-full" alt="">
           </div>
           <!-- card2 -->
           <div class="mb-3">
-            <img src="chocolate.WebP" alt="">
+            <img src="chocolate.WebP" class=" w-full h-full" alt="">
           </div>
           <!-- card3 -->
           <div class="mb-3">
-            <img src="library.WebP" alt="">
+            <img src="library.WebP" class=" w-full h-full" alt="">
           </div>
           <!-- card4 -->
           <div class="mb-3">
-            <img src="manga.WebP" alt="">
+            <img src="manga.WebP" class=" w-full h-full" alt="">
           </div>
         </div>
       </div>
@@ -246,9 +246,9 @@
 </div>
  
       <!-- experience -->
-      <div id="experience" class="py-5 lg:py-0 z-50 categories opacity-1 lg:opacity-0 text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
+      <div id="experience" class="lg:hidden py-5 lg:py-0 z-50 categories opacity-1 lg:opacity-0 text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1rem]">Experience</h3>
-        <h3 class="text-center text-[1rem] lg:text-[1.563rem] font-thin"> As of now, I don’t have any formal work experience, but I have previously
+        <h3 class="text-center text-[1rem] lg:text-[1.563rem] font-thin p-8"> As of now, I don’t have any formal work experience, but I have previously
           worked as a front-end web development intern where I gained hands-on experience with Tailwind CSS. During this
           internship, I developed a strong foundation in building responsive and visually appealing websites, and I had
           the opportunity to enhance my skills in HTML, CSS, and JavaScript.</h3>
@@ -361,14 +361,21 @@ checkEvent();
 
 
 
-      // Add and remove classes to/from categories based on the targetIndex
+      // Add and remove classes from categories based on the targetIndex
       for (let z = 0; z < categories.length; z++) {
         if ((targetIndex - 3) == z) {
+          categories[z].style.display = "flex";
+          setTimeout(() => {
           categories[z].classList.remove("lg:opacity-0");
           categories[z].classList.add("cate");
-          categories[z].classList.remove("earth-contents-out");
+          }, 1000);
+            categories[z].classList.remove("earth-contents-out");
         } else {
+          categories[z].classList.remove("cate");
           categories[z].classList.add("earth-contents-out");
+          setTimeout(() => {
+            categories[z].style.display = "none";
+          }, 1000);
         }
       }
 

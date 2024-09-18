@@ -640,12 +640,12 @@ video {
   top: -84px;
 }
 
-.top-\[25\%\] {
-  top: 25%;
+.top-\[calc\(100\%-50\%\)\] {
+  top: calc(100% - 50%);
 }
 
-.top-\[50\%\] {
-  top: 50%;
+.top-\[calc\(100\%-84\%\)\] {
+  top: calc(100% - 84%);
 }
 
 .z-0 {
@@ -965,8 +965,8 @@ video {
   padding: 0.75rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
+.p-8 {
+  padding: 2rem;
 }
 
 .px-1 {
@@ -1164,7 +1164,7 @@ main{
 }
 
 .cate{
-  transition: 2s ease-in;
+  transition: 1s ease-in;
   opacity: 1;
   z-index: 100;
 }
@@ -1175,8 +1175,12 @@ main{
 
 .earth-contents-out{
   transition: 1s ease-out;
-  opacity: 0;
-  z-index: 0;
+}
+
+@media (min-width: 1024px) {
+  .earth-contents-out {
+    opacity: 0;
+  }
 }
 
 /* width */
