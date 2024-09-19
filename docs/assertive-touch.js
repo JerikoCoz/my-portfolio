@@ -40,6 +40,8 @@ function activePosition(){
 
 
 function touchtAssertive(){
+    checkMove();
+    console.log(afterMove)
   if(status){
     if(position == "right"){
       assertiveContainer.style.right = [ (body.offsetWidth/2) - (assertiveContainer.offsetWidth/2) ] + "px";
@@ -64,6 +66,7 @@ function touchtAssertive(){
 
 function touchtMain(){
     afterMove = "cannot touch";
+    console.log("this is touch main: "+ afterMove)
   if(status == false){
     assertiveContainer.style.transition = "1s";
     if(y-50 < -51 || y > (window.innerHeight * .94)){
@@ -125,19 +128,21 @@ function touchtmoveAssertive(e){
   assertiveContainer.style.transition = "none";
   activeBlur();
 
-  afterMove = "can touch";
+
+    afterMove = "can touch";
+   
+
   
+}
+
+function checkMove(){
     if(afterMove == "can touch"){
         assertiveContainer.addEventListener("touchend", ()=>{
             activePosition();
         });
     }
- 
-
-
-  
+    
 }
-
 
 
 
