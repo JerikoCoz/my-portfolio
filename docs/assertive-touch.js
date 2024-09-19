@@ -113,8 +113,8 @@ function touchtmoveAssertive(e){
 
     
   status = false;
-   x = window.innerWidth - e.touches[0].pageX - 80;
-   y =  e.touches[0].pageY - 40;
+   x = window.innerWidth - e.touches[0].pageX - 90;
+   y =  e.touches[0].screenY - 190;
 
   assertiveContainer.style.right = x + "px";
   assertiveContainer.style.top = y + "px";
@@ -139,8 +139,3 @@ function touchtmoveAssertive(e){
  })
   
  
- assertiveContainer.addEventListener("touchend", touchtAssertive);
- ic.addEventListener("touchmove", touchtmoveAssertive);
-
- 
-   background.addEventListener("touchend", touchtMain);
