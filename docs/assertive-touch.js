@@ -69,7 +69,7 @@ function touchtMain(){
       assertiveContainer.style.transition = "1s ease-in";
     }
     
-    if(x > (window.innerWidth/2)){
+    if((x + 90) > (window.innerWidth/2)){
       setTimeout(() => {
       assertiveContainer.style.right = window.innerWidth - assertiveContainer.offsetWidth + 65 + "px";
       position = "left";
@@ -77,7 +77,7 @@ function touchtMain(){
        ic.classList.add("left-position");
         burger.classList.add("left-position-margin");
         burger.classList.remove("ml-4");
-    }else if(x < (window.innerWidth/2)){
+    }else if((x + 90) < (window.innerWidth/2)){
       setTimeout(() => {
       assertiveContainer.style.right = -70 + "px";
       position = "right";
@@ -123,11 +123,11 @@ function touchtmoveAssertive(e){
   assertiveContainer.style.transition = "none";
   activeBlur();
   
-  assertiveContainer.addEventListener("touchend", ()=>{
-      assertiveContainer.addEventListener("touchstart", ()=>{
-        activePosition();
-    });
+  assertiveContainer.addEventListener("touchstart", ()=>{
+    assertiveContainer.addEventListener("touchend", ()=>{
+      activePosition();
   });
+});
 
   
 }
