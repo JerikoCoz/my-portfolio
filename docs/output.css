@@ -558,33 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 1025px) {
   .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
+    max-width: 1025px;
   }
 }
 
@@ -1177,7 +1153,7 @@ main{
   transition: 1s ease-out;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .earth-contents-out {
     opacity: 0;
   }
@@ -1304,22 +1280,7 @@ main{
   margin-right: 1rem;
 }
 
-@media (min-width: 768px) {
-  .md\:h-\[6rem\] {
-    height: 6rem;
-  }
-
-  .md\:w-\[6rem\] {
-    width: 6rem;
-  }
-
-  .md\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .lg\:absolute {
     position: absolute;
   }
@@ -1422,16 +1383,6 @@ main{
 
   .lg\:opacity-0 {
     opacity: 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:bg-\[url\(\'first\.WebP\'\)\] {
-    background-image: url('first.WebP');
-  }
-
-  .xl\:bg-cover {
-    background-size: cover;
   }
 }
 
