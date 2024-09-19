@@ -3,7 +3,7 @@
 let x;
 let y;
 let position;
-let afterMove = "cannot touch";
+let ismove;
 
 
 
@@ -17,6 +17,7 @@ const burgerContainer = document.getElementById("burger-container");
   let bgBlur = document.getElementById("background-color-blur");
   let cac = document.getElementById("categories-assertive-container");
   let ic = document.getElementById("icon-container");
+  const  backgrounds = document.getElementById("background-div");
   
 
 
@@ -40,8 +41,6 @@ function activePosition(){
 
 
 function touchtAssertive(){
-    checkMove();
-    console.log(afterMove)
   if(status){
     if(position == "right"){
       assertiveContainer.style.right = [ (body.offsetWidth/2) - (assertiveContainer.offsetWidth/2) ] + "px";
@@ -65,8 +64,8 @@ function touchtAssertive(){
 }
 
 function touchtMain(){
-    afterMove = "cannot touch";
-    console.log("this is touch main: "+ afterMove)
+  assertiveContainer.removeEventListener("touchend", addev);
+  assertiveContainer.addEventListener("touchend", touchtAssertive);
   if(status == false){
     assertiveContainer.style.transition = "1s";
     if(y-50 < -51 || y > (window.innerHeight * .94)){
@@ -116,7 +115,6 @@ function touchtMain(){
 function touchtmoveAssertive(e){
   e.preventDefault();
 
-    
   status = false;
    x = window.innerWidth - e.touches[0].pageX - 90;
    y =  e.touches[0].screenY - 190;
@@ -128,27 +126,50 @@ function touchtmoveAssertive(e){
   assertiveContainer.style.transition = "none";
   activeBlur();
 
+  ismove = "yes";
 
-    afterMove = "can touch";
-   
+  if(ismove == "yes"){
+    assertiveContainer.removeEventListener("touchend", touchtAssertive);
+    assertiveContainer.addEventListener("touchend", (e)=>{
+      e.preventDefault();
+      assertiveContainer.addEventListener("touchend", addev);
+    })
+  }
 
-  
+
+
 }
-
-function checkMove(){
-    if(afterMove == "can touch"){
-        assertiveContainer.addEventListener("touchend", ()=>{
-            activePosition();
-        });
-    }
+function addev(e){
+e.preventDefault();
+e.stopPropagation();
+e.stopImmediatePropagation();
+activePosition();
     
 }
 
+
+// function checkMove(){
+//     if(afterMove == "can touch"){
+//         assertiveContainer.addEventListener("touchend", ()=>{
+//             activePosition();
+//         });
+//     }
+    
+// }
 
 
  assertiveContainer.addEventListener("touchcancel", ()=>{
   position = "right";
   touchtAssertive();
  })
+
+ 
+ assertiveContainer.addEventListener("touchend", touchtAssertive);
+ assertiveContainer.addEventListener("touchmove", touchtmoveAssertive);
+
+ 
+   backgrounds.addEventListener("touchend", touchtMain);
+
+
   
  
