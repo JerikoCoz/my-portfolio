@@ -277,6 +277,14 @@ let body = document.body;
  let wid = window.innerWidth;
 
 
+ 
+ assertiveContainer.addEventListener("touchend", touchtAssertive);
+ ic.addEventListener("touchmove", touchtmoveAssertive);
+
+ 
+   background.addEventListener("touchend", touchtMain);
+
+
  window.addEventListener("resize", ()=>{
   if(wid > window.innerWidth || wid < window.innerWidth){
     location.reload();
