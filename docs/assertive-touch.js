@@ -130,8 +130,7 @@ function touchtmoveAssertive(e){
 
   if(ismove == "yes"){
     assertiveContainer.removeEventListener("touchend", touchtAssertive);
-    assertiveContainer.addEventListener("touchend", (e)=>{
-      e.preventDefault();
+    assertiveContainer.addEventListener("touchend", ()=>{
       assertiveContainer.addEventListener("touchend", addev);
     })
   }
@@ -139,10 +138,7 @@ function touchtmoveAssertive(e){
 
 
 }
-function addev(e){
-e.preventDefault();
-e.stopPropagation();
-e.stopImmediatePropagation();
+function addev(){
 activePosition();
     
 }
