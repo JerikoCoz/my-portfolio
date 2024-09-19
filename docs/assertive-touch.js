@@ -3,6 +3,7 @@
 let x;
 let y;
 let position;
+let afterMove = "cannot touch";
 
 
 
@@ -62,6 +63,7 @@ function touchtAssertive(){
 }
 
 function touchtMain(){
+    afterMove = "cannot touch";
   if(status == false){
     assertiveContainer.style.transition = "1s";
     if(y-50 < -51 || y > (window.innerHeight * .94)){
@@ -122,15 +124,21 @@ function touchtmoveAssertive(e){
   
   assertiveContainer.style.transition = "none";
   activeBlur();
+
+  afterMove = "can touch";
   
-  assertiveContainer.addEventListener("touchstart", ()=>{
-    assertiveContainer.addEventListener("touchend", ()=>{
-      activePosition();
-  });
-});
+    if(afterMove == "can touch"){
+        assertiveContainer.addEventListener("touchend", ()=>{
+            activePosition();
+        });
+    }
+ 
+
 
   
 }
+
+
 
 
  assertiveContainer.addEventListener("touchcancel", ()=>{
