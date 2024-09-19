@@ -558,9 +558,21 @@ video {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1025px;
   }
 }
 
@@ -1153,7 +1165,7 @@ main{
   transition: 1s ease-out;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .earth-contents-out {
     opacity: 0;
   }
@@ -1280,7 +1292,69 @@ main{
   margin-right: 1rem;
 }
 
+@media (min-width: 768px) {
+  .md\:h-\[6rem\] {
+    height: 6rem;
+  }
+
+  .md\:w-\[6rem\] {
+    width: 6rem;
+  }
+
+  .md\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .md\:px-\[30px\] {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .md\:px-\[32px\] {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .md\:px-\[135px\] {
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .md\:px-\[120px\] {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .md\:px-\[110px\] {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .md\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
 @media (min-width: 1024px) {
+  .large\:px-52 {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+
+@media (min-width: 1025px) {
   .lg\:absolute {
     position: absolute;
   }
