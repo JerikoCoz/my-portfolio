@@ -169,4 +169,20 @@ background-color: transparent;
 .none-dislpay{
   display: none;
 }
+/* assertive position
+.left-assertive{
+  @apply left-[-70px];
+}
+.right-assertive{
+  @apply right-[-70px];
+} */
+/* icon in icon container*/
+.left-position{
+  @apply mr-4 justify-end;
+  transition: .5 ease-in; 
+}
+/* margin right in icon itself*/
+.left-position-margin{
+  @apply mr-4;
+}
 
