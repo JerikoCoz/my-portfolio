@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1025px;
+    max-width: 1024px;
   }
 }
 
@@ -1153,7 +1153,7 @@ main{
   transition: 1s ease-out;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .earth-contents-out {
     opacity: 0;
   }
@@ -1280,7 +1280,7 @@ main{
   margin-right: 1rem;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .lg\:absolute {
     position: absolute;
   }

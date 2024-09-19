@@ -11,7 +11,7 @@ module.exports = {
       
     },
     screens: {
-      'lg': '1025px',
+      'lg': '1024px',
     },
   },
   plugins: [],

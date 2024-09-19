@@ -107,7 +107,7 @@ function clicks(e) {
         categories[z].classList.remove("cate");
         categories[z].classList.add("earth-contents-out");
         setTimeout(() => {
-          categories[z].classList.add("none-dislpay");
+          categories[z].style.display = "none";
         }, 1000);
       }
     }
