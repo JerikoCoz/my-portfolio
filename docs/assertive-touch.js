@@ -4,8 +4,8 @@ let position;
 let ismove;
 // this functions below are for assertive touch
 const burgerContainer = document.getElementById("burger-container");
+burger = document.getElementById("burger");
   let status = true;
-  let currentView = document.getElementById("current-view");
   let assertiveContainer = document.getElementById("assertive-container");
   let bgBlur = document.getElementById("background-color-blur");
   let cac = document.getElementById("categories-assertive-container");
@@ -48,6 +48,7 @@ function touchtAssertive(){
   burgerContainer.classList.add("assertive-touch");
 }
 function touchtMain(){
+  ismove = "no";
   assertiveContainer.removeEventListener("touchend", addev);
   assertiveContainer.addEventListener("touchend", touchtAssertive);
   if(status == false){
@@ -66,27 +67,30 @@ function touchtMain(){
         burger.classList.add("left-position-margin");
         burger.classList.remove("ml-4");
     }else if((x + 90) < (window.innerWidth/2)){
-      setTimeout(() => {
+   
       assertiveContainer.style.right = -70 + "px";
       position = "right";
-    }, 500);
+   
          ic.classList.remove("left-position");
         burger.classList.remove("left-position-margin");
         burger.classList.add("ml-4");
     }else{
-      setTimeout(() => {
+     
       assertiveContainer.style.right = -70 + "px";
-    }, 500);
+ 
     }
     setTimeout(() => {
   cac.classList.add("none-dislpay");
-    }, 2000);
+    }, 500);
     cac.style.height = 0 + "px";
+
   setTimeout(() => {
+    bgBlur.classList.remove("bg-blur");
     burgerContainer.classList.remove("assertive-touch");
   burger.style.color = "black";
-  bgBlur.classList.remove("bg-blur");
-  }, 1450);
+  }, 1000);
+  
+
   body.style.overflow = "auto";
   }
   status = true;
