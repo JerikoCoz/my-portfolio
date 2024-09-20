@@ -74,37 +74,20 @@
    </div>
 
   <!-- main-->
-  <main id="background-div" class="justify-center items-center flex-col hidden z-[99] px-3 large:px-52 md:px-[100px] lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] xl:bg-[url('first.WebP')] xl:bg-cover lg:bg-[url('first.WebP')] lg:bg-cover">
+  <main id="background-div" class="justify-center items-center flex-col hidden z-[99] px-3 large:px-52 md:px-[100px] lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] xl:bg-[url('second.WebP')] xl:bg-cover lg:bg-[url('second.WebP')] lg:bg-cover">
 
-    <!-- blur  -->
-    <div id="blur" class="hidden lg:block h-full w-full relative bg-black opacity-[25%] backdrop-blur-[4] z-[1]"></div>
-    
-    <!-- landing texts -->
-    <div id="landing-text" class="absolute top-[calc(100%-84%)] hidden  w-full lg:flex justify-center flex-col items-center text-white z-[2]">
-      <h1 class="text-[2.8rem] lg:text-8xl font-inika text-center">WELCOME</h1>
-      <h3 class="text-[1.2rem] lg:text-[2rem] font-inria text-center leading-none my-5 lg:w-[44.625rem]"> Hi! I am
-        Jeriko Ronnel S. Coz, My language are python, java, HTML, CSS, Tailwind CSS, JavaScript and PHP</h3>
-    </div>
 
 
 
 
     <!-- earth container -->
-    <div id="earth-container" class="earth-container top-[calc(100%-50%)]  hidden lg:flex absolute z-[2] ">
-      <!-- contact container -->
-      <div class='links font-instrument text-[1.5rem] text-right'>
-        <h3><a class='buttons' target="_blank" rel="noreferrer" href="https://www.instagram.com/jjjjerikoooo/?next=%2F">Instagram</a></h3>
-        <h3 class=' mr-[1.25rem]'><a class='buttons' target="_blank" rel="noreferrer"
-            href="https://www.facebook.com/profile.php?id=100053874975545">Facebook</a></h3>
-        <h3 ><a class='buttons' target="_blank" rel="noreferrer"
-            href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/">Linkedin</a></h3>
-      </div>
-      <!-- circle -->
+    <div id="earth-container" class="earth-move top-[calc(100%-50%)]  hidden lg:flex absolute z-[2] ">
+
       <div
-        class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative bg-[url(galaxy.WebP)] flex justify-center flex-col items-center'>
+        class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative flex justify-center flex-col items-center'>
         
         <!-- contact container -->
-        <div class=" opacity-0 cursor-default pointer-events-none" id="links-circle">
+        <div class=" opacity-1 cursor-default pointer-events-none" id="links-circle">
           <h3 class="text-white text-[1.688rem]">Contact</h3>
           <!-- icons container -->
           <div class="flex justify-center">
@@ -119,9 +102,9 @@
       </div>
       <!-- categories -->
       <div class='links font-inika text-[1.5rem]'>
-        <h3 class='buttons ml-[1.25rem]' onclick="clicks(event)"><a  href=""></a>More about me</h3>
-        <h3 class='buttons ml-[1.25rem]' onclick="clicks(event)"><a  href=""></a>Personal Project</h3>
-        <h3 class="buttons" onclick="clicks(event)"><a  href=""></a>experience</h3>
+        <h3 class='buttons ml-[1rem] font-thin underline' onclick="clicks(event)"><a  href=""></a>More about me</h3>
+        <h3 class='buttons ml-[1rem] font-thin' onclick="clicks(event)"><a  href=""></a>Personal Project</h3>
+        <h3 class="buttons ml-[1rem] font-thin" onclick="clicks(event)"><a  href=""></a>experience</h3>
       </div>
       <!-- end of earth container -->
     </div>
@@ -129,9 +112,9 @@
 
 
     <!-- categories contents container -->
-    <div id="catergories-contents-container" class="lg:hidden opacity-100 lg:opacity-0  top-0 w-full h-full relative">
+    <div id="catergories-contents-container" class="lg:flex opacity-100 lg:opacity-1  top-0 w-full h-full relative">
       <!-- more about me -->
-      <div id="about-me" class="lg:hidden py-2 opacity-100 lg:opacity-0 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
+      <div id="about-me" class="lg:flex py-2 opacity-100 lg:opacity-1 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
         <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
         <img loading="lazy"src="Frame 148.WebP" alt="" class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
         <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
@@ -183,8 +166,8 @@
 
 
       <!-- personal-project -->
-      <div id="personal-project" class="hidden lg:flex opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
-        <h1 class=" text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer underline font-bold"
+      <div id="personal-project" class="hidden lg:hidden opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
+        <h1 class=" text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer underline font-thin"
             target="_blank"
             href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
         <!-- card projects -->
@@ -210,7 +193,7 @@
 <!-- mobile view - projects -->
 <div id="personal-project-mobile" class="lg:hidden flex flex-col items-center px-1">
   <h3 class="lg:hidden text-[1rem] text-center text-white">Personal projects</h3>
-  <h1 class="lg:hidden text-[1.2rem] text-white font-bold text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer"
+  <h1 class="lg:hidden text-[1.2rem] text-white font-thin text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer"
     target="_blank"
     href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
   <!-- project container -->

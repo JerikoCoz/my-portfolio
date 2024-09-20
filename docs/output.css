@@ -632,10 +632,6 @@ video {
   top: calc(100% - 50%);
 }
 
-.top-\[calc\(100\%-84\%\)\] {
-  top: calc(100% - 84%);
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -656,10 +652,6 @@ video {
   z-index: 101;
 }
 
-.z-\[1\] {
-  z-index: 1;
-}
-
 .z-\[2\] {
   z-index: 2;
 }
@@ -670,11 +662,6 @@ video {
 
 .m-0 {
   margin: 0px;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .mb-2 {
@@ -689,12 +676,8 @@ video {
   margin-left: 1rem;
 }
 
-.ml-\[1\.25rem\] {
-  margin-left: 1.25rem;
-}
-
-.mr-\[1\.25rem\] {
-  margin-right: 1.25rem;
+.ml-\[1rem\] {
+  margin-left: 1rem;
 }
 
 .mt-3 {
@@ -909,10 +892,6 @@ video {
   background-color: transparent;
 }
 
-.bg-\[url\(galaxy\.WebP\)\] {
-  background-image: url(galaxy.WebP);
-}
-
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -977,10 +956,6 @@ video {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1007,20 +982,8 @@ video {
   font-size: 1rem;
 }
 
-.text-\[2\.8rem\] {
-  font-size: 2.8rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
 .font-thin {
   font-weight: 100;
-}
-
-.leading-none {
-  line-height: 1;
 }
 
 .text-blue-600 {
@@ -1061,12 +1024,6 @@ video {
 .blur {
   --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-blur-\[4\] {
-  --tw-backdrop-blur: blur(4);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .backdrop-blur-md {
@@ -1114,6 +1071,25 @@ main{
   justify-content: center;
 }
 
+.notcurrent{
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.gray{
+  color: gray;
+}
+
+.white{
+  color: white;
+}
+
+.currentCategory{
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  font-weight: 100;
+}
+
 .links h3{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1123,12 +1099,16 @@ main{
 .earth-move{
   transition: 2s ease-in-out;
   top: 40%;
-  left: -70px;
+  left: 0px;
 }
 
 .links-buttons{
   transition: 1s ease-out;
   opacity: 0;
+}
+
+.earthy{
+  border-right: 2px solid rgb(182, 163, 163);
 }
 
 .icon-circle{
@@ -1155,10 +1135,6 @@ main{
   transition: 1s ease-in;
   opacity: 1;
   z-index: 100;
-}
-
-.earth-container{
-  left: calc((100vw / 2) - (490.23px / 2) + 33px);
 }
 
 .earth-contents-out{
@@ -1319,10 +1295,6 @@ main{
     position: absolute;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -1347,10 +1319,6 @@ main{
     width: 6rem;
   }
 
-  .lg\:w-\[44\.625rem\] {
-    width: 44.625rem;
-  }
-
   .lg\:w-auto {
     width: auto;
   }
@@ -1371,12 +1339,8 @@ main{
     overflow-y: hidden;
   }
 
-  .lg\:bg-\[url\(\"second\.WebP\"\)\] {
-    background-image: url("second.WebP");
-  }
-
-  .lg\:bg-\[url\(\'first\.WebP\'\)\] {
-    background-image: url('first.WebP');
+  .lg\:bg-\[url\(\'second\.WebP\'\)\] {
+    background-image: url('second.WebP');
   }
 
   .lg\:bg-cover {
@@ -1398,21 +1362,12 @@ main{
     line-height: 2.25rem;
   }
 
-  .lg\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .lg\:text-\[1\.563rem\] {
     font-size: 1.563rem;
   }
 
   .lg\:text-\[1rem\] {
     font-size: 1rem;
-  }
-
-  .lg\:text-\[2rem\] {
-    font-size: 2rem;
   }
 
   .lg\:opacity-0 {
