@@ -1,305 +1,361 @@
 <!doctype HTML>
-<html  lang="en">
-
-<head>
-  <title>programmer</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel='stylesheet'">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-</head>
-
-<body> 
-  <div id="container-load" class="bg-black w-full h-full flex justify-center items-center">
-  <h1 class="loadt text-white">LOADING...</h1>
-  </div>
-  
-  <!-- header -->
-  <div id="header" class="hidden z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
-    <!-- mobile view -->
-    <div class="lg:hidden w-full flex justify-center items-center p-3">
-      <div >
-        <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank"> 
-          <i class="icon-circle fa fa-instagram text-gray-300 fa-2x"></i></a>
-        <a href="https://www.facebook.com/profile.php?id=100053874975545" class = "w-0 m-0 p-0" target="_blank"><i
-            class="icon-circle fa fa-facebook-official text-gray-300 m-0 p-0 fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/" target="_blank"><i
-            class="icon-circle fa fa-linkedin text-gray-300 fa-2x" aria-hidden="true"></i></a>
-
-      </div>
-
-    </div>
-  </div>
-    <!-- assertive touch for mobile and tablet view -->
-     <!-- assertive touch container -->
-     <div id="assertive-container" class="hidden z-[100] lg:hidden fixed right-[-70px] mt-3 flex-col w-[176px] items-center  justify-center ">
-   
-      <!-- icon container -->
-      <div id="icon-container" class="flex items-center relative mb-2 p-0 w-[80px] h-[53px]">
- <!-- blur -->
- <div id="burger-container" class="bg-[#A8A1A1] opacity-[.50] rounded-[60px]  absolute h-full w-full">
-  <!-- blur background color -->
-  <div id="background-color-blur" class=" absolute h-full w-full rounded-full"></div>
- </div>
- 
-  <!-- buger icon -->
-  <svg id="burger" class="z-[101] ml-4" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 14 14">
-    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-      d="M.5 7.5h13M4 .5h6A3.5 3.5 0 0 1 13.5 4a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1A3.5 3.5 0 0 1 4 .5m9 9.5H7l-1.5 1.5l-3-1.5H1a.5.5 0 0 0-.5.5v0a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3a.5.5 0 0 0-.5-.5" />
-  </svg>
-
-  <!-- end of icon container -->
-      </div>
-     
-      <!-- categories container for assertive touch -->
-      <div id="categories-assertive-container" class="hidden justify-center items-center flex-col relative opacity-0 h-0 w-full">
-        <!-- blur -->
- <div class="opacity-100 bg-transparent backdrop-blur-md z-50 h-full w-full absolute rounded-[30px]">
-  <!-- blur background color -->
-  <div id="background-color-blur2" class="overflow-auto scroll bg-[rgba(18,14,14,0.6)] z-50 absolute h-full w-full rounded-[30px] flex justify-center flex-col items-center">
-    <!-- categories -->
-     <a href="#about-me"><div class="categories-assertive">More about me</div></a>
-     <a href="#personal-project-mobile"> <div class="categories-assertive">Personal projects</div></a>
-     <a href="#experience"><div class="categories-assertive">Experience</div></a>
-   
-  </div>
- </div>
-      </div>
-  
-
-
-    <!--end of assertive touch container -->
-   </div>
-
-  <!-- main-->
-  <main id="background-div" class="justify-center items-center flex-col hidden z-[99] px-3 large:px-52 md:px-[100px] lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] xl:bg-[url('second.WebP')] xl:bg-cover lg:bg-[url('second.WebP')] lg:bg-cover">
-
-
-
-
-
-    <!-- earth container -->
-    <div id="earth-container" class="earth-move top-[calc(100%-50%)]  hidden lg:flex absolute z-[2] ">
-
-      <div
-        class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative flex justify-center flex-col items-center'>
-        
-        <!-- contact container -->
-        <div class=" opacity-1 cursor-default pointer-events-none" id="links-circle">
-          <h3 class="text-white text-[1.688rem]">Contact</h3>
-          <!-- icons container -->
-          <div class="flex justify-center">
-            <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank"> 
-              <i class="icon-circle fa fa-instagram text-white fa-2x"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100053874975545" target="_blank"><i
-                class="icon-circle fa fa-facebook-official text-blue-600 fa-2x" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/" target="_blank"><i
-                class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i></a>
-          </div>
+<html lang="en">
+    <head>
+        <title>programmer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./output.css" rel='stylesheet' ">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div
+            id="container-load"
+            class="bg-black w-full h-full flex justify-center items-center">
+            <h1 class="loadt text-white">LOADING...</h1>
         </div>
-      </div>
-      <!-- categories -->
-      <div class='links font-inika text-[1.5rem]'>
-        <h3 class='buttons ml-[1rem] font-thin underline' onclick="clicks(event)"><a  href=""></a>More about me</h3>
-        <h3 class='buttons ml-[1rem] font-thin' onclick="clicks(event)"><a  href=""></a>Personal Project</h3>
-        <h3 class="buttons ml-[1rem] font-thin" onclick="clicks(event)"><a  href=""></a>experience</h3>
-      </div>
-      <!-- end of earth container -->
-    </div>
-
-
-
-    <!-- categories contents container -->
-    <div id="catergories-contents-container" class="lg:flex opacity-100 lg:opacity-1  top-0 w-full h-full relative">
-      <!-- more about me -->
-      <div id="about-me" class="lg:flex py-2 opacity-100 lg:opacity-1 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
-        <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
-        <img loading="lazy"src="Frame 148.WebP" alt="" class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
-        <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
-        <h3 class="text-[1rem] lg:text-[1rem]">Graduate at July 26, 2024</h3>
-        <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info: <a target="_blank"
-            href="Jeriko Ronnel S. Coz.pdf">click here</a></h3>
-
-        <div class="flex lg:overflow-scroll lg:overflow-x-hidden lg:overflow-y-hidden p-8 flex-col">
-          <h3 class="text-[1rem] lg:text-[1.563rem] font-thin">Good day! I am a BS Computer Science graduate from STI Ortigas-Cainta, with skills in both front-end and back-end development. While I lack formal work experience, I’ve honed my abilities through academic projects and personal initiatives. I can work as a front-end developer using Tailwind CSS for responsive designs or as a back-end developer handling databases, APIs, and server-side logic. My experience in both areas enables me to understand the full development process and collaborate effectively with teams.
-
-          </h3>
-
-          <br><br>
-          <h1 class="text-2xl lg:text-3xl text-center">language:</h1>
-          <br>
-          <div class="flex-wrap flex">
-
-            <!-- card1 -->
-            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="java.WebP" alt="" class="w-full h-full">
+        <!-- header -->
+        <div
+            id="header"
+            class="hidden z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
+            <!-- mobile view -->
+            <div class="lg:hidden w-full flex justify-center items-center p-3">
+                <div>
+                    <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank">
+                        <i class="icon-circle fa fa-instagram text-gray-300 fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100053874975545"
+                        class="w-0 m-0 p-0"
+                        target="_blank">
+                        <i class="icon-circle fa fa-facebook-official text-gray-300 m-0 p-0 fa-2x"></i>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"
+                        target="_blank">
+                        <i class="icon-circle fa fa-linkedin text-gray-300 fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
-            <!-- card2 -->
-            <div class="w-[11.125rem] flex-grow h-[3.188rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="python-logo.WebP" alt="" class="w-full h-full">
-            </div>
-            <!-- card3 -->
-            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="html.WebP" alt="" class="w-full h-full">
-            </div>
-            <!-- card4 -->
-            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="css.WebP" alt="" class="w-full h-full">
-            </div>
-            <!-- card5 -->
-            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="js.WebP" alt="" class="w-full h-full">
-            </div>
-            <!-- card6 -->
-            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="php.WebP" alt="" class="w-full h-full">
-            </div>
-            <!-- card7 -->
-            <div class="w-[11.125rem] h-[3.188rem] lg:h-24 lg:w-24">
-              <img loading="lazy"src="tailwind.WebP" alt="" class="w-full h-full">
-            </div>
-          </div>
         </div>
-      </div>
-
-
-      <!-- personal-project -->
-      <div id="personal-project" class="hidden lg:hidden opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
-        <h1 class=" text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer underline font-thin"
-            target="_blank"
-            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
-        <!-- card projects -->
-        <div class="flex flex-col overflow-scroll overflow-x-hidden p-8 w-[100%] h-[80%]">
-          <!-- card1 -->
-          <div class="mb-3">
-            <img loading="lazy"src="amazon.WebP" class=" w-full h-full" alt="">
-          </div>
-          <!-- card2 -->
-          <div class="mb-3">
-            <img loading="lazy"src="chocolate.WebP" class=" w-full h-full" alt="">
-          </div>
-          <!-- card3 -->
-          <div class="mb-3">
-            <img loading="lazy"src="library.WebP" class=" w-full h-full" alt="">
-          </div>
-          <!-- card4 -->
-          <div class="mb-3">
-            <img loading="lazy"src="manga.WebP" class=" w-full h-full" alt="">
-          </div>
+        <!-- assertive touch for mobile and tablet view -->
+        <!-- assertive touch container -->
+        <div
+            id="assertive-container"
+            class="hidden z-[100] lg:hidden fixed right-[-70px] mt-3 flex-col w-[176px] items-center  justify-center ">
+            <!-- icon container -->
+            <div
+                id="icon-container"
+                class="flex items-center relative mb-2 p-0 w-[80px] h-[53px]">
+                <!-- blur -->
+                <div
+                    id="burger-container"
+                    class="bg-[#A8A1A1] opacity-[.50] rounded-[60px]  absolute h-full w-full">
+                    <!-- blur background color -->
+                    <div id="background-color-blur" class=" absolute h-full w-full rounded-full"></div>
+                </div>
+                <!-- buger icon -->
+                <svg
+                    id="burger"
+                    class="z-[101] ml-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="2em"
+                    height="2em"
+                    viewbox="0 0 14 14">
+                    <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M.5 7.5h13M4 .5h6A3.5 3.5 0 0 1 13.5 4a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1A3.5 3.5 0 0 1 4 .5m9 9.5H7l-1.5 1.5l-3-1.5H1a.5.5 0 0 0-.5.5v0a3 3 0 0 0 3 3h7a3 3 0 0 0 3-3a.5.5 0 0 0-.5-.5"/>
+                </svg>
+                <!-- end of icon container -->
+            </div>
+            <!-- categories container for assertive touch -->
+            <div
+                id="categories-assertive-container"
+                class="hidden justify-center items-center flex-col relative opacity-0 h-0 w-full">
+                <!-- blur -->
+                <div
+                    class="opacity-100 bg-transparent backdrop-blur-md z-50 h-full w-full absolute rounded-[30px]">
+                    <!-- blur background color -->
+                    <div
+                        id="background-color-blur2"
+                        class="overflow-auto scroll bg-[rgba(18,14,14,0.6)] z-50 absolute h-full w-full rounded-[30px] flex justify-center flex-col items-center">
+                        <!-- categories -->
+                        <a href="#about-me">
+                            <div class="categories-assertive">More about me</div>
+                        </a>
+                        <a href="#personal-project-mobile">
+                            <div class="categories-assertive">Personal projects</div>
+                        </a>
+                        <a href="#experience">
+                            <div class="categories-assertive">Experience</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--end of assertive touch container -->
         </div>
-      </div>
-<!-- mobile view - projects -->
-<div id="personal-project-mobile" class="lg:hidden flex flex-col items-center px-1">
-  <h3 class="lg:hidden text-[1rem] text-center text-white">Personal projects</h3>
-  <h1 class="lg:hidden text-[1.2rem] text-white font-thin text-4xl">Here is my figma link: <a class="pointer-events-auto cursor-pointer"
-    target="_blank"
-    href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a></h1>
-  <!-- project container -->
-<div class=" relative inline-block ">
-  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" id="prevs" class="absolute z-50 h-full flex items-center" viewBox="0 0 20 20"><path fill="currentcolor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/></svg>
+        <!-- main-->
+        <main
+            id="background-div"
+            class="justify-center items-center flex-col hidden z-[99] px-3 large:px-52 md:px-[100px] lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] xl:bg-[url('second.WebP')] xl:bg-cover lg:bg-[url('second.WebP')] lg:bg-cover">
+            <!-- earth container -->
+            <div
+                id="earth-container"
+                class="earth-move top-[calc(100%-50%)]  hidden lg:flex absolute z-[2] ">
+                <div
+                    class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative flex justify-center flex-col items-center'>
+                    <!-- contact container -->
+                    <div class=" opacity-1 cursor-default pointer-events-none" id="links-circle">
+                        <h3 class="text-white text-[1.688rem]">Contact</h3>
+                        <!-- icons container -->
+                        <div class="flex justify-center">
+                            <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank">
+                                <i class="icon-circle fa fa-instagram text-white fa-2x"></i>
+                            </a>
+                            <a
+                                href="https://www.facebook.com/profile.php?id=100053874975545"
+                                target="_blank">
+                                <i
+                                    class="icon-circle fa fa-facebook-official text-blue-600 fa-2x"
+                                    aria-hidden="true"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"
+                                target="_blank">
+                                <i class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- categories -->
+                <div class='links font-inika text-[1.5rem]'>
+                    <h3 class='buttons ml-[1rem] font-thin underline' onclick="clicks(event)">
+                        <a href=""></a>More about me
+                    </h3>
+                    <h3 class='buttons ml-[1rem] font-thin' onclick="clicks(event)">
+                        <a href=""></a>Personal Project
+                    </h3>
+                    <h3 class="buttons ml-[1rem] font-thin" onclick="clicks(event)">
+                        <a href=""></a>experience
+                    </h3>
+                </div>
+                <!-- end of earth container -->
+            </div>
+            <!-- categories contents container -->
+            <div
+                id="catergories-contents-container"
+                class="lg:flex opacity-100 lg:opacity-1  top-0 w-full h-full relative">
+                <!-- more about me -->
+                <div
+                    id="about-me"
+                    class="lg:flex py-2 opacity-100 lg:opacity-1 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
+                    <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
+                    <img
+                        loading="lazy"
+                        src="Frame 148.WebP"
+                        alt=""
+                        class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
+                    <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
+                    <h3 class="text-[1rem] lg:text-[1rem]">Graduate at July 26, 2024</h3>
+                    <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info:
+                        <a target="_blank" href="Jeriko Ronnel S. Coz.pdf">click here</a>
+                    </h3>
+                    <div
+                        class="flex lg:overflow-scroll lg:overflow-x-hidden lg:overflow-y-hidden p-8 flex-col">
+                        <h3 class="text-[1rem] lg:text-[1.563rem] font-thin">Good day! I am a BS
+                            Computer Science graduate from STI Ortigas-Cainta, with skills in both front-end
+                            and back-end development. While I lack formal work experience, I’ve honed my
+                            abilities through academic projects and personal initiatives. I can work as a
+                            front-end developer using Tailwind CSS for responsive designs or as a back-end
+                            developer handling databases, APIs, and server-side logic. My experience in both
+                            areas enables me to understand the full development process and collaborate
+                            effectively with teams.
+                        </h3>
+                        <br>
+                        <br>
+                        <h1 class="text-2xl lg:text-3xl text-center">language:</h1>
+                        <br>
+                        <div class="flex-wrap flex">
+                            <!-- card1 -->
+                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="java.WebP" alt="" class="w-full h-full">
+                            </div>
+                            <!-- card2 -->
+                            <div class="w-[11.125rem] flex-grow h-[3.188rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="python-logo.WebP" alt="" class="w-full h-full">
+                            </div>
+                            <!-- card3 -->
+                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="html.WebP" alt="" class="w-full h-full">
+                            </div>
+                            <!-- card4 -->
+                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="css.WebP" alt="" class="w-full h-full">
+                            </div>
+                            <!-- card5 -->
+                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="js.WebP" alt="" class="w-full h-full">
+                            </div>
+                            <!-- card6 -->
+                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="php.WebP" alt="" class="w-full h-full">
+                            </div>
+                            <!-- card7 -->
+                            <div class="w-[11.125rem] h-[3.188rem] lg:h-24 lg:w-24">
+                                <img loading="lazy" src="tailwind.WebP" alt="" class="w-full h-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- personal-project -->
+                <div
+                    id="personal-project"
+                    class="hidden lg:hidden opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
+                    <h1 class=" text-4xl">Here is my figma link:
+                        <a
+                            class="pointer-events-auto cursor-pointer underline font-thin"
+                            target="_blank"
+                            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a>
+                    </h1>
+                    <!-- card projects -->
+                    <div
+                        class="flex flex-col overflow-scroll overflow-x-hidden p-8 w-[100%] h-[80%]">
+                        <!-- card1 -->
+                        <div class="mb-3">
+                            <img loading="lazy" src="amazon.WebP" class=" w-full h-full" alt="">
+                        </div>
+                        <!-- card2 -->
+                        <div class="mb-3">
+                            <img loading="lazy" src="chocolate.WebP" class=" w-full h-full" alt="">
+                        </div>
+                        <!-- card3 -->
+                        <div class="mb-3">
+                            <img loading="lazy" src="library.WebP" class=" w-full h-full" alt="">
+                        </div>
+                        <!-- card4 -->
+                        <div class="mb-3">
+                            <img loading="lazy" src="manga.WebP" class=" w-full h-full" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile view - projects -->
+                <div
+                    id="personal-project-mobile"
+                    class="lg:hidden flex flex-col items-center px-1">
+                    <h3 class="lg:hidden text-[1rem] text-center text-white">Personal projects</h3>
+                    <h1 class="lg:hidden text-[1.2rem] text-white font-thin text-4xl">Here is my figma link:
+                        <a
+                            class="pointer-events-auto cursor-pointer"
+                            target="_blank"
+                            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a>
+                    </h1>
+                    <!-- project container -->
+                    <div class=" relative inline-block ">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2em"
+                            height="2em"
+                            id="prevs"
+                            class="absolute z-50 h-full flex items-center"
+                            viewbox="0 0 20 20">
+                            <path fill="currentcolor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/>
+                        </svg>
+                        <!-- current view container -->
+                        <div
+                            id="current-view"
+                            class="z-50 flex flex-shrink-1 max-w-[420px] max-h-[350px] bg-black overflow-hidden">
+                            <!-- card container -->
+                            <div id="card-container" class="relative flex right-0">
+                                <!-- card1 -->
+                                <div class="w-full h-full flex-shrink-0 card">
+                                    <img loading="lazy" class="w-full h-full" src="amazon.WebP" alt="">
+                                </div>
+                                <!-- card2 -->
+                                <div class="w-full h-full flex-shrink-0 card">
+                                    <img loading="lazy" class="w-full h-full" src="chocolate.WebP" alt="">
+                                </div>
+                                <!-- card3 -->
+                                <div class="w-full h-full flex-shrink-0 card">
+                                    <img loading="lazy" class="w-full h-full" src="library.WebP" alt="">
+                                </div>
+                                <!-- card4 -->
+                                <div class="w-full h-full flex-shrink-0">
+                                    <img loading="lazy" class="w-full h-full" src="manga.WebP" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="2em"
+                            height="2em"
+                            viewbox="0 0 20 20"
+                            id="next"
+                            class="top-0 absolute z-50 h-full flex items-center right-0">
+                            <path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/>
+                        </svg>
+                    </div>
+                </div>
+                <!-- experience -->
+                <div
+                    id="experience"
+                    class="lg:hidden py-5 lg:py-0 z-50 categories opacity-1 lg:opacity-0 text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
+                    <h3 class="lg:hidden text-[1rem]">Experience</h3>
+                    <h3 class="text-center text-[1rem] lg:text-[1.563rem] font-thin p-8">
+                        As of now, I don’t have any formal work experience, but I have previously worked
+                        as a front-end web development intern where I gained hands-on experience with
+                        Tailwind CSS. During this internship, I developed a strong foundation in
+                        building responsive and visually appealing websites, and I had the opportunity
+                        to enhance my skills in HTML, CSS, and JavaScript.</h3>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <div
+            id="footer"
+            class="hidden z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
+    </body>
+    <script src="landing-page.js" defer></script>
+    <script src="projects-mobile-view.js" defer></script>
+    <script src="assertive-touch.js" defer></script>
+    <script defer>
+        let body = document.body;
+        const background = document.getElementById("background-div");
 
- <!-- current view container -->
-  <div id="current-view" class="z-50 flex flex-shrink-1 max-w-[420px] max-h-[350px] bg-black overflow-hidden" >
-    
-    <!-- card container -->
-      <div  id="card-container" class="relative flex right-0">
-            <!-- card1 -->
-      <div class="w-full h-full flex-shrink-0 card">
-          <img loading="lazy"class="w-full h-full" src="amazon.WebP" alt="">
-      </div> 
-      <!-- card2 -->
-      <div class="w-full h-full flex-shrink-0 card">
-          <img loading="lazy"class="w-full h-full" src="chocolate.WebP" alt="">
-      </div>
-      <!-- card3 -->
-      <div class="w-full h-full flex-shrink-0 card">
-          <img loading="lazy"class="w-full h-full" src="library.WebP" alt="">
-      </div>
-      <!-- card4 -->
-      <div class="w-full h-full flex-shrink-0">
-          <img loading="lazy"class="w-full h-full" src="manga.WebP" alt="">
-      </div>
-     
-      </div>
-      
-  </div>
-  <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20" id="next" class="top-0 absolute z-50 h-full flex items-center right-0"><path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/></svg>
+        let wid = window.innerWidth;
 
-</div>
-</div>
- 
-      <!-- experience -->
-      <div id="experience" class="lg:hidden py-5 lg:py-0 z-50 categories opacity-1 lg:opacity-0 text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
-        <h3 class="lg:hidden text-[1rem]">Experience</h3>
-        <h3 class="text-center text-[1rem] lg:text-[1.563rem] font-thin p-8"> As of now, I don’t have any formal work experience, but I have previously
-          worked as a front-end web development intern where I gained hands-on experience with Tailwind CSS. During this
-          internship, I developed a strong foundation in building responsive and visually appealing websites, and I had
-          the opportunity to enhance my skills in HTML, CSS, and JavaScript.</h3>
+        window.addEventListener("resize", () => {
+            if (wid > window.innerWidth || wid < window.innerWidth) {
+                location.reload();
+            }
+        })
+        window.addEventListener("load", () => {
+            let con = document.getElementById("contaier");
+            document
+                .getElementById("container-load")
+                .classList
+                .add("none-dislpay");
+            cac
+                .classList
+                .add("flex-dislpay");
+            assertiveContainer
+                .classList
+                .add("assertive-mobile");
+            document
+                .getElementById("header")
+                .classList
+                .add("flex-dislpay");
+            document
+                .getElementById("footer")
+                .classList
+                .add("flex-dislpay");
+            background
+                .classList
+                .add("flex-dislpay");
 
-      </div>
-    </div>
-
-  </main>
-
-
-
-  <!-- footer -->
-  <div id="footer" class="hidden z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
-</body>
-<script src="landing-page.js"></script>
-<script src="projects-mobile-view.js"></script>
-<script src="assertive-touch.js"></script>
-
-
-<script> 
-let body = document.body;
- const  background = document.getElementById("background-div");
-
- let wid = window.innerWidth;
-
-
- 
- window.addEventListener("resize", ()=>{
-  if(wid > window.innerWidth || wid < window.innerWidth){
-    location.reload();
-  }
- })
-
-
- window.addEventListener("load", ()=>{
-let con = document.getElementById("contaier");
-document.getElementById("container-load").classList.add("none-dislpay");
-cac.classList.add("flex-dislpay");
-assertiveContainer.classList.add("assertive-mobile");
-document.getElementById("header").classList.add("flex-dislpay");
-document.getElementById("footer").classList.add("flex-dislpay");
-background.classList.add("flex-dislpay");
-    
-      });
-
-
-//         //this is only for presentation in resizing
-//         window.addEventListener('resize', () => {
-//   location.reload();
-// });
-
-
-
-
-
-
-  
-   
-         
-        
-
-          
-
-
-
-
-</script>
-
+        });
+    </script>
 </html>
