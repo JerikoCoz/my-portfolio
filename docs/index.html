@@ -9,41 +9,18 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+    <body class="overflow-hidden">
         <div
             id="container-load"
-            class="bg-black w-full h-full flex justify-center items-center">
+            class="bg-black w-full h-full flex flex-col justify-center items-center">
             <h1 class="loadt text-white">LOADING...</h1>
         </div>
-        <!-- header -->
-        <div
-            id="header"
-            class="hidden z-50 top-0 left-0 relative w-full label h-14 bg-[#666686]">
-            <!-- mobile view -->
-            <div class="lg:hidden w-full flex justify-center items-center p-3">
-                <div>
-                    <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank">
-                        <i class="icon-circle fa fa-instagram text-gray-300 fa-2x"></i>
-                    </a>
-                    <a
-                        href="https://www.facebook.com/profile.php?id=100053874975545"
-                        class="w-0 m-0 p-0"
-                        target="_blank">
-                        <i class="icon-circle fa fa-facebook-official text-gray-300 m-0 p-0 fa-2x"></i>
-                    </a>
-                    <a
-                        href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"
-                        target="_blank">
-                        <i class="icon-circle fa fa-linkedin text-gray-300 fa-2x" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+
         <!-- assertive touch for mobile and tablet view -->
         <!-- assertive touch container -->
         <div
             id="assertive-container"
-            class="hidden z-[100] lg:hidden fixed right-[-70px] mt-3 flex-col w-[176px] items-center  justify-center ">
+            class="hidden z-[100] lg:hidden fixed right-[-70px] mt-11 flex-col w-[176px] items-center  justify-center ">
             <!-- icon container -->
             <div
                 id="icon-container"
@@ -85,7 +62,7 @@
                         class="overflow-auto scroll bg-[rgba(18,14,14,0.6)] z-50 absolute h-full w-full rounded-[30px] flex justify-center flex-col items-center">
                         <!-- categories -->
                         <a href="#about-me">
-                            <div class="categories-assertive">More about me</div>
+                            <div class="categories-assertive">about me</div>
                         </a>
                         <a href="#personal-project-mobile">
                             <div class="categories-assertive">Personal projects</div>
@@ -101,182 +78,185 @@
         <!-- main-->
         <main
             id="background-div"
-            class="justify-center items-center flex-col hidden z-[99] px-3 large:px-52 md:px-[100px] lg:px-0 w-full h-auto lg:h-[calc(100%-7rem)] overflow-x-hidden bg-[#454661] xl:bg-[url('second.WebP')] xl:bg-cover lg:bg-[url('second.WebP')] lg:bg-cover">
-            <!-- earth container -->
+            class="justify-center items-center flex-col z-[99] lg:px-0 large:px-52 md:px-[100px] w-full overflow-x-hidden bg-[#454661] lg:bg-gradient-to-b lg:from-[#020202] lg:to-[#0B0326]">
+            <!-- header section -->
             <div
-                id="earth-container"
-                class="earth-move top-[calc(100%-50%)]  hidden lg:flex absolute z-[2] ">
-                <div
-                    class='earthy h-[11.25rem] w-[11.25rem] rounded-full relative flex justify-center flex-col items-center'>
-                    <!-- contact container -->
-                    <div class=" opacity-1 cursor-default pointer-events-none" id="links-circle">
-                        <h3 class="text-white text-[1.688rem]">Contact</h3>
-                        <!-- icons container -->
-                        <div class="flex justify-center">
-                            <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank">
-                                <i class="icon-circle fa fa-instagram text-white fa-2x"></i>
-                            </a>
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100053874975545"
-                                target="_blank">
-                                <i
-                                    class="icon-circle fa fa-facebook-official text-blue-600 fa-2x"
-                                    aria-hidden="true"></i>
-                            </a>
-                            <a
-                                href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"
-                                target="_blank">
-                                <i class="icon-circle fa fa-linkedin text-blue-600 fa-2x" aria-hidden="true"></i>
-                            </a>
-                        </div>
+                id="header"
+                class="hidden z-[60] top-0 left-0 flex-col fixed w-full label lg:h-[6rem] bg-[#666686] lg:bg-[#020202]">
+                <!-- mobile/desktop view -->
+                <div class=" w-full flex justify-center items-center p-3">
+                    <!-- header1 -->
+                    <div id="header1" class="z-[100]">
+
+                        <a href="https://www.instagram.com/jjjjerikoooo/?next=%2F" target="_blank">
+                            <i class=" icon-circle fa fa-instagram text-gray-300 lg:text-[#BA8F8F] fa-2x"></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100053874975545"
+                            class="w-0 m-0 p-0 "
+                            target="_blank">
+                            <i
+                                class="icon-circle fa fa-facebook-official text-gray-300 lg:text-[#BA8F8F]  m-0 lg:px-[115px] fa-2x"></i>
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/jeriko-ronnel-coz-230600292/"
+                            target="_blank">
+                            <i
+                                class="icon-circle fa fa-linkedin text-gray-300 lg:text-[#BA8F8F] fa-2x"
+                                aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- categories -->
-                <div class='links font-inika text-[1.5rem]'>
-                    <h3 class='buttons ml-[1rem] font-thin underline' onclick="clicks(event)">
-                        <a href=""></a>More about me
-                    </h3>
-                    <h3 class='buttons ml-[1rem] font-thin' onclick="clicks(event)">
-                        <a href=""></a>Personal Project
-                    </h3>
-                    <h3 class="buttons ml-[1rem] font-thin" onclick="clicks(event)">
-                        <a href=""></a>experience
-                    </h3>
+                <!-- header2 -->
+                <div id="header2" class="hidden lg:flex justify-center z-50">
+                    <h1>
+                        <a class="header2-nav click-nav2" href="#home">Home</a>
+                    </h1>
+                    <h1>
+                        <a class="header2-nav" href="#about-me">About me</a>
+                    </h1>
+                    <h1>
+                        <a class="header2-nav" href="#personal-project-mobile">Projects</a>
+                    </h1>
+                    <h1>
+                        <a class="header2-nav" href="#experience">Experience</a>
+                    </h1>
+                    <h1>
+                        <a
+                            class="header2-nav text-white"
+                            href="Jeriko Ronnel S. Coz.pdf"
+                            target="_blank">Resume</a>
+                    </h1>
+
                 </div>
-                <!-- end of earth container -->
             </div>
             <!-- categories contents container -->
             <div
                 id="catergories-contents-container"
-                class="lg:flex opacity-100 lg:opacity-1  top-0 w-full h-full relative">
+                class="pt-[3rem] lg:pt-0 lg:flex  px-3 flex-col opacity-100 lg:opacity-1  justify-center items-center w-full h-auto relative">
+
+                <!-- first landing -->
+                <!-- desktop -->
+                <div id="home" class="flex justify-center items-center lg:h-[100vh] w-full">
+                    <img
+                        id="home-image"
+                        src="jeriko.WebP"
+                        class="lg:block hidden move-image opacity-1 relative h-[25rem] w-[19rem]"
+                        alt="Jeriko Ronnel Coz">
+                    <div class="pl-[71px] hidden  lg:flex flex-col justify-center items-center">
+                        <h1
+                            id="home-text"
+                            class="blink-text font-istok text-[2rem] font-bold text-[#45A4D6]"></h1>
+                        <h1
+                            id="home-text2"
+                            class=" w-[350px] text-wrap font-poppins text-[#c3b5b5] font-thin text-[1.5rem]"></h1>
+                    </div>
+                    <!-- mobile -->
+                    <div class="flex lg:hidden flex-col py-8 justify-center items-center">
+                        <img
+                            loading="lazy"
+                            src="Frame 148.WebP"
+                            alt="jeriko"
+                            class="w-[4.7rem] h-[4.7rem]"/>
+                        <h1 class=" font-istok text-[1.5rem] font-bold text-white text-center">JERIKO RONNEL S. COZ</h1>
+                        <h1
+                            class=" w-full text-wrap font-poppins text-white font-thin text-center text-[1rem]">
+                            I am a BS Computer Science graduate with skills in both front-end and back-end
+                            development.
+                        </h1>
+                    </div>
+                </div>
                 <!-- more about me -->
                 <div
                     id="about-me"
-                    class="lg:flex py-2 opacity-100 lg:opacity-1 categories z-0  text-white w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-shrink-1 flex-col justify-center items-center">
-                    <h3 class="lg:hidden text-[1.5rem]">More about me</h3>
-                    <img
-                        loading="lazy"
-                        src="Frame 148.WebP"
-                        alt=""
-                        class="w-[4.688rem] h-[4.563rem] md:w-[6rem] md:h-[6rem] lg:w-auto lg:h-auto"/>
-                    <h3 class="text-[1rem] lg:text-[1rem]">STI ORTIGAS-CAINTA</h3>
-                    <h3 class="text-[1rem] lg:text-[1rem]">Graduate at July 26, 2024</h3>
-                    <h3 class="text-[1rem] lg:text-[1rem]">Look at my resume for more info:
-                        <a target="_blank" href="Jeriko Ronnel S. Coz.pdf">click here</a>
-                    </h3>
-                    <div
-                        class="flex lg:overflow-scroll lg:overflow-x-hidden lg:overflow-y-hidden p-8 flex-col">
-                        <h3 class="text-[1rem] lg:text-[1.563rem] font-thin">Good day! I am a BS
-                            Computer Science graduate from STI Ortigas-Cainta, with skills in both front-end
-                            and back-end development. While I lack formal work experience, I’ve honed my
-                            abilities through academic projects and personal initiatives. I can work as a
-                            front-end developer using Tailwind CSS for responsive designs or as a back-end
-                            developer handling databases, APIs, and server-side logic. My experience in both
-                            areas enables me to understand the full development process and collaborate
-                            effectively with teams.
+                    class="py-2 lg:py-[100px] opacity-100 lg:opacity-1 categories z-0  text-white w-[79rem.188] lg:w-auto right-0 flex flex-shrink-1 flex-col justify-center items-center">
+                    <h3
+                        class="scroll-effect relative  right-[500px] opacity-0 text-[1.5rem] lg:font-poppins lg:text-left lg:w-full lg:text-[3rem] lg:text-[#0E7904]">about
+                        <span class="text-bl lg:text-gray-300">me</span></h3>
+                    <div class="lg:hidden flex justify-center items-center flex-col">
+                        <h3 class="text-[1rem] lg:text-[1rem] text-center">STI ORTIGAS-CAINTA</h3>
+                        <h3 class="text-[1rem] lg:text-[1rem] text-center">Graduate at July 26, 2024</h3>
+                        <h3 class="text-[1rem] lg:text-[1rem] text-center">Look at my resume for more info:
+                            <a target="_blank" href="Jeriko Ronnel S. Coz.pdf">click here</a>
                         </h3>
-                        <br>
-                        <br>
-                        <h1 class="text-2xl lg:text-3xl text-center">language:</h1>
-                        <br>
-                        <div class="flex-wrap flex">
-                            <!-- card1 -->
-                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="java.WebP" alt="" class="w-full h-full">
-                            </div>
-                            <!-- card2 -->
-                            <div class="w-[11.125rem] flex-grow h-[3.188rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="python-logo.WebP" alt="" class="w-full h-full">
-                            </div>
-                            <!-- card3 -->
-                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="html.WebP" alt="" class="w-full h-full">
-                            </div>
-                            <!-- card4 -->
-                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="css.WebP" alt="" class="w-full h-full">
-                            </div>
-                            <!-- card5 -->
-                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="js.WebP" alt="" class="w-full h-full">
-                            </div>
-                            <!-- card6 -->
-                            <div class="w-[5rem] h-[4.688rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="php.WebP" alt="" class="w-full h-full">
-                            </div>
-                            <!-- card7 -->
-                            <div class="w-[11.125rem] h-[3.188rem] lg:h-24 lg:w-24">
-                                <img loading="lazy" src="tailwind.WebP" alt="" class="w-full h-full">
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <!-- personal-project -->
-                <div
-                    id="personal-project"
-                    class="hidden lg:hidden opacity-0 categories z-0 text-white h-full max-w-[60%] static lg:absolute right-0 flex-col justify-center items-center">
-                    <h1 class=" text-4xl">Here is my figma link:
-                        <a
-                            class="pointer-events-auto cursor-pointer underline font-thin"
-                            target="_blank"
-                            href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a>
-                    </h1>
-                    <!-- card projects -->
                     <div
-                        class="flex flex-col overflow-scroll overflow-x-hidden p-8 w-[100%] h-[80%]">
-                        <!-- card1 -->
-                        <div class="mb-3">
-                            <img loading="lazy" src="amazon.WebP" class=" w-full h-full" alt="">
+                        class="scroll-effect opacity-0 flex w-full lg:overflow-x-hidden lg:overflow-y-hidden p-8 flex-col">
+                        <h3
+                            class="text-[1rem] lg:text-[1.5rem] lg:w-[79.063rem] text-white font-thin  text-left lg:text-[#C5C3C3] w-full">I
+                            bring a strong foundation of skills developed through academic projects and
+                            personal initiatives. My passion for learning and problem-solving drives me to
+                            excel in any environment.
+                            <br>
+                            <br>
+                            Languages: Java, Python, PHP, HTML, CSS, TAILWIND CSS, JAVASCRIPT & MYSQL
+                            <br><br>
+                            Other Technologies: GITHUB, FIGMA & CANVA
+                        </h3>
+                    </div>
+
+                    <!-- History -->
+                    <div
+                        class="scroll-effect opacity-0 flex-col md:flex-row flex justify-center items-center w-full py-[20px] lg:w-[76.25rem] lg:h-[26.063rem] lg:pt-[60px]">
+                        <img
+                            src="sti.WebP"
+                            class="sm:w-[250px] sm:h-[150px] md:w-[300px] md:h-[200px] lg:w-[30.375rem] lg:h-[20.313rem]"
+                            alt="STI">
+                        <div class="lg:pl-[100px] flex justify-center items-center">
+                            <h1
+                                class="text-[15px] md:text-[20px] md:pl-[10px] lg:text-[35px] lg:text-[#C5C3C3] font-light">Graduated from STI-Ortigas Cainta
+                                <br>
+                                (July 2024). At STI, I
+                                <br>
+                                learned the basic concepts of
+                                <br>
+                                programming, which helped me grow.</h1>
                         </div>
-                        <!-- card2 -->
-                        <div class="mb-3">
-                            <img loading="lazy" src="chocolate.WebP" class=" w-full h-full" alt="">
-                        </div>
-                        <!-- card3 -->
-                        <div class="mb-3">
-                            <img loading="lazy" src="library.WebP" class=" w-full h-full" alt="">
-                        </div>
-                        <!-- card4 -->
-                        <div class="mb-3">
-                            <img loading="lazy" src="manga.WebP" class=" w-full h-full" alt="">
-                        </div>
+
                     </div>
                 </div>
-                <!-- mobile view - projects -->
-                <div
-                    id="personal-project-mobile"
-                    class="lg:hidden flex flex-col items-center px-1">
-                    <h3 class="lg:hidden text-[1rem] text-center text-white">Personal projects</h3>
-                    <h1 class="lg:hidden text-[1.2rem] text-white font-thin text-4xl">Here is my figma link:
+
+                <!-- personal projects -->
+                <div id="personal-project-mobile" class=" flex flex-col items-center px-1">
+                    <h3
+                        class="scroll-effect right-[-1500px] opacity-0 relative text-[1.5rem] text-center text-white lg:text-3xl">Personal
+                        <span class="text-blue-500">projects</span></h3>
+                    <h1
+                        class="scroll-effect opacity-0 text-[1rem] text-white font-thin lg:text-3xl">Here is my figma link:
                         <a
                             class="pointer-events-auto cursor-pointer"
                             target="_blank"
                             href="https://www.figma.com/design/iUu6XVW37JWIN0h3tajWol/Untitled?node-id=492-2&node-type=frame&t=kR55IGoPhc1GRgVd-0">click here</a>
                     </h1>
                     <!-- project container -->
-                    <div id="project-container" class=" relative inline-block ">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="2em"
-                            height="2em"
-                            id="prevs"
-                            class="absolute z-50 h-full flex items-center"
-                            viewbox="0 0 20 20">
-                            <path fill="currentcolor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/>
-                        </svg>
+                    <div
+                        id="project-container"
+                        class="scroll-effect opacity-0 relative flex justify-center items-center">
+
                         <!-- current view container -->
                         <div
                             id="current-view"
-                            class="z-50 flex flex-shrink-1 max-w-[420px] max-h-[350px] bg-black overflow-hidden">
+                            class=" flex flex-shrink-1 lg:m-10 max-w-[55.688rem] max-h-[35.25rem] relative bg-black overflow-hidden">
+
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2em"
+                                height="2em"
+                                id="prevs"
+                                class="absolute z-50 h-full flex items-center"
+                                viewbox="0 0 20 20">
+                                <path fill="currentcolor" d="m4 10l9 9l1.4-1.5L7 10l7.4-7.5L13 1z"/>
+                            </svg>
                             <!-- card container -->
                             <div id="card-container" class="relative flex right-0">
                                 <!-- card1 -->
                                 <div class="w-full h-full flex-shrink-0 card">
-                                    <img loading="lazy" class="w-full h-full" src="amazon.WebP" alt="">
+                                    <img loading="lazy" class="w-full h-full" src="chocolate.WebP" alt="">
                                 </div>
                                 <!-- card2 -->
                                 <div class="w-full h-full flex-shrink-0 card">
-                                    <img loading="lazy" class="w-full h-full" src="chocolate.WebP" alt="">
+                                    <img loading="lazy" class="w-full h-full" src="amazon.WebP" alt="">
                                 </div>
                                 <!-- card3 -->
                                 <div class="w-full h-full flex-shrink-0 card">
@@ -287,45 +267,140 @@
                                     <img loading="lazy" class="w-full h-full" src="manga.WebP" alt="">
                                 </div>
                             </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="2em"
+                                height="2em"
+                                viewbox="0 0 20 20"
+                                id="next"
+                                class="top-0 absolute z-50 h-full flex items-center right-0">
+                                <path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/>
+                            </svg>
                         </div>
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="2em"
-                            height="2em"
-                            viewbox="0 0 20 20"
-                            id="next"
-                            class="top-0 absolute z-50 h-full flex items-center right-0">
-                            <path fill="currentColor" d="M7 1L5.6 2.5L13 10l-7.4 7.5L7 19l9-9z"/>
-                        </svg>
+
                     </div>
                 </div>
                 <!-- experience -->
                 <div
                     id="experience"
-                    class="lg:hidden py-5 lg:py-0 z-50 categories opacity-1 lg:opacity-0 text-white h-full w-full lg:max-w-[60%] static lg:absolute right-0 flex flex-col justify-center items-center">
-                    <h3 class="lg:hidden text-[1rem]">Experience</h3>
-                    <h3 class="text-center text-[1rem] lg:text-[1.563rem] font-thin p-8">
-                        As of now, I don’t have any formal work experience, but I have previously worked
-                        as a front-end web development intern where I gained hands-on experience with
-                        Tailwind CSS. During this internship, I developed a strong foundation in
-                        building responsive and visually appealing websites, and I had the opportunity
-                        to enhance my skills in HTML, CSS, and JavaScript.</h3>
+                    class=" py-5 lg:py-0 z-50 categories opacity-1 text-white h-auto w-full lg:max-w-[60%] static right-0 flex flex-col justify-center items-center">
+                    <h3
+                        class="scroll-effect opacity-0 right-[-700px] w-full lg:text-[48px] md:text-[30px] text-center relative text-white lg:text-right text-[1rem] lg:text-red-600">Experience</h3>
+                    <div
+                        class="scroll-effect opacity-0 flex flex-col md:flex-row justify-center items-center">
+                        <img
+                            src="UIP.WebP"
+                            loading="lazy"
+                            class="w-[117px] h-[115px] md:w-[200px] md:h-[215px] lg:h-[23.875rem] lg:w-[30.188rem]"
+                            alt="UIP">
+                        <div class=" flex flex-col max-w-[36.75rem]">
+                            <h3
+                                class="font-poppins"
+                                font-thin="font-thin"
+                                text-[14px]="text-[14px]"
+                                text-white="text-white"
+                                text-left="text-left"
+                                lg:text-[20px]="lg:text-[20px]"
+                                lg:text-gray-400="lg:text-gray-400"
+                                ">
+
+                                <span class="text-gray-200">
+
+                                    UIP Inc. April 2024 - May 2024 Front-end web developer Intern
+                                </span>
+                                <br><br>
+                                Here at UIP, I learned how to
+                                <br>
+                                effectively use Tailwind CSS to create
+                                <br>
+                                responsive and visually appealing
+                                <br>
+                                web designs. Additionally, I
+                                <br>
+                                enhanced my programming skills by
+                                <br>
+                                working on real-world projects,<br>
+                                sharpening my abilities in HTML, CSS, and JavaScript
+
+                            </h3>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="w-full h-[30px] lg:h-[50px] bg-gray-700 relative"></div>
         </main>
-        <!-- footer -->
-        <div
-            id="footer"
-            class="hidden z-50 bottom-0 left-0 relative w-full label h-14 bg-[#666686]"></div>
+
     </body>
-    <script src="landing-page.js" defer></script>
-    <script src="projects-mobile-view.js" defer></script>
-    <script src="assertive-touch.js" defer></script>
-    <script defer>
+    <script src="projects-mobile-view.js" defer="defer"></script>
+    <script src="assertive-touch.js" defer="defer"></script>
+    <script defer="defer">
         let body = document.body;
+        let homeText = document.getElementById("home-text");
+        let homeText2 = document.getElementById("home-text2");
+        let homeImage = document.getElementById("home-image");
+        let wid = window.innerWidth;
+        let countText1 = 0;
+        let countText2 = 0;
+        let header2Nav = Array.from(document.getElementsByClassName("header2-nav"));
+
+        header2Nav.forEach(element => {
+            element.addEventListener("click", (e) => {
+                header2Nav.forEach(el => {
+                    el
+                        .classList
+                        .remove("click-nav2");
+                });
+                element
+                    .classList
+                    .add("click-nav2");
+            });
+        });
+
+        let text1 = 'JERIKO RONNEL S. COZ';
+        let text2 = ' I am a BS Computer Science graduate with skills in both front-end and back-en' +
+                'd development. ';
+
+        setInterval(() => {
+            homeText.innerHTML += text1.charAt(countText1);
+            countText1++;
+            if (countText1 == text1.length - 1) {
+                clearInterval();
+                setInterval(() => {
+                    homeText2.innerHTML += text2.charAt(countText2);
+                    countText2++;
+                    if (countText2 == text2.length - 1) {
+                        clearInterval();
+
+                    }
+                }, 50)
+
+            }
+        }, 50);
+
         const background = document.getElementById("background-div");
 
-        let wid = window.innerWidth;
+        let scrollEffect = document.getElementsByClassName("scroll-effect");
+        let windowSize = window.innerHeight - 50;
+
+        if (wid > 1024) {
+            background.addEventListener("scroll", () => {
+                for (let i = 0; i < scrollEffect.length; i++) {
+                    let topLoc = scrollEffect[i]
+                        .getBoundingClientRect()
+                        .top;
+                    console.log(scrollEffect[i]);
+                    if (topLoc < windowSize && topLoc > 40) {
+                        scrollEffect[i]
+                            .classList
+                            .add("scroll-effect-right");
+                    } else if (topLoc > windowSize || topLoc < 0) {
+                        scrollEffect[i]
+                            .classList
+                            .remove("scroll-effect-right");
+                    }
+                }
+            })
+        }
 
         window.addEventListener("resize", () => {
             if (wid > window.innerWidth || wid < window.innerWidth) {
@@ -346,13 +421,6 @@
                 .add("assertive-mobile");
             document
                 .getElementById("header")
-                .classList
-                .add("flex-dislpay");
-            document
-                .getElementById("footer")
-                .classList
-                .add("flex-dislpay");
-            background
                 .classList
                 .add("flex-dislpay");
 

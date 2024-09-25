@@ -2,6 +2,7 @@ const next = document.getElementById("next"),
     prev = document.getElementById("prevs"),
     cardContainer = document.getElementById("card-container"),
     projectContainer = document.getElementById("project-container"),
+    curentView = document.getElementById("current-view"),
     card = document.getElementsByClassName("card");
 let lefts = 0;
 prev.style.color = lefts == 0
@@ -25,6 +26,7 @@ function prevs() {
 }
 
 projectContainer.addEventListener("touchstart", (e) => {
+    e.preventDefault();
     let pos = e
         .touches[0]
         .pageX;

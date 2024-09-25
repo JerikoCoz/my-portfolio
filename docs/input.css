@@ -13,19 +13,40 @@ body, html{
 #header{
   top: 0px;
 }
+#header1:not(:last-child){
+  @apply pr-[115px] mx-0;
+}
+#header2 h1:not(:last-child){
+  @apply text-white pr-[50px];
+}
 
 #foot{
   bottom: 0px;
 }
 main{
   height: 100%;
+  scroll-behavior: smooth;
 }
+/* scroll effect */
+.scroll-effect-right{
+transition: 1s ease-in;
+opacity: 1;
+right: 0;
+}
+
+.scroll-effect-left{
+  transition: 1s;
+  }
+/* links */
 .links{
 
    display: flex;
    flex-direction: column;
    color: white;
    justify-content: center;  
+}
+.click-nav2{
+  @apply text-orange-500 underline;
 }
 
 .notcurrent{
@@ -90,7 +111,13 @@ color: gray;
   opacity: 1;
   z-index: 100;
 }
-
+.move-image{
+  animation: move 1.7s 1;
+}
+@keyframes move{
+  from{right: -500px}
+  to{right: 0}
+}
 
 .earth-contents-out{
   transition: 1s ease-out;
@@ -102,12 +129,12 @@ color: gray;
 }
  
 /* Handle */
-::-webkit-scrollbar-thumb {
-  background: #695baa; 
+#background-div::-webkit-scrollbar-thumb {
+  background: #424243; 
     border-radius: 0.625rem;
 }
-::-webkit-scrollbar-track {
-  background: rgb(182, 17, 17); 
+#background-div::-webkit-scrollbar-track {
+  background: rgba(150, 109, 109, 0.193); 
   border: 1px solid black;
   border-radius: 0.625rem;
 
