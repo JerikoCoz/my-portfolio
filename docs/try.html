@@ -1,0 +1,114 @@
+<head>
+    <title>programmer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel='stylesheet' ">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="flex justify-center items-center bg-gray-700">
+    <div id="" class = "w-[1524px] overflow-hidden flex h-auto">
+    <div id="parent" class="right-0 h-[350px] items-end w-full bg-orange-50  flex relative">
+    
+          <!-- card4 -->
+          <div class="box 0  flex-shrink-0 absolute  h-[200px]  w-[340px] bottom-[20px] right-[1024px]">
+            <div class="blur-effect h-full w-full bg-black z-[100] backdrop-blur-sm  absolute opacity-[.75]"></div>
+            <img loading="lazy" class="w-full h-full" src="manga.WebP" alt="">
+        </div>
+
+        <!-- add cards here and add 1 for each card in for loop in js -->
+          <!-- card4 -->
+          <div class="box  0  flex-shrink-0 absolute  h-[200px]  w-[340px] bottom-[20px] right-[1024px]">
+            <div class="blur-effect h-full w-full bg-black z-[100] backdrop-blur-sm  absolute opacity-[.75]"></div>
+            <img loading="lazy" class="w-full h-full" src="manga.WebP" alt="">
+        </div>
+        
+       
+           <!-- card1 -->
+           <div class="box 1 flex-shrink-0 absolute bottom-[20px] h-[200px] w-[340px] right-[1024px]">
+            <div class="blur-effect h-full w-full bg-black z-[100] backdrop-blur-sm  absolute opacity-[.75]"></div>
+            <img loading="lazy" class="w-full h-full" src="chocolate.WebP" alt="">
+        </div>
+       
+        <!-- card2 -->
+        <div class="box 2 flex-shrink-0 absolute h-[300px] w-[500px] right-[512px]">
+            <div class="blur-effect h-full w-full bg-black z-[100] backdrop-blur-sm  absolute opacity-[0]"></div>
+            <img loading="lazy" class="w-full h-full" src="amazon.WebP" alt="">
+        </div>
+        <!-- card3 --> 
+        <div class="box 3 flex-shrink-0 absolute bottom-[20px] z-0 mr-[160px] right-0 h-[200px] w-[340px]">
+            <div class="blur-effect h-full w-full bg-black z-[100] backdrop-blur-sm  absolute opacity-[.75]"></div>
+            <img loading="lazy" class="w-full h-full" src="library.WebP" alt="">
+        </div>
+         
+    </div>
+<!--        
+<div class="box  flex-shrink-0 h-[300px] w-[500px] text-white bg-black">f</div>
+<div class="box  flex-shrink-0 h-[300px] w-[500px]  z-50  text-white bg-red-500">s</div>
+<div class="box  flex-shrink-0 h-[300px] w-[500px] bg-green-800  text-white">c</div>
+
+<div class="box  flex-shrink-0 h-[300px] w-[500px]  z-50  text-white bg-red-400">ds</div>
+<div class="box  flex-shrink-0 h-[300px] w-[500px] bg-green-500  text-white">cd</div>
+
+<div class="box  flex-shrink-0 h-[300px] w-[500px]  z-50  text-white bg-red-100">s</div>
+<div class="box  flex-shrink-0 h-[300px] w-[500px] bg-green-600  text-white">csa</div>
+
+<div class="box  flex-shrink-0 h-[300px] w-[500px]  z-50  text-white bg-red-600">s</div>
+<div class="box  flex-shrink-0 h-[300px] w-[500px] bg-green-700  text-white">csdsa</div> -->
+
+</div>
+
+
+
+    <script>
+        let parent = document.getElementById("parent");
+        let box = Array.from(document.getElementsByClassName("box"));
+        let curtain = Array.from(document.getElementsByClassName("blur-effect"));
+        
+      
+document.getElementById("parent").addEventListener("click", ()=>{
+    let left = 1024;
+      for(let i = 2; i < box.length; i++){
+        let current = left-512;
+        
+        box[0].style.zIndex = 10;
+         box[0].style.zIndex = 10;
+        if(left == 0){
+            box[i].style.right = 1024+"px";
+            box[i].style.zIndex = 9;
+            box[i].style.marginRight = 0+"px";
+            let boxes = box.pop();
+            box.unshift(boxes);
+            let curtains = curtain.pop();
+            curtain.unshift(curtains);
+            
+        }else{
+                if(current == 512){
+                    box[i].style.width = 500 + "px";
+                    box[i].style.height = 300 + "px";
+                    box[i].style.bottom = 0;
+                    box[i].style.zIndex = 100;
+                    curtain[i].style.opacity = 0;
+                    console.log(curtain[i])
+                    
+                }else{
+                    box[i].style.width = 340 + "px";
+                    box[i].style.height = 200 + "px";
+                    box[i].style.bottom = 20+"px";
+                    curtain[i].style.opacity = 0.75;
+                }
+                if(current == 0){
+                    box[i].style.marginRight = 160 + "px";
+                    box[i].style.zIndex = 8;
+                }
+                
+            box[i].style.right = (current +"px");
+        }
+        left = current;
+    }
+      });
+
+    </script>
+</body>
+</html>
