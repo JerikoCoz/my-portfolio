@@ -120,7 +120,7 @@ activePosition();
   touchtAssertive();
  }, { passive: true })
  assertiveContainer.addEventListener("touchend", touchtAssertive, { passive: true });
- assertiveContainer.addEventListener("touchmove", touchtmoveAssertive);
+ assertiveContainer.addEventListener("touchmove", touchtmoveAssertive,{ passive: false });
    backgrounds.addEventListener("touchend", touchtMain, { passive: true });
 
 

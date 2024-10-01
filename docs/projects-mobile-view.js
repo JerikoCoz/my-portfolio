@@ -84,7 +84,7 @@ if (window.innerWidth > 1024) {
             prevs();
         }
 
-    })
+    },{ passive: false })
 }
 next.addEventListener("click", nextt, { passive: true });
 prev.addEventListener("click", prevs, { passive: true });
