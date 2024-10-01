@@ -59,10 +59,10 @@ function touchtMain(){
     }
     
     if((x + 90) > (window.innerWidth/2)){
-      setTimeout(() => {
+   
       assertiveContainer.style.right = window.innerWidth - assertiveContainer.offsetWidth + 65 + "px";
       position = "left";
-    }, 500);
+
        ic.classList.add("left-position");
         burger.classList.add("left-position-margin");
         burger.classList.remove("ml-4");
