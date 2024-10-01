@@ -96,7 +96,6 @@ function touchtMain(){
   status = true;
 }
 function touchtmoveAssertive(e){
-  e.preventDefault();
   status = false;
    x = window.innerWidth - e.touches[0].pageX - 90;
    y =  e.touches[0].screenY - 190;
@@ -106,10 +105,10 @@ function touchtmoveAssertive(e){
   activeBlur();
   ismove = "yes";
   if(ismove == "yes"){
-    assertiveContainer.removeEventListener("touchend", touchtAssertive);
+    assertiveContainer.removeEventListener("touchend", touchtAssertive, { passive: true });
     assertiveContainer.addEventListener("touchend", ()=>{
-      assertiveContainer.addEventListener("touchend", addev);
-    })
+      assertiveContainer.addEventListener("touchend", addev, { passive: true });
+    }, { passive: true })
   }
 }
 function addev(){
@@ -119,10 +118,10 @@ activePosition();
  assertiveContainer.addEventListener("touchcancel", ()=>{
   position = "right";
   touchtAssertive();
- })
- assertiveContainer.addEventListener("touchend", touchtAssertive);
+ }, { passive: true })
+ assertiveContainer.addEventListener("touchend", touchtAssertive, { passive: true });
  assertiveContainer.addEventListener("touchmove", touchtmoveAssertive);
-   backgrounds.addEventListener("touchend", touchtMain);
+   backgrounds.addEventListener("touchend", touchtMain, { passive: true });
 
 
   

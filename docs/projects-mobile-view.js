@@ -49,7 +49,7 @@ if (window.innerWidth > 1024) {
                 }
                 left = current;
             }
-        });
+        }, { passive: true });
 
 } else {
     let lefts = 0;
@@ -86,5 +86,5 @@ if (window.innerWidth > 1024) {
 
     })
 }
-next.addEventListener("click", nextt);
-prev.addEventListener("click", prevs);
+next.addEventListener("click", nextt, { passive: true });
+prev.addEventListener("click", prevs, { passive: true });
