@@ -702,6 +702,10 @@ video {
   height: 100%;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
 .max-h-\[35\.25rem\] {
   max-height: 35.25rem;
 }
@@ -760,6 +764,10 @@ video {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[250px\] {
+  width: 250px;
 }
 
 .max-w-\[183px\] {
