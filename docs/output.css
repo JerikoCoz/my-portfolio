@@ -630,6 +630,10 @@ video {
   top: -84px;
 }
 
+.right-\[50\%\] {
+  right: 50%;
+}
+
 .z-0 {
   z-index: 0;
 }
