@@ -16,9 +16,18 @@ body, html{
 #header1:not(:last-child){
   @apply pr-[115px] mx-0;
 }
+
 #header2 h1:not(:last-child){
   @apply text-white pr-[50px];
 }
+.svg-group3{
+  @apply lg:hover:stroke-[#6d9763] lg:hover:fill-[#6d9763];
+}
+svg {
+  width: 30px;
+  height: 30px; 
+}
+
 
 #foot{
   bottom: 0px;
@@ -85,10 +94,7 @@ color: gray;
 .earthy{
   border-right: 2px solid rgb(182, 163, 163);
 }
-.icon-circle{
-  margin-left: 0.188rem;
-  margin-right: 0.188rem;
-}
+
 .links-circle{
    opacity: 1;
   transition: 2s ease-in;
