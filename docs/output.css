@@ -634,6 +634,10 @@ video {
   right: 50%;
 }
 
+.right-\[0\] {
+  right: 0;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1606,6 +1610,10 @@ main{
 
   .lg\:right-\[calc\(50\%-250px\)\] {
     right: calc(50% - 250px);
+  }
+
+  .lg\:right-\[50\%\] {
+    right: 50%;
   }
 
   .lg\:z-0 {
