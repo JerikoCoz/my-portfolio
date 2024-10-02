@@ -678,10 +678,6 @@ video {
   height: 313px;
 }
 
-.h-\[323px\] {
-  height: 323px;
-}
-
 .h-\[4\.7rem\] {
   height: 4.7rem;
 }
@@ -1249,11 +1245,11 @@ svg{
 
 @keyframes move{
   from{
-    right:-500px
+    transform: translateX(500px)
   }
 
   to{
-    right:0
+    transform: translateX(0)
   }
 }
 
@@ -1272,7 +1268,7 @@ svg{
 
 @keyframes rotates{
   to{
-    rotate:360deg
+    transform: rotate(360deg)
   }
 }
 
@@ -1548,10 +1544,6 @@ svg{
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-\[100vh\] {
-    height: 100vh;
   }
 
   .lg\:h-\[200px\] {
