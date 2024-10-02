@@ -602,6 +602,14 @@ video {
   left: 50px;
 }
 
+.right-\[0\] {
+  right: 0;
+}
+
+.right-\[20px\] {
+  right: 20px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -1531,6 +1539,26 @@ svg{
 
   .lg\:right-\[calc\(50\%-250px\)\] {
     right: calc(50% - 250px);
+  }
+
+  .lg\:right-\[30px\] {
+    right: 30px;
+  }
+
+  .lg\:right-\[200px\] {
+    right: 200px;
+  }
+
+  .lg\:right-\[50px\] {
+    right: 50px;
+  }
+
+  .lg\:right-\[5px\] {
+    right: 5px;
+  }
+
+  .lg\:right-\[-50px\] {
+    right: -50px;
   }
 
   .lg\:z-0 {
