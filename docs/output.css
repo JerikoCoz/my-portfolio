@@ -710,6 +710,10 @@ video {
   max-height: 73px;
 }
 
+.min-h-\[323px\] {
+  min-height: 323px;
+}
+
 .w-\[117px\] {
   width: 117px;
 }
@@ -1584,6 +1588,10 @@ svg{
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:min-h-\[100vh\] {
+    min-height: 100vh;
   }
 
   .lg\:w-\[100\%\] {
