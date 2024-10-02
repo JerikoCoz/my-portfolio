@@ -14,6 +14,9 @@ body,html,main{height:100%}html,main{scroll-behavior:smooth}.flex-dislpay,.links
 .sti-container{
   clip-path: ellipse(330px 240px at 10% 50%);
 }
+.assertive-blur {
+  -webkit-backdrop-filter: blur(10px);
+}
 
 /* assertive position
 .left-assertive{
