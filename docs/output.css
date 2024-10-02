@@ -610,6 +610,14 @@ video {
   right: 20px;
 }
 
+.right-\[50px\] {
+  right: 50px;
+}
+
+.right-\[0px\] {
+  right: 0px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -640,6 +648,10 @@ video {
 
 .m-\[5px\] {
   margin: 5px;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .mb-2 {
@@ -1559,6 +1571,10 @@ svg{
 
   .lg\:right-\[-50px\] {
     right: -50px;
+  }
+
+  .lg\:right-\[0px\] {
+    right: 0px;
   }
 
   .lg\:z-0 {
