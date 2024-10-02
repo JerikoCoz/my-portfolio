@@ -27,8 +27,11 @@ body,html,main{height:100%}html,main{scroll-behavior:smooth}.flex-dislpay,.links
   transition: 1s ease-out;
  @apply lg:opacity-0;
 }
+.header2-nav{
+  @apply hover:text-orange-500;
+}
 .click-nav2{
-  @apply text-orange-500 underline;
+  @apply text-orange-500 underline font-extrabold;
 }
 .not-focus{
   @apply bg-black opacity-[.5];

@@ -15,12 +15,13 @@ if (window.innerWidth > 1024) {
             let left = 100;
             for (let i = 2; i < box.length; i++) {
                 let current = left - 50;
-                box[0].style.zIndex = 10;
+                box[0].style.zIndex = 9;
+                box[1].style.zIndex = 10;
                 box[0].style.display = "flex";
                 box[1].style.display = "flex";
                 if (left == 0) {
                     box[i].style.right = (cardContainer.offsetWidth) - (box[i].offsetWidth) + "px";
-                    box[i].style.zIndex = 9;
+                    box[i].style.zIndex = 8;
                     let boxes = box.pop();
                     box.unshift(boxes);
                     let curtains = curtain.pop();

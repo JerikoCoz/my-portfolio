@@ -646,8 +646,16 @@ video {
   z-index: 99;
 }
 
+.z-\[11\] {
+  z-index: 11;
+}
+
 .m-\[5px\] {
   margin: 5px;
+}
+
+.m-0 {
+  margin: 0px;
 }
 
 .mb-2 {
@@ -1439,7 +1447,13 @@ svg{
   }
 }
 
+.header2-nav:hover {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity));
+}
+
 .click-nav2 {
+  font-weight: 800;
   --tw-text-opacity: 1;
   color: rgb(249 115 22 / var(--tw-text-opacity));
   text-decoration-line: underline;
@@ -1650,6 +1664,10 @@ svg{
     height: 100%;
   }
 
+  .lg\:h-\[500px\] {
+    height: 500px;
+  }
+
   .lg\:min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -1684,6 +1702,10 @@ svg{
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[700px\] {
+    width: 700px;
   }
 
   .lg\:items-end {
