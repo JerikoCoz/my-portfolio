@@ -704,6 +704,10 @@ video {
   height: 100px;
 }
 
+.h-\[10px\] {
+  height: 10px;
+}
+
 .h-\[115px\] {
   height: 115px;
 }
@@ -716,8 +720,16 @@ video {
   height: 200px;
 }
 
+.h-\[22\.5px\] {
+  height: 22.5px;
+}
+
 .h-\[26px\] {
   height: 26px;
+}
+
+.h-\[3\.75px\] {
+  height: 3.75px;
 }
 
 .h-\[30px\] {
@@ -748,6 +760,14 @@ video {
   height: 100%;
 }
 
+.h-\[48\] {
+  height: 48;
+}
+
+.h-\[48px\] {
+  height: 48px;
+}
+
 .max-h-\[73px\] {
   max-height: 73px;
 }
@@ -762,6 +782,10 @@ video {
 
 .w-\[100px\] {
   width: 100px;
+}
+
+.w-\[10px\] {
+  width: 10px;
 }
 
 .w-\[117px\] {
@@ -780,12 +804,24 @@ video {
   width: 20px;
 }
 
+.w-\[22\.5px\] {
+  width: 22.5px;
+}
+
 .w-\[25px\] {
   width: 25px;
 }
 
+.w-\[3\.75px\] {
+  width: 3.75px;
+}
+
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .w-\[313px\] {
@@ -818,6 +854,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-\[48px\] {
+  width: 48px;
 }
 
 .max-w-\[183px\] {
@@ -1412,13 +1456,12 @@ svg{
   animation: load 1s linear infinite;
 }
 
-.line-md--facebook {
+.line-md--facebook::after {
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23D1D5DB' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Cpath stroke-dasharray='24' stroke-dashoffset='24' d='M17 4l-2 0c-2.5 0 -4 1.5 -4 4v12'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.4s' values='24;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M8 12h7'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.5s' dur='0.2s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  width: 48px;
+  height: 48px;
+  vertical-align: -0.125em;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23D1D5DB' stroke-linecap='round' stroke-linejoin='round' stroke-width='4'%3E%3Cpath stroke-dasharray='24' stroke-dashoffset='24' d='M17 4l-2 0c-2.5 0 -4 1.5 -4 4v12'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' dur='0.4s' values='24;0'/%3E%3C/path%3E%3Cpath stroke-dasharray='8' stroke-dashoffset='8' d='M8 12h7'%3E%3Canimate fill='freeze' attributeName='stroke-dashoffset' begin='0.5s' dur='0.2s' values='8;0'/%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
 @keyframes load {
