@@ -1734,6 +1734,10 @@ svg{
   .sm\:w-\[260px\] {
     width: 260px;
   }
+
+  .sm\:w-\[320px\] {
+    width: 320px;
+  }
 }
 
 @media (min-width: 768px) {
