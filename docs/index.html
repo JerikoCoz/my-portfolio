@@ -203,7 +203,7 @@
             </div>
             </div>
             <div class=" transition ease-in-out duration-1000 opacity-100 flex-col md:flex-row flex justify-center items-center w-full py-[20px] lg:w-full lg:h-[26.063rem]">
-            <div class="flex scroll-effect rounded-full z-[50] overflow-hidden transition duration-1000">
+            <div id = "sti-pieces" class="flex scroll-effect rounded-full z-[50] overflow-hidden transition duration-1000">
                 <img src="sti1.WebP" alt="sti1" class="sti-pic relative lg:translate-x-[-100px]  transition duration-[6000ms] sm:h-[150px] md:h-[150px] lg:h-[280px]">
             <img src="sti2.WebP" loading="lazy" alt="sti2" class="sti-pic relative lg:translate-x-[-200px]  transition duration-[5000ms] sm:h-[150px] md:h-[150px] lg:h-[280px]">
             <img src="sti3.WebP" loading="lazy" alt="sti3" class="sti-pic relative lg:translate-x-[-300px]   transition duration-[4000ms] sm:h-[150px] md:h-[150px] lg:h-[280px]">
@@ -319,8 +319,10 @@
     typing();
     let stis = Array.from(document.getElementsByClassName("sti-pic"));
     const background = document.getElementById("background-div");
+    let stiPieces = document.getElementById("sti-pieces");
     let scrollEffect = document.getElementsByClassName("scroll-effect"),
         windowSize = window.innerHeight - 100;
+       
 
     wid > 1024 &&
         background.addEventListener(
@@ -328,26 +330,57 @@
             () => {
                 for (let e = 0; e < scrollEffect.length; e++) {
                     let t = scrollEffect[e].getBoundingClientRect().top;
-                    t < windowSize && t > 40 ? // if true
-                        (scrollEffect[e].classList.add("scroll-effect-right", "lg:opacity-100"),
-                            runType && (runType = false),
-                            (scrollEffect[e].style.transform = "translateX(0)"),
-                            cardLanguage.forEach((e, t) => {
-                                setTimeout(() => {
-                                    e.classList.add("clip");
-                                }, 700 * t);
-    
-    
-                                setTimeout(() => {
-                                    for (let i = stis.length - 1; i >= 0; i--) {
-                                        stis[i].style.transform = "translateX(0)";
-                                    }
-                                }, 1000);
+                    let final = stiPieces.getBoundingClientRect().top;
+                    let bottom = stiPieces.getBoundingClientRect().bottom;
+// Check if the element is within the window's visible range
+if ( t < windowSize && t > 40) {
+    // If within the range, add classes and set transformation to 0
+    scrollEffect[e].classList.add("scroll-effect-right", "lg:opacity-100");
 
-                            })) : //else
-                        (t > windowSize || t < 0) && (scrollEffect[e].classList.remove("scroll-effect-right", "lg:opacity-100"), (runType = true), (scrollEffect[e].style.transform = ""));
-                 
-                   
+    if (runType) {
+        runType = false; // Disable runType after the first execution
+    }
+
+    scrollEffect[e].style.transform = "translateX(0)"; // Move to the original position
+
+    // Apply animations to cardLanguage elements
+    cardLanguage.forEach((element, index) => {
+        setTimeout(() => {
+            element.classList.add("clip"); // Add 'clip' class with delay
+        }, 700 * index); // Each element gets delayed by 700ms * index
+
+        // Move 'stis' elements to their original position with delay
+        if(t < windowSize && t > 0){
+
+            if(final < windowSize && bottom > 0 ){
+                setTimeout(() => {
+            for (let i = stis.length - 1; i >= 0; i--) {
+                stis[i].style.transform = "translateX(0)"; // Reset transform to 0
+            }
+        }, 500);
+        }
+      
+    }
+    });
+} else {
+    // If the element is out of bounds (above or below view)
+    if (t > windowSize || t < 0) {
+        scrollEffect[e].classList.remove("scroll-effect-right", "lg:opacity-100");
+        runType = true; // Re-enable runType for future scrolls
+
+        scrollEffect[e].style.transform = ""; // Clear transform value (reset to default)
+
+        if(final > windowSize || bottom < 0){
+            console.log(bottom)
+            for (let i = stis.length - 1; i >= 0; i--) {
+            stis[i].style.transform = "";
+        }
+        }
+      
+        
+    }
+}
+  
                         
                 }
             }, {

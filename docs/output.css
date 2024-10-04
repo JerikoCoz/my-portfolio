@@ -558,6 +558,10 @@ video {
   pointer-events: auto;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .static {
   position: static;
 }
@@ -1879,6 +1883,10 @@ svg{
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-\[100vh\] {
+    height: 100vh;
   }
 
   .lg\:min-h-\[100vh\] {
