@@ -844,6 +844,18 @@ video {
   width: auto;
 }
 
+.w-\[215px\] {
+  width: 215px;
+}
+
+.w-\[43px\] {
+  width: 43px;
+}
+
+.w-\[85px\] {
+  width: 85px;
+}
+
 .min-w-\[360px\] {
   min-width: 360px;
 }
@@ -1955,6 +1967,30 @@ svg{
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[420px\] {
+    width: 420px;
+  }
+
+  .lg\:w-\[425px\] {
+    width: 425px;
+  }
+
+  .lg\:w-\[85px\] {
+    width: 85px;
+  }
+
+  .lg\:w-\[80px\] {
+    width: 80px;
+  }
+
+  .lg\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .lg\:w-\[70px\] {
+    width: 70px;
   }
 
   .lg\:translate-x-\[500px\] {
