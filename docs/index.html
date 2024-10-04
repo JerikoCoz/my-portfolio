@@ -1,7 +1,7 @@
 <!-- minified html for website performance -->
 <!doctype html><html lang=en><head><title>programmer</title><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1">
     <meta name="description" content="About me, my projects and resume">
-    <meta name="keywords" content="jeriko, jeriko ronnel coz, jeriko coz, programmer, Web Developer, back-end developer, front-end developer, full stack developer, junior developer, freelancer, resume">
+    <meta name="keywords" content="github portfolio, github programer, jeriko, jeriko ronnel coz, jeriko coz, programmer, Web Developer, back-end developer, front-end developer, full stack developer, junior developer, freelancer, resume">
     <meta name="author" content="Jeriko Ronnel Coz">
     
 
@@ -143,7 +143,7 @@
             I bring a strong foundation of skills developed through academic projects and personal initiatives. My passion for learning and problem-solving drives me to excel in any environment.<br>
             <br>
             </h3>
-            <div class="scroll-effect transition ease-in-out duration-1000 opacity-100 lg:opacity-0 flex justify-center items-center w-full flex-wrap">
+            <div id="card-language-container" class="scroll-effect transition ease-in-out duration-1000 opacity-100 lg:opacity-0 flex justify-center items-center w-full flex-wrap">
             <div class="card-language flex lg:w-full max-w-[183px] m-[5px] md:m-[20px] justify-center items-center max-h-[73px]">
             <div class="bg-gray-800 rounded-2xl flex items-center justify-center p-3">
             <img src=html.WebP alt=html height=52 width=50 class="w-[25px] h-[26px] md:w-[50px] md:h-[52px]">
@@ -203,7 +203,7 @@
             </div>
             </div>
             <div class=" transition ease-in-out duration-1000 opacity-100 flex-col md:flex-row flex justify-center items-center w-full py-[20px] lg:w-full lg:h-[26.063rem]">
-            <div id = "sti-pieces" class="flex scroll-effect rounded-full z-[50] overflow-hidden transition duration-1000">
+            <div id = "sti-pieces" class="flex scroll-effecter w-full rounded-full z-[50] overflow-hidden transition duration-1000">
                 <img src="sti1.WebP" alt="sti1" class="sti-pic relative lg:translate-x-[-100px]  transition duration-[6000ms] sm:h-[150px] md:h-[150px] lg:h-[280px]">
             <img src="sti2.WebP" loading="lazy" alt="sti2" class="sti-pic relative lg:translate-x-[-200px]  transition duration-[5000ms] sm:h-[150px] md:h-[150px] lg:h-[280px]">
             <img src="sti3.WebP" loading="lazy" alt="sti3" class="sti-pic relative lg:translate-x-[-300px]   transition duration-[4000ms] sm:h-[150px] md:h-[150px] lg:h-[280px]">
@@ -330,38 +330,40 @@
             () => {
                 for (let e = 0; e < scrollEffect.length; e++) {
                     let t = scrollEffect[e].getBoundingClientRect().top;
-                    let final = stiPieces.getBoundingClientRect().top;
-                    let bottom = stiPieces.getBoundingClientRect().bottom;
-// Check if the element is within the window's visible range
+                    let stiTop = stiPieces.getBoundingClientRect().top;
+                    let stiBottom = stiPieces.getBoundingClientRect().bottom;
+                   let cardLanguageTop = document.getElementById("card-language-container").getBoundingClientRect().top;
+                   let cardLanguageBottom = document.getElementById("card-language-container").getBoundingClientRect().bottom;
+
 if ( t < windowSize && t > 40) {
-    // If within the range, add classes and set transformation to 0
+   
     scrollEffect[e].classList.add("scroll-effect-right", "lg:opacity-100");
+    scrollEffect[e].style.transform = "translateX(0)";
 
-    if (runType) {
-        runType = false; // Disable runType after the first execution
-    }
 
-    scrollEffect[e].style.transform = "translateX(0)"; // Move to the original position
 
-    // Apply animations to cardLanguage elements
-    cardLanguage.forEach((element, index) => {
+
+
+    if(cardLanguageTop < windowSize && cardLanguageBottom > 0 ){
+        cardLanguage.forEach((element, index) => {
         setTimeout(() => {
-            element.classList.add("clip"); // Add 'clip' class with delay
-        }, 700 * index); // Each element gets delayed by 700ms * index
-
-        // Move 'stis' elements to their original position with delay
-        if(t < windowSize && t > 0){
-
-            if(final < windowSize && bottom > 0 ){
-                setTimeout(() => {
-            for (let i = stis.length - 1; i >= 0; i--) {
-                stis[i].style.transform = "translateX(0)"; // Reset transform to 0
-            }
-        }, 500);
-        }
-      
-    }
+            element.classList.add("clip"); 
+        }, 500 * index);
     });
+
+}
+ 
+       if(t < windowSize && t > 0){
+
+if(stiTop < windowSize && stiBottom > 0 ){
+    setTimeout(() => {
+for (let i = stis.length - 1; i >= 0; i--) {
+    stis[i].style.transform = "translateX(0)";
+}
+}, 500);
+}
+
+}
 } else {
     // If the element is out of bounds (above or below view)
     if (t > windowSize || t < 0) {
@@ -370,11 +372,27 @@ if ( t < windowSize && t > 40) {
 
         scrollEffect[e].style.transform = ""; // Clear transform value (reset to default)
 
-        if(final > windowSize || bottom < 0){
-            console.log(bottom)
+
+
+        if(cardLanguageTop > windowSize || cardLanguageBottom < 0){
+          
+            cardLanguage.forEach((element, index) => {
+ 
+            element.classList.remove("clip"); 
+    });
+ 
+      }
+
+
+
+        if(stiTop > windowSize || stiBottom < 0){
+          
             for (let i = stis.length - 1; i >= 0; i--) {
+                stis[i].style.transition = "none";
             stis[i].style.transform = "";
+            stis[i].style.transition = "";
         }
+   
         }
       
         

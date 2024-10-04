@@ -840,6 +840,10 @@ video {
   width: 500px;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .max-w-\[183px\] {
   max-width: 183px;
 }
