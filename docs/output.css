@@ -1722,6 +1722,10 @@ svg{
   .sm\:w-\[250px\] {
     width: 250px;
   }
+
+  .sm\:w-\[360px\] {
+    width: 360px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1759,6 +1763,10 @@ svg{
 
   .md\:w-\[50px\] {
     width: 50px;
+  }
+
+  .md\:w-\[760px\] {
+    width: 760px;
   }
 
   .md\:flex-row {
