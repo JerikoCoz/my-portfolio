@@ -844,6 +844,10 @@ video {
   width: auto;
 }
 
+.min-w-\[360px\] {
+  min-width: 360px;
+}
+
 .max-w-\[183px\] {
   max-width: 183px;
 }
@@ -1725,6 +1729,10 @@ svg{
 
   .sm\:w-\[360px\] {
     width: 360px;
+  }
+
+  .sm\:w-\[260px\] {
+    width: 260px;
   }
 }
 
