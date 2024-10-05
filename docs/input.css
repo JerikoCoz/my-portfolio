@@ -123,3 +123,8 @@ body,html,main{height:100%}html,main{scroll-behavior:smooth}.flex-dislpay,.links
     transform: translate(-50%, -50%) rotate(360deg);}
     
 } 
+
+
+#img{
+  transform-origin: center center;
+}

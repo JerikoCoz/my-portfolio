@@ -288,8 +288,8 @@
         countText1 = 0,
         countText2 = 0,
         header2Nav = Array.from(document.getElementsByClassName("header2-nav")),
-        cardLanguage = Array.from(document.getElementsByClassName("card-language")),
-        runType = false;
+        cardLanguage = Array.from(document.getElementsByClassName("card-language"));
+    
     header2Nav.forEach((e) => {
         e.addEventListener(
             "click",
@@ -368,12 +368,7 @@ for (let i = stis.length - 1; i >= 0; i--) {
     // If the element is out of bounds (above or below view)
     if (t > windowSize || t < 0) {
         scrollEffect[e].classList.remove("scroll-effect-right", "lg:opacity-100");
-        runType = true; // Re-enable runType for future scrolls
-
-        scrollEffect[e].style.transform = ""; // Clear transform value (reset to default)
-
-
-
+        scrollEffect[e].style.transform = ""; 
         if(cardLanguageTop > windowSize || cardLanguageBottom < 0){
           
             cardLanguage.forEach((element, index) => {
@@ -383,13 +378,10 @@ for (let i = stis.length - 1; i >= 0; i--) {
  
       }
 
-
-
         if(stiTop > windowSize || stiBottom < 0){
           
             for (let i = stis.length - 1; i >= 0; i--) {
-                stis[i].style.transition = "none";
-            stis[i].style.transform = "";
+            stis[i].style.transform = "translateX(-500px)";
             stis[i].style.transition = "";
         }
    

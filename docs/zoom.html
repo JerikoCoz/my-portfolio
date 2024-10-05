@@ -1,0 +1,43 @@
+<!doctype html><html lang=en><head><title>programmer</title><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="description" content="About me, my projects and resume">
+    <meta name="keywords" content="github portfolio, github programer, jeriko, jeriko ronnel coz, jeriko coz, programmer, Web Developer, back-end developer, front-end developer, full stack developer, junior developer, freelancer, resume">
+    <meta name="author" content="Jeriko Ronnel Coz">
+    
+
+    <link href=./output.css rel=stylesheet>
+    </head>
+    <body class="flex justify-center items-center">
+        
+   
+            <img id = "img" src="webs.WebP" class="h-full w-full relative origin-center transition duration-[10000]" alt=""/>
+       
+ 
+     
+        <script>
+            let img = document.getElementById("img");
+            let main = document.getElementsByClassName("main");
+            let num = 1;
+          
+
+           img.addEventListener("wheel", (e)=>{
+            let delt = e.deltaY;
+            if(delt > 0){
+                num += .1;          
+                    //  console.log("working")
+              
+            }else{
+            
+                if(num > 1){
+                    num -= .1;  
+                }
+                          
+                
+                
+            
+            }
+            img.style.scale = num;
+            console.log(num)
+            })
+            </script>
+    </body>
+    </html>
