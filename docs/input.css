@@ -84,7 +84,7 @@ body,html,main{height:100%}html,main{scroll-behavior:smooth}.flex-dislpay,.links
 
 
 .click-container{
-  @apply absolute bg-black top-10 left-0 flex justify-center items-center h-auto w-auto;
+  @apply fixed z-[500] bg-black flex justify-center items-center scale-110;
   pointer-events: none;
 }
 .click-rotate{
@@ -123,8 +123,3 @@ body,html,main{height:100%}html,main{scroll-behavior:smooth}.flex-dislpay,.links
     transform: translate(-50%, -50%) rotate(360deg);}
     
 } 
-
-
-#img{
-  transform-origin: center center;
-}

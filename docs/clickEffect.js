@@ -12,7 +12,7 @@ document.body.addEventListener("click", (e)=>{
      box.style.top = y - (box.clientWidth / 2) + "px";
      box.style.left = x - (box.clientWidth / 2) + "px";
 
-     document.body.appendChild(box);
+ 
 
      let divs = document.createElement("div");
      let divs2 = document.createElement("div");
@@ -23,12 +23,14 @@ document.body.addEventListener("click", (e)=>{
  
         divs2.setAttribute("class", "click-rotate2");
      
-   
+  
      box.appendChild(divs);
      box.appendChild(divs2);
 
+     document.body.appendChild(box);
      setTimeout(() => {
-        divs.remove();
+          box.style.display = "none";
      }, 1000);
+ 
    count++;
 });
