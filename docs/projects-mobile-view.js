@@ -4,7 +4,7 @@ const next = document.getElementById("next"),
     projectContainer = document.getElementById("project-container"),
     curentView = document.getElementById("current-view"),
     card = document.getElementsByClassName("card");
-if (window.innerWidth > 1024) {
+if (window.innerWidth >= 1024) {
     let e = Array.from(document.getElementsByClassName("box")),
         t = Array.from(document.getElementsByClassName("blur-effect"));
     document
@@ -20,7 +20,7 @@ if (window.innerWidth > 1024) {
                     e[1].style.display = "flex",
                     0 == l
                 ) {
-                    e[n].style.right = "762px",
+                    e[n].style.right = cardContainer.offsetWidth - e[0].offsetWidth + "px",
                     e[n].style.zIndex = 8;
                     let i = e.pop();
                     e.unshift(i);
@@ -78,4 +78,4 @@ if (window.innerWidth > 1024) {
     }, {passive: false})
 }
 next.addEventListener("click", next, {passive: true}),
-prev.addEventListener("click", prevs, {passive: true});
+prev.addEventListener("click", prev, {passive: true});
