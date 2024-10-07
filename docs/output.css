@@ -578,6 +578,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-\[20px\] {
+  bottom: 20px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -651,6 +655,11 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.my-9 {
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -674,6 +683,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
 }
 
 .h-0 {
@@ -706,6 +719,10 @@ video {
 
 .h-\[200px\] {
   height: 200px;
+}
+
+.h-\[25px\] {
+  height: 25px;
 }
 
 .h-\[26px\] {
@@ -784,6 +801,10 @@ video {
   width: 300px;
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
 .w-\[313px\] {
   width: 313px;
 }
@@ -810,10 +831,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[30px\] {
-  width: 30px;
 }
 
 .w-\[50px\] {
@@ -844,6 +861,11 @@ video {
   flex-grow: 1;
 }
 
+.translate-x-\[-500px\] {
+  --tw-translate-x: -500px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-x-\[70px\] {
   --tw-translate-x: 70px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -872,6 +894,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1113,11 +1139,6 @@ video {
   color: rgb(235 221 221 / var(--tw-text-opacity));
 }
 
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1126,6 +1147,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1174,6 +1200,10 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-\[1000ms\] {
+  transition-duration: 1000ms;
 }
 
 .duration-\[2000ms\] {
@@ -1621,6 +1651,11 @@ svg{
 }
 
 @media (min-width: 320px) {
+  .sm\:my-9 {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+
   .sm\:h-\[150px\] {
     height: 150px;
   }
@@ -1639,6 +1674,16 @@ svg{
     margin: 20px;
   }
 
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md\:my-9 {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+
   .md\:h-\[150px\] {
     height: 150px;
   }
@@ -1647,12 +1692,20 @@ svg{
     height: 215px;
   }
 
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
   .md\:h-\[40px\] {
     height: 40px;
   }
 
   .md\:h-\[52px\] {
     height: 52px;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:w-\[100px\] {
@@ -1671,7 +1724,7 @@ svg{
     width: 50px;
   }
 
-  .md\:w-\[100\%\] {
+  .md\:w-full {
     width: 100%;
   }
 
@@ -1688,6 +1741,16 @@ svg{
     padding-left: 10px;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .md\:text-\[20px\] {
     font-size: 20px;
   }
@@ -1695,15 +1758,16 @@ svg{
   .md\:text-\[30px\] {
     font-size: 30px;
   }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .large\:absolute {
     position: absolute;
-  }
-
-  .large\:bottom-\[20px\] {
-    bottom: 20px;
   }
 
   .large\:right-\[0\%\] {
@@ -1718,6 +1782,10 @@ svg{
     right: calc(50% - 250px);
   }
 
+  .large\:bottom-\[20px\] {
+    bottom: 20px;
+  }
+
   .large\:z-0 {
     z-index: 0;
   }
@@ -1730,20 +1798,20 @@ svg{
     display: none;
   }
 
-  .large\:h-\[200px\] {
-    height: 200px;
-  }
-
-  .large\:h-\[300px\] {
-    height: 300px;
-  }
-
   .large\:h-\[350px\] {
     height: 350px;
   }
 
   .large\:h-auto {
     height: auto;
+  }
+
+  .large\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .large\:h-\[300px\] {
+    height: 300px;
   }
 
   .large\:w-\[100\%\] {
@@ -1768,42 +1836,19 @@ svg{
 }
 
 @media (min-width: 1025px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
-  .lg\:bottom-\[20px\] {
-    bottom: 20px;
-  }
-
-  .lg\:right-\[0\%\] {
-    right: 0%;
-  }
-
-  .lg\:right-\[calc\(100\%-262px\)\] {
-    right: calc(100% - 262px);
-  }
-
-  .lg\:right-\[calc\(50\%-250px\)\] {
-    right: calc(50% - 250px);
-  }
-
-  .lg\:z-0 {
-    z-index: 0;
-  }
-
   .lg\:mx-\[100px\] {
     margin-left: 100px;
     margin-right: 100px;
   }
 
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg\:my-\[10px\] {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
-
-  .lg\:block {
-    display: block;
   }
 
   .lg\:flex {
@@ -1814,24 +1859,12 @@ svg{
     display: none;
   }
 
-  .lg\:h-\[200px\] {
-    height: 200px;
-  }
-
   .lg\:h-\[26\.063rem\] {
     height: 26.063rem;
   }
 
   .lg\:h-\[280px\] {
     height: 280px;
-  }
-
-  .lg\:h-\[300px\] {
-    height: 300px;
-  }
-
-  .lg\:h-\[350px\] {
-    height: 350px;
   }
 
   .lg\:h-\[50px\] {
@@ -1854,28 +1887,12 @@ svg{
     min-height: 100vh;
   }
 
-  .lg\:w-\[100\%\] {
-    width: 100%;
-  }
-
-  .lg\:w-\[1024px\] {
-    width: 1024px;
-  }
-
-  .lg\:w-\[262px\] {
-    width: 262px;
-  }
-
-  .lg\:w-\[30\.188rem\] {
-    width: 30.188rem;
+  .lg\:w-\[382px\] {
+    width: 382px;
   }
 
   .lg\:w-\[400px\] {
     width: 400px;
-  }
-
-  .lg\:w-\[500px\] {
-    width: 500px;
   }
 
   .lg\:w-\[80px\] {
@@ -1888,6 +1905,10 @@ svg{
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[30\.188rem\] {
+    width: 30.188rem;
   }
 
   .lg\:translate-x-\[-100px\] {
@@ -1920,8 +1941,9 @@ svg{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:items-end {
-    align-items: flex-end;
+  .lg\:translate-x-\[70px\] {
+    --tw-translate-x: 70px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:overflow-x-hidden {
@@ -1998,6 +2020,11 @@ svg{
     font-family: Poppins, sans-serif;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2011,16 +2038,16 @@ svg{
     font-size: 1rem;
   }
 
-  .lg\:text-\[35px\] {
-    font-size: 35px;
-  }
-
   .lg\:text-\[3rem\] {
     font-size: 3rem;
   }
 
   .lg\:text-\[48px\] {
     font-size: 48px;
+  }
+
+  .lg\:text-\[35px\] {
+    font-size: 35px;
   }
 
   .lg\:text-\[\#0E7904\] {
