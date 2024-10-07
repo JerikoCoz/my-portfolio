@@ -680,8 +680,40 @@ video {
   display: none;
 }
 
+.aspect-\[5\/3\] {
+  aspect-ratio: 5/3;
+}
+
 .aspect-video {
   aspect-ratio: 16 / 9;
+}
+
+.aspect-\[8\/3\] {
+  aspect-ratio: 8/3;
+}
+
+.aspect-\[5\/8\] {
+  aspect-ratio: 5/8;
+}
+
+.aspect-\[5\/5\] {
+  aspect-ratio: 5/5;
+}
+
+.aspect-\[5\/4\] {
+  aspect-ratio: 5/4;
+}
+
+.aspect-\[17\/10\] {
+  aspect-ratio: 17/10;
+}
+
+.aspect-\[16\/9\] {
+  aspect-ratio: 16/9;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .h-0 {
