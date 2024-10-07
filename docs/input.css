@@ -123,3 +123,16 @@ body,html,main{height:100%}html,main{scroll-behavior:smooth}.flex-dislpay,.links
     transform: translate(-50%, -50%) rotate(360deg);}
     
 } 
+
+
+.button{
+  margin-left: 30px;
+  transition: .200s ease-in;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .2),
+  -3px -3px 3px rgba(196, 193, 193, 0.3);
+}
+.button:focus{
+  transition: .200s ease-in;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, .2),
+  inset -3px -3px 3px rgba(196, 193, 193, 0.6);
+}
