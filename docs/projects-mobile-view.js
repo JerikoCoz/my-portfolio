@@ -30,7 +30,7 @@ if (window.innerWidth >= 1024) {
                     50 == r
                         ? (
                             e[n].style.width = "500px",
-                            e[n].style.height = "300px",
+                            e[n].style.height = "auto",
                             e[n].style.bottom = 0,
                             e[n].style.zIndex = 100,
                             t[n].style.opacity = 0,
@@ -38,7 +38,7 @@ if (window.innerWidth >= 1024) {
                         )
                         : (
                             e[n].style.width = "262px",
-                            e[n].style.height = "200px",
+                            e[n].style.height = "auto",
                             e[n].style.bottom = "20px",
                             t[n].style.opacity = .75
                         ),
