@@ -646,6 +646,10 @@ video {
   z-index: 99;
 }
 
+.z-\[-100\] {
+  z-index: -100;
+}
+
 .m-\[5px\] {
   margin: 5px;
 }
@@ -934,11 +938,6 @@ video {
   background-color: rgb(168 161 161 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#a9a7a7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(169 167 167 / var(--tw-bg-opacity));
-}
-
 .bg-\[rgba\(18\2c 14\2c 14\2c 0\.6\)\] {
   background-color: rgba(18,14,14,0.6);
 }
@@ -1014,10 +1013,6 @@ video {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-1 {

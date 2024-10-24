@@ -11,21 +11,21 @@ if (window.innerWidth >= 1024) {
         .getElementById("card-container")
         .addEventListener("click", () => {
             let l = 100;
-            for (let n = 2; n < e.length; n++) {
+            for (let n = 3; n < e.length; n++) {
                 let r = l - 50;
                 if (
-                    e[0].style.zIndex = 9,
-                    e[1].style.zIndex = 10,
-                    e[0].style.display = "flex",
-                    e[1].style.display = "flex",
+                    e[0].style.zIndex = 6,
+                    e[1].style.zIndex = 7,
+                    e[2].style.zIndex = 8,
                     0 == l
                 ) {
-                    e[n].style.right = cardContainer.offsetWidth - e[0].offsetWidth + "px",
-                    e[n].style.zIndex = 8;
+                    e[n].style.right = cardContainer.offsetWidth - e[0].offsetWidth + "px";
+                  
                     let i = e.pop();
                     e.unshift(i);
                     let s = t.pop();
-                    t.unshift(s)
+                    t.unshift(s);
+                    e[n].style.zIndex = 0;
                 } else 
                     50 == r
                         ? (
