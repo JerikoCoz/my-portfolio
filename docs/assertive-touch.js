@@ -27,15 +27,14 @@ function activePosition() {
     status = false
 }
 function touchtAssertive() {
-    if (status) {
   
             assertiveContainer.style.right = [(body.offsetWidth / 2) - (assertiveContainer.offsetWidth / 2)] +
                     "px"
 
         activeBlur();
         activePosition()
-    }
-    status = false
+    
+   
 }
 function activeBlur() {
     bgBlur
@@ -46,7 +45,8 @@ function activeBlur() {
         .classList
         .add("assertive-touch")
 }
-function touchtMain() {
+function touchtMain(e) {
+    e.preventDefault();
     ismove = "no";
     assertiveContainer.removeEventListener("touchend", addev);
     assertiveContainer.addEventListener("touchend", touchtAssertive);
@@ -103,6 +103,7 @@ function touchtMain() {
     status = true
 }
 function touchtmoveAssertive(e) {
+    e.preventDefault();
     status = false;
     x = window.innerWidth - e
         .touches[0]
@@ -121,7 +122,8 @@ function touchtmoveAssertive(e) {
             touchtAssertive,
             {passive: true}
         );
-        assertiveContainer.addEventListener("touchend", () => {
+        assertiveContainer.addEventListener("touchend", (e) => {
+            e.preventDefault();
             assertiveContainer.addEventListener("touchend", addev, {passive: true})
         }, {passive: true})
     }
@@ -129,7 +131,8 @@ function touchtmoveAssertive(e) {
 function addev() {
     activePosition()
 }
-assertiveContainer.addEventListener("touchcancel", () => {
+assertiveContainer.addEventListener("touchcancel", (e) => {
+    e.preventDefault();
     touchtAssertive()
 }, {passive: true})
 burgerContainer.addEventListener(
