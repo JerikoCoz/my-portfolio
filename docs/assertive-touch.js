@@ -51,7 +51,6 @@ function touchtMain() {
     assertiveContainer.addEventListener("touchend", touchtAssertive);
     if (status == false) {
         assertiveContainer.style.transition = "1s";
-        console.log(y)
         if (y > 580 || y > (window.innerHeight * .94)) {
             assertiveContainer.style.top = "68px";
             assertiveContainer.style.transition = "1s ease-in"
@@ -103,6 +102,7 @@ function touchtMain() {
     status = true
 }
 function touchtmoveAssertive(e) {
+    e.preventDefault();
     status = false;
     x = window.innerWidth - e
         .touches[0]
