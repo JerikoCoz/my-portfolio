@@ -27,14 +27,14 @@ function activePosition() {
     status = false
 }
 function touchtAssertive() {
+    if (status) {
   
-            assertiveContainer.style.right = [(body.offsetWidth / 2) - (assertiveContainer.offsetWidth / 2)] +
-                    "px"
+            assertiveContainer.style.right = [(body.offsetWidth / 2) - (assertiveContainer.offsetWidth / 2)] + "px";
 
         activeBlur();
         activePosition()
-    
-   
+    }
+    status = false
 }
 function activeBlur() {
     bgBlur
@@ -45,14 +45,14 @@ function activeBlur() {
         .classList
         .add("assertive-touch")
 }
-function touchtMain(e) {
-    e.preventDefault();
+function touchtMain() {
     ismove = "no";
     assertiveContainer.removeEventListener("touchend", addev);
     assertiveContainer.addEventListener("touchend", touchtAssertive);
     if (status == false) {
         assertiveContainer.style.transition = "1s";
-        if (y - 50 < -51 || y > (window.innerHeight * .94)) {
+        console.log(y)
+        if (y > 580 || y > (window.innerHeight * .94)) {
             assertiveContainer.style.top = "68px";
             assertiveContainer.style.transition = "1s ease-in"
         }
@@ -103,7 +103,6 @@ function touchtMain(e) {
     status = true
 }
 function touchtmoveAssertive(e) {
-    e.preventDefault();
     status = false;
     x = window.innerWidth - e
         .touches[0]
@@ -122,8 +121,7 @@ function touchtmoveAssertive(e) {
             touchtAssertive,
             {passive: true}
         );
-        assertiveContainer.addEventListener("touchend", (e) => {
-            e.preventDefault();
+        assertiveContainer.addEventListener("touchend", () => {
             assertiveContainer.addEventListener("touchend", addev, {passive: true})
         }, {passive: true})
     }
@@ -131,11 +129,10 @@ function touchtmoveAssertive(e) {
 function addev() {
     activePosition()
 }
-assertiveContainer.addEventListener("touchcancel", (e) => {
-    e.preventDefault();
+assertiveContainer.addEventListener("touchcancel", () => {
     touchtAssertive()
 }, {passive: true})
-burgerContainer.addEventListener(
+assertiveContainer.addEventListener(
     "touchend",
     touchtAssertive,
     {passive: true}
