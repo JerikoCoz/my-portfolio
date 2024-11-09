@@ -21,7 +21,7 @@ function activePosition() {
         cac.style.opacity = 1
     }, 500);
     setTimeout(() => {
-        cac.style.height = "229px"
+        cac.classList.remove("scale-y-0");
     }, 700);
     body.style.overflow = "auto";
     status = false
@@ -87,7 +87,7 @@ function touchtMain() {
                 .classList
                 .add("none-dislpay")
         }, 500);
-        cac.style.height = 0 + "px";
+        cac.classList.add("scale-y-0");
         setTimeout(() => {
             bgBlur
                 .classList
