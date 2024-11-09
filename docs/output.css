@@ -708,6 +708,10 @@ video {
   height: 100px;
 }
 
+.h-\[110px\] {
+  height: 110px;
+}
+
 .h-\[115px\] {
   height: 115px;
 }
@@ -750,10 +754,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[110px\] {
-  height: 110px;
 }
 
 .max-h-\[73px\] {
