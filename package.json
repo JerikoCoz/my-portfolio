@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "run": "npx tailwindcss -i ./docs/input.css -o ./docs/output.css --watch",
-    "production": "cross-env NODE_ENV=production npx tailwindcss -o output.css --minify",
+    "production": "cross-env NODE_ENV=production",
     "dev": "cross-env NODE_ENV=development npx tailwindcss -o output.css"
   },
   "keywords": [],
