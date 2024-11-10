@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run": "npx tailwindcss -i ./docs/input.css -o ./docs/output.css --watch",
-    "start": "cross-env NODE_ENV=production node your_script.js",
-    "dev": "cross-env NODE_ENV=development node your_script.js"
+    "run": "npx tailwindcss -i ./docs/input.css -o ./docs/output.css --watch"
   },
   "keywords": [],
   "author": "",
